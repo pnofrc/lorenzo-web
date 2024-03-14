@@ -30,3 +30,18 @@ function selectCategory(category){
 
 }
 
+let projs = document.querySelectorAll('.element')
+
+projs.forEach(proj => {
+    proj.addEventListener("mouseenter", () => {
+        let titl = proj.appendChild(document.createElement('h1'))
+        let pic = proj.querySelector('img').getAttribute('src')
+        titl.style.backgroundImage = "url(" + pic +")"
+        titl.innerHTML = proj.dataset.title
+    })
+
+    proj.addEventListener("mouseleave", () => {
+        document.querySelector('.element h1').remove()
+    })
+
+});

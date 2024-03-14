@@ -1,6 +1,14 @@
 :root{
-    --main: rgb(23, 28, 32);
+    --main: blue;
+    
 }
+
+@font-face {
+    font-family: 'murmure';
+    src: url('./LeMurmure-Regular.woff');
+}
+
+
 
 html,body{
     width: 100%;
@@ -8,7 +16,10 @@ html,body{
     margin: 0;
     scroll-behavior: smooth;
 }
+h1{
+    font-family: 'murmure';
 
+}
 .start{
     width: 100%;
     z-index: 100;
@@ -51,10 +62,12 @@ html,body{
     display: flex;
     z-index: 100;
     justify-content: space-between;
+    display: none;
 }
 
 .categories a, .menu a {
-    font-size: 5rem;
+    font-family: 'murmure';
+    font-size: 3rem;
     text-decoration: none !important;
     color: black;
 }
@@ -68,6 +81,7 @@ html,body{
     z-index: 101;
 }
 .menu div{
+    padding-top: 2rem;
     justify-content: end;
     position: sticky;    display: flex;
   gap: 3rem;
@@ -89,30 +103,39 @@ html,body{
 
 .element{
     display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  margin: 10px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 10px;
 }
-.element:nth-child(even){
-    border-bottom: pink solid 5px;
-    border-right: pink solid 5px;
+
+.element h1{
+
+    position: absolute;
+    font-size: 4rem;
+    background-size: cover;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+-webkit-text-stroke: 1px var(--main);}
+/* .element:nth-child(even){
+    border-bottom: var(--main) solid 5px;
+    border-right: var(--main) solid 5px;
 }
 .element:nth-child(odd){
     border-bottom: black solid 5px;
     border-right: black solid 5px;
-}
+} */
 
 #closeMenu{
     display: block;
     text-align: right;
     font-size: 3rem;
     color: black;
-    -webkit-text-stroke: 1px pink;
+    -webkit-text-stroke: 1px var(--main);
 }
 
 #closeMenu:hover{
-    color: pink;
+    color: var(--main);
     -webkit-text-stroke: 2px black;
 }
 
@@ -128,7 +151,7 @@ html,body{
 .head{
     width: 100%;
     height: 100%;
-    background-color: pink;
+    background-color: var(--main);
     position: relative
 
     
@@ -146,20 +169,20 @@ header{
     display: block;
     top: 100%;
     right: -15%;
-    width: 15%;
+    width: fit-content;
     height: 100%;
     background-color: black;
-    color: pink;
+    color: var(--main);
 }
 
 #bio{
     background-color: black;
-    height: 100%;
-    border: solid 10px pink;
-    color: pink;
+    border: solid 10px var(--main);
+    position: relative;
+    color: var(--main);
     padding: 2%;
     font-size: 2rem;
-    margin-top: 10rem;
+    margin-top: 15rem;
     display: flex;
   align-items: end;
 
@@ -170,7 +193,7 @@ header{
 }
 
 #up{
-    color: pink !important;
+    color: var(--main) !important;
     text-decoration: none !important;
     text-align: right;
     border: solid;
@@ -180,9 +203,15 @@ header{
     position: absolute;
 }
 
-.presentazione p{
+h1{
     color: black !important;
-   
+   text-align: center;    -webkit-text-stroke: unset unset !important;
+
+}
+
+a.presentazione:hover{
+    -webkit-text-stroke: unset unset !important;
+
 }
 
 
@@ -192,7 +221,7 @@ header{
     -webkit-text-stroke: unset !important;}
 
 a:hover{
-    color: pink;
+    color: var(--main);
     -webkit-text-stroke: 2px black;
     
 }
