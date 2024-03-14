@@ -17,31 +17,37 @@ function selectCategory(category){
         let cat = document.querySelectorAll(`.element`)
 
         cat.forEach(cat_element => {
-            cat_element.style.display = "block"
+            cat_element.style.display = "flex"
         });
     } else {
         let cat = document.querySelectorAll(`.${category}`)
 
         cat.forEach(cat_element => {
-            cat_element.style.display = "block"
+            cat_element.style.display = "flex"
         });
     }
 
+    bo()
 
 }
 
-let projs = document.querySelectorAll('.element')
+function bo(){
 
-projs.forEach(proj => {
-    proj.addEventListener("mouseenter", () => {
-        let titl = proj.appendChild(document.createElement('h1'))
-        let pic = proj.querySelector('img').getAttribute('src')
-        titl.style.backgroundImage = "url(" + pic +")"
-        titl.innerHTML = proj.dataset.title
-    })
+    let projs = document.querySelectorAll('.element')
 
-    proj.addEventListener("mouseleave", () => {
-        document.querySelector('.element h1').remove()
-    })
+    projs.forEach(proj => {
+        proj.addEventListener("mouseenter", () => {
+            let titl = proj.appendChild(document.createElement('h1'))
+            let pic = proj.querySelector('img').getAttribute('src')
+            titl.style.backgroundImage = "url(" + pic +")"
+            titl.innerHTML = proj.dataset.title
+        })
 
-});
+        proj.addEventListener("mouseleave", () => {
+            document.querySelector('.element h1').remove()
+        })
+
+    });
+    }
+
+    bo()
