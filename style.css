@@ -73,9 +73,18 @@ h1{
     color: black !important;
 }
 
+.menu a:hover{
+    color: var(--main) !important;
+}
+
 .categories a{
     color: var(--main) !important;
    
+}
+
+.categories a:hover{
+    color: black !important;
+    -webkit-text-stroke: var(--main) 1px;
 }
 
 
@@ -128,10 +137,11 @@ h1{
     justify-content: center;
     flex-direction: column;
     margin: 10px;
+
 }
 
 .element h1{  overflow-wrap: break-word;
-
+    filter: brightness(200%);
     position: absolute;
     font-size: 4rem;
     background-size: cover;
@@ -189,6 +199,12 @@ header{
     flex-direction: column;
 }
 
+.instruction{
+    user-select: none;
+    top: 50%;
+  position: relative;
+  width: fit-content;left: 50%;
+}
 #news{
     position: absolute;
     display: block;
@@ -198,6 +214,15 @@ header{
     height: 100%;
     background-color: black;
     color: var(--main);
+    z-index: 222;
+}
+
+#news ul{
+    list-style: none;
+    padding: 30px;
+}
+#news ul li{
+    margin-top: 10px;
 }
 
 #bio{
@@ -270,7 +295,7 @@ a:hover{
     display: none;
     align-items: center;
     justify-content: center;
-    z-index: 100;
+    z-index: 200;
 }
 
 #friends div{
@@ -286,9 +311,11 @@ a:hover{
 
 .close-friends{
     position: absolute;
-  width: min-content;
   top: 2rem;
-  right: 2rem;
+  left: 2rem;
+  font-size: 4rem;
+  cursor: pointer;
+  width: min-content !important;
 }
 
 #bio h1{

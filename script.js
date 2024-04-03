@@ -60,10 +60,12 @@ let x;
 let y;
 
 function addPic(event) {
+
         x = event.clientX;
         y =  event.clientY;
+        r = Math.floor(Math.random() * (10 - (-10)) +  (-10))
 
-        document.querySelector(".presentazione").innerHTML+=`<img class="opening-pic" style="top:${y}px; left:${x}px" src="apertura/${opening_pics[i]}">`
+        document.querySelector(".presentazione").innerHTML+=`<img class="opening-pic" style="top:${y}px; left:${x}px; transform: rotate(${r}deg)" src="apertura/${opening_pics[i]}">`
         i++
         if (i >= opening_pics.length){
             i = 0
@@ -75,3 +77,4 @@ function addPic(event) {
 
 
 document.querySelector(".presentazione").addEventListener("click", addPic)
+document.querySelector(".instruction").addEventListener("click", addPic)
