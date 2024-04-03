@@ -66,11 +66,16 @@ h1{
     z-index: 100;
     justify-content: space-between;
     text-decoration: none;
-
+    top: 5rem !important;
 }
 
 .menu a{
     color: black !important;
+}
+
+#name{
+    left: 0;
+     position: absolute;
 }
 
 .menu a:hover{
@@ -104,13 +109,14 @@ h1{
     z-index: 101;
 } */
 .menu{
-    padding-top: 2rem;
+    margin-top: 2rem;
     justify-content: end;
    z-index: 111;
     display: flex;
   gap: 3rem;
   right: 0;
   top: 0;
+  width: 100%;
 }
 
 
@@ -143,7 +149,7 @@ h1{
 .element h1{  overflow-wrap: break-word;
     filter: brightness(200%);
     position: absolute;
-    font-size: 4rem;
+    font-size: 5rem;
     background-size: cover;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -347,5 +353,9 @@ a:hover{
   font-size: 1.4rem;
 }
 
+.start{
+    display: flex;
+    flex-direction: column;
+}
 
 }
