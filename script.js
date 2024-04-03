@@ -51,3 +51,24 @@ function bo(){
     }
 
     bo()
+
+
+    let opening_pics = ['_DSC7702.JPG','Buoni_a_nulla.JPG','Ido.jpg','Ido2.jpg','Sito.JPG'] 
+
+let i = 0;
+let x;
+let y;
+
+function addPic(event) {
+        x = event.clientX;
+        y =  event.clientY;
+
+        document.querySelector(".presentazione").innerHTML+=`<img class="opening-pic" style="top:${y}px; left:${x}px" src="apertura/${opening_pics[i]}">`
+        i++
+    }
+
+
+
+
+
+document.querySelector(".presentazione").addEventListener("click", addPic)
