@@ -273,7 +273,7 @@ a:hover{
     color: var(--main) !important;
 }
 
-/* MOVBILE */
+@media only screen and (max-width: 600px) {
 
 .menu{
     gap: 1rem;
@@ -298,3 +298,5 @@ a:hover{
   font-size: 1.4rem;
 }
 
+
+}
