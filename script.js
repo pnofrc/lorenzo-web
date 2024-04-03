@@ -65,6 +65,9 @@ function addPic(event) {
 
         document.querySelector(".presentazione").innerHTML+=`<img class="opening-pic" style="top:${y}px; left:${x}px" src="apertura/${opening_pics[i]}">`
         i++
+        if (i >= opening_pics.length){
+            i = 0
+        }
     }
 
 

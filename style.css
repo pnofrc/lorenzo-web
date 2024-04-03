@@ -56,21 +56,34 @@ h1{
 
 
 .categories{
+  
+    -webkit-text-stroke: 1px black !important;
     right: 0;
     padding-top: 5px;
-    position: absolute;
+    position: sticky;
     width: 50%;
     display: flex;
     z-index: 100;
     justify-content: space-between;
-    text-decoration: underline;
+    text-decoration: none;
+
 }
+
+.menu a{
+    color: black !important;
+}
+
+.categories a{
+    color: var(--main) !important;
+   
+}
+
+
 
 .categories a, .menu a {
     font-family: 'murmure';
     font-size: 3rem;
     text-decoration: none !important;
-    color: black;
 }
 
 /* .menu{
@@ -84,10 +97,17 @@ h1{
 .menu{
     padding-top: 2rem;
     justify-content: end;
-    position: sticky;    display: flex;
+   z-index: 111;
+    display: flex;
   gap: 3rem;
   right: 0;
   top: 0;
+}
+
+
+
+.head .menu{
+    position: fixed;
 }
 
 .presentazione{
@@ -157,7 +177,7 @@ h1{
 }
 
 .head img{
-    width: 50%;
+    width: 40%;
     position: absolute;
     translate: -50% -50%;
 }
@@ -190,6 +210,8 @@ header{
     margin-top: 15rem;
     display: flex;
     justify-content: space-between;
+    align-items: baseline;
+    z-index: 333;
 }
 
 .biotext{
