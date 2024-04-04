@@ -389,6 +389,8 @@ a:hover{
 
 .burger{
     flex-direction: column;
+    gap: 0;
+    display: none;
 }
 
 #toggle{
