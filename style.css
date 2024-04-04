@@ -13,6 +13,7 @@
 
 html,body{
     width: 100%;
+    padding: 0;
     height: 100%;
     margin: 0;
     scroll-behavior: smooth;
@@ -77,6 +78,7 @@ h1{
 #name{
     left: 0;
      position: absolute;
+     color: var(--main) !important;
 }
 
 .menu a:hover{
@@ -208,9 +210,9 @@ header{
 
 .instruction{
     user-select: none;
-    top: 50%;
   position: relative;
-  width: fit-content;left: 50%;
+  width: fit-content;
+  font-size: 1.5rem;
 }
 #news{
     position: absolute;
@@ -327,12 +329,17 @@ a:hover{
 
 #bio h1{
     color: var(--main) !important;
+    font-size: 3rem;
 }
 
-#toggle,.burger{
+#toggle{
     display: none;
 }
 
+.burger{
+    gap: 2rem;
+    display: flex;
+}
 
 
 
@@ -368,7 +375,7 @@ a:hover{
 }
 
 .start{
-    display: flex;
+    display: flex !important;
     flex-direction: column;
 }
 .sticky{
@@ -386,7 +393,7 @@ a:hover{
 
 #toggle{
     display: block;
-    right: 2rem;
+    right: .5rem;
     height: fit-content;
     position: absolute;
 }
@@ -394,6 +401,19 @@ a:hover{
 #toggle svg{
     width: 3rem;
     height: fit-content;
+    stroke: var(--main);
 }
 
+.categories{
+    flex-direction: row;
+    top: 6rem !important;
+}
+
+.head img{
+    width: 55%;
+}
+
+.instruction{
+    font-size: 2rem;
+}
 }
