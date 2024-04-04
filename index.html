@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Lorenzo!</title>
@@ -27,9 +35,9 @@
             
             <div style="position: absolute;
             top: 2rem;
-            right: 2rem;
-            z-index: -10;">
-            </div>
+            right: 5rem;
+            z-index: -10;
+            width: 50%;"></div>
 
             <div>
                 A list of my friends
@@ -51,20 +59,45 @@
                 <a href="#head" id="name">Lorenzo Ponte</a>
                 <div class="burger">
                     <a href="#work" onclick="toggleMenu(false)">Lavori</a>
-                    <a href="#bio" onclick="toggleMenu(false)">Bio</a>
                     <a href="#news" onclick="toggleMenu(false)">Calendario</a>
+                    <a href="#bio" onclick="toggleMenu(false)">Bio</a>
                     <a onclick="document.getElementById('friends').style.display ='flex', toggleMenu(false)" href="#friends">Amici</a>
+                </div>
+                <div class="desktop">
+                    <a href="#work">Lavori</a>
+                    <a href="#news" >Calendario</a>
+                    <a href="#bio">Bio</a>
+                    <a onclick="document.getElementById('friends').style.display ='flex'" href="#friends">Amici</a>
                 </div>
 
                 <div id="toggle" ><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 50 50">
                     <path d="M 0 9 L 0 11 L 50 11 L 50 9 Z M 0 24 L 0 26 L 50 26 L 50 24 Z M 0 39 L 0 41 L 50 41 L 50 39 Z"></path>
                     </svg></div>
             </div>
-            <!-- <a href="#menu"> -->
-                
-            <div class="presentazione">
-                <h1 class="instruction">Click</h1>
+
+            <div class="presentazione swiper">
+                <!-- <h1 class="instruction">Click</h1> -->
+
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="apertura/_DSC7702.JPG" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="apertura/Buoni_a_nulla.JPG" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="apertura/Ido.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="apertura/Ido2.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="apertura/Sito.JPG" alt="">
+                    </div>
+                  </div>
+                  <div class="swiper-pagination"></div>
             </div>
+
         </a>
         </div>
 
@@ -145,29 +178,30 @@
             </div>
         </div>
 
-        <div id="bio">
-            <h1>Bio</h1>
+        <div id="news">
+            <h1>Calendario</h1>
             <div class="biotext">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nunc id cursus metus aliquam eleifend mi in. Nulla malesuada pellentesque elit eget gravida. Posuere urna nec tincidunt praesent semper feugiat nibh. Quis hendrerit dolor magna eget est lorem ipsum. Sit amet massa vitae tortor condimentum lacinia quis vel eros. Diam volutpat commodo sed egestas. Egestas sed tempus urna et. Pulvinar pellentesque habitant morbi tristique senectus et netus et malesuada. Ultricies mi quis hendrerit dolor magna eget est lorem. Convallis tellus id interdum velit laoreet id donec ultrices tincidunt. Faucibus pulvinar elementum integer enim. Platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim. Rhoncus dolor purus non enim praesent elementum facilisis leo. Dictum sit amet justo donec enim diam vulputate ut. Massa sed elementum tempus egestas sed sed risus. Risus nullam eget felis eget nunc. Amet consectetur adipiscing elit ut aliquam purus sit amet. Pellentesque dignissim enim sit amet venenatis urna cursus. Enim nulla aliquet porttitor lacus luctus accumsan tortor posuere ac.
-            </div>
+                <ul>
+                    <li>12 01 2025<br>SPETTACOLONE</li>
+    
+                    <li>12 01 2025<br>SPETTACOLONE</li>
+    
+                    <li>12 01 2025<br>SPETTACOLONE</li>
+    
+                    <li>12 01 2025<br>SPETTACOLONE</li>
+                </ul>            </div>
             <div class="sticky"><a id="up" href="#head">↑</a></div>
         </div>
 
         
 
-        <!-- <div id='news' >
-            <a href="#menu" id="closeMenu">Chiudi</a>
+        <div id='bio' >
+            <h1><a href="#head" id="closeMenu">Chiudi</a></h1>
 
-            <ul>
-                <li>12 01 2025<br>SPETTACOLONE</li>
-
-                <li>12 01 2025<br>SPETTACOLONE</li>
-
-                <li>12 01 2025<br>SPETTACOLONE</li>
-
-                <li>12 01 2025<br>SPETTACOLONE</li>
-            </ul>
-        </div> -->
+            <p>
+                Lorenzo Ponte fa cose e vede gente ed e' nato sotto una verza
+            </p>
+        </div>
 
     
 
