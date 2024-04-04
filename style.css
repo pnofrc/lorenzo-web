@@ -16,6 +16,7 @@ html,body{
     height: 100%;
     margin: 0;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 h1{
     font-family: 'murmure';
@@ -328,14 +329,26 @@ a:hover{
     color: var(--main) !important;
 }
 
+#toggle,.burger{
+    display: none;
+}
+
+
+
+
 @media only screen and (max-width: 600px) {
 
+    .head{
+        margin-top: 0;
+        top: 0;
+    }
 .menu{
     gap: 1rem;
     padding-top: unset;
   justify-content: unset;
   right: unset;
   top: unset;
+  flex-direction: column;
 }
 
 #bio{
@@ -351,11 +364,36 @@ a:hover{
 .biotext{
     width: 80%;
   font-size: 1.4rem;
+  line-height: 2rem;
 }
 
 .start{
     display: flex;
     flex-direction: column;
+}
+.sticky{
+    top: 40%;
+    position: absolute;
+    right: 0;
+}
+#name{
+    position: unset;
+}
+
+.burger{
+    flex-direction: column;
+}
+
+#toggle{
+    display: block;
+    right: 2rem;
+    height: fit-content;
+    position: absolute;
+}
+
+#toggle svg{
+    width: 3rem;
+    height: fit-content;
 }
 
 }
