@@ -9,6 +9,10 @@
     src: url('./LeMurmure-Regular.woff');
 }
 
+@font-face {
+    font-family: 'lineal';
+    src: url('./Lineal-Thin.woff');
+}
 
 
 html,body{
@@ -21,7 +25,7 @@ html,body{
     font-family: Arial, Helvetica, sans-serif;
 }
 h1{
-    font-family: 'murmure';
+    font-family: 'lineal';
 
 }
 .start{
@@ -105,7 +109,7 @@ h1{
 
 
 .categories a, .menu a {
-    font-family: 'murmure';
+    font-family: 'lineal';
     font-size: 3rem;
     text-decoration: none !important;
 }

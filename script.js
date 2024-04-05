@@ -104,12 +104,13 @@ document.querySelector("#toggle").addEventListener("click", (toggle)=>{
 
 var swiper = new Swiper(".swiper", {
     loop: true,
-    autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
+    clickable: true,
+    // autoplay: {
+    //     delay: 2500,
+    //     disableOnInteraction: false,
+    //   },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
       },
-    pagination: {
-      el: ".swiper-pagination",
-      dynamicBullets: true,
-    },
   });
