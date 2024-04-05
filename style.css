@@ -384,6 +384,10 @@ a:hover{
   flex-direction: column;
 }
 
+.burger a, #name {
+    font-size: 2rem;
+}
+
 #news{
     display: block;
   width: auto;
