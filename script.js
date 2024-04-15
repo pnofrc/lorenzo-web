@@ -1,3 +1,24 @@
+let elementsLeft = document.querySelectorAll(`.left .element`)
+let elementsRight = document.querySelectorAll(`.right .element`)
+
+
+function rd(min,max){
+    return Math.random() * (max - min) + min;
+}
+
+elementsLeft.forEach(element => {
+    element.style.width = rd(45,60)+'%';
+    element.style.marginTop = rd(4,20)+"rem";
+    element.style.left = rd(2,10)+"rem";
+});
+
+
+elementsRight.forEach(element => {
+    element.style.width = rd(45,60)+'%';
+    element.style.marginTop = rd(4,20)+"rem";
+    element.style.left = rd(10,20)+"rem";
+});
+
 
 function eraseCategories(){
 
@@ -7,6 +28,9 @@ function eraseCategories(){
     });
 
 }
+
+
+
 
 function selectCategory(category){
 

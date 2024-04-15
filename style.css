@@ -1,5 +1,5 @@
 :root{
-    --main: blue;
+    --main: black;
     --second: white;
     
 }
@@ -14,6 +14,11 @@
     src: url('./Lineal-Thin.woff');
 }
 
+@font-face {
+    font-family: 'vg';
+    src: url('./VG5000-Regular.otf');
+}
+
 
 html,body{
     width: 100%;
@@ -25,9 +30,9 @@ html,body{
     font-family: Arial, Helvetica, sans-serif;
 }
 h1{
-    font-family: 'lineal';
-
+    font-family: 'vg';
 }
+
 .start{
     width: 100%;
     z-index: 100;
@@ -109,8 +114,8 @@ h1{
 
 
 .categories a, .menu a {
-    font-family: 'lineal';
-    font-size: 3rem;
+    font-family: 'vg';
+        font-size: 3rem;
     text-decoration: none !important;
 }
 
@@ -160,6 +165,8 @@ h1{
     justify-content: center;
     flex-direction: column;
     margin: 10px;
+    position: relative;
+    /* width: 66%; */
 
 }
 
@@ -234,8 +241,8 @@ header{
     position: absolute;
     display: inline;
     top: 0;
-    right: -15%;
-    width: 11%;
+    right: -24%;
+    width: 20%;
     height: 100%;
     background-color: black;
     color: var(--second);
@@ -452,9 +459,12 @@ a:hover{
 .instruction{
     font-size: 2rem;
 }
-}.swiper {
-    width: 100%;
-    height: 100%;
+}
+
+.swiper {
+    width: 85%;
+    height: 70%;
+    top: 20%;
   }
 
 .swiper-slide {
@@ -471,4 +481,23 @@ a:hover{
     width: 100%;
     height: 100%;
     object-fit: cover;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev{
+    width: 50%;
+    height: 100%;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    opacity: 0;
+  }
+
+  footer{
+    background-color: var(--main);
+    color: var(--second);
+    display: flex;
+    height: 8%;
+    align-items: center;
+    padding-left: 2rem;
   }
