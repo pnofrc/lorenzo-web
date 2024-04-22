@@ -52,28 +52,34 @@
                 </ul>
             </div>
 
-            <div class="close-friends" onclick="document.getElementById('friends').style.display ='none'">✖</div>
+            <div class="close-friends" onclick="document.getElementById('friends').style.display ='none'">✕</div>
         </div>
 
         <div class="head" id="head">
             <div class="menu">
-                <a href="#head" id="name">Lorenzo Ponte</a>
+                <div>
+                    <a href="#head" id="name">Lorenzo Ponte</a>
+                    <div id="toggle" ><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 50 50">
+                        <path d="M 0 9 L 0 11 L 50 11 L 50 9 Z M 0 24 L 0 26 L 50 26 L 50 24 Z M 0 39 L 0 41 L 50 41 L 50 39 Z"></path></svg>
+                    </div>
+                </div>
+
                 <div class="burger">
                     <a href="#work" onclick="toggleMenu(false)">Lavori</a>
                     <a href="#news" onclick="toggleMenu(false)">Bio</a>
                     <a href="#bio" onclick="toggleMenu(false)">News</a>
                     <a onclick="document.getElementById('friends').style.display ='flex', toggleMenu(false)" href="#friends">Amici</a>
+                    <a href="/en">ENG</a>
                 </div>
                 <div class="desktop">
                     <a href="#work">Lavori</a>
                     <a href="#news" >Bio</a>
                     <a href="#bio">News</a>
                     <a onclick="document.getElementById('friends').style.display ='flex'" href="#friends">Amici</a>
+                    <a href="/en">ENG</a>
                 </div>
 
-                <div id="toggle" ><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 50 50">
-                    <path d="M 0 9 L 0 11 L 50 11 L 50 9 Z M 0 24 L 0 26 L 50 26 L 50 24 Z M 0 39 L 0 41 L 50 41 L 50 39 Z"></path>
-                    </svg></div>
+                
             </div>
 
             <div class="presentazione swiper">
@@ -81,19 +87,19 @@
 
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <img src="apertura/_DSC7702.JPG" alt="">
+                        <a href="works/slug/"><img src="apertura/_DSC7702.JPG" alt="">
                     </div>
                     <div class="swiper-slide">
-                        <img src="apertura/Buoni_a_nulla.JPG" alt="">
+                        <a href="works/slug/"><img src="apertura/Buoni_a_nulla.JPG" alt="">
                     </div>
                     <div class="swiper-slide">
-                        <img src="apertura/Ido.jpg" alt="">
+                        <a href="works/slug/"><img src="apertura/Ido.jpg" alt="">
                     </div>
                     <div class="swiper-slide">
-                        <img src="apertura/Ido2.jpg" alt="">
+                        <a href="works/slug/"><img src="apertura/Ido2.jpg" alt="">
                     </div>
                     <div class="swiper-slide">
-                        <img src="apertura/Sito.JPG" alt="">
+                        <a href="works/slug/"><img src="apertura/Sito.JPG" alt="">
                     </div>
                   </div>
                   <div class="swiper-button-next"></div>
@@ -115,86 +121,87 @@
                 <a onclick="selectCategory('all')" href="#work">*</a>
                 <a onclick="selectCategory('prosa')" href="#work">Prosa</a>
                 <a onclick="selectCategory('opera')" href="#work">Opera</a>
-                <a onclick="selectCategory('video')" href="#work">Video</a>
+                <!-- <a onclick="selectCategory('video')" href="#work">Video</a> -->
             </div>
 
 
             <div class="start">
                 <div class="left">
-                    <div class="element prosa" data-title="Titolo">
-                        <img src="https://conhecimentocientifico.r7.com/wp-content/uploads/2020/03/prosa-o-que-e-caracteristicas-e-tipos.jpg">
+                    <div class="element prosa" data-title="Titolo" data-slug="works/slug/">
+                        <a href="works/slug/"><img src="https://conhecimentocientifico.r7.com/wp-content/uploads/2020/03/prosa-o-que-e-caracteristicas-e-tipos.jpg"></a>
                     </div>
         
-                    <div class="element opera" data-title="Titolo">
-                        <img src="https://houstonhistorymagazine.org/wp-content/uploads/2013/11/LittleNightMusic.jpg">
+                    <div class="element opera" data-title="Titolo" data-slug="works/slug/">
+                        <a href="works/slug/"><img src="https://houstonhistorymagazine.org/wp-content/uploads/2013/11/LittleNightMusic.jpg"></a>
                     </div>
         
-                    <div class="element video" data-title="Titolo">
-                        <img src="https://sonavisual.com/wp-content/uploads/2022/05/7-Video-Hooks-2048x1365.jpg">
-                    </div>
+                    <!-- <div class="element video" data-title="Titolo" data-slug="works/slug/">
+                        <a href="works/slug/"><img src="https://sonavisual.com/wp-content/uploads/2022/05/7-Video-Hooks-2048x1365.jpg"></a>
+                    </div> -->
 
-                    <div class="element prosa" data-title="Titolo">
-                        <img src="https://conhecimentocientifico.r7.com/wp-content/uploads/2020/03/prosa-o-que-e-caracteristicas-e-tipos.jpg">
+                    <div class="element prosa" data-title="Titolo" data-slug="works/slug/">
+                        <a href="works/slug/"><img src="https://conhecimentocientifico.r7.com/wp-content/uploads/2020/03/prosa-o-que-e-caracteristicas-e-tipos.jpg"></a>
                     </div>
         
-                    <div class="element opera" data-title="Titolo">
-                        <img src="https://houstonhistorymagazine.org/wp-content/uploads/2013/11/LittleNightMusic.jpg">
+                    <div class="element opera" data-title="Titolo" data-slug="works/slug/">
+                        <a href="works/slug/"><img src="https://houstonhistorymagazine.org/wp-content/uploads/2013/11/LittleNightMusic.jpg"></a>
                     </div>
         
-                    <div class="element video" data-title="Titolo">
-                        <img src="https://sonavisual.com/wp-content/uploads/2022/05/7-Video-Hooks-2048x1365.jpg">
-                    </div>
+                    <!-- <div class="element video" data-title="Titolo" data-slug="works/slug/">
+                        <a href="works/slug/"><img src="https://sonavisual.com/wp-content/uploads/2022/05/7-Video-Hooks-2048x1365.jpg"></a>
+                    </div> -->
 
-                    <div class="element prosa" data-title="Titolo">
-                        <img src="https://conhecimentocientifico.r7.com/wp-content/uploads/2020/03/prosa-o-que-e-caracteristicas-e-tipos.jpg">
+                    <div class="element prosa" data-title="Titolo" data-slug="works/slug/">
+                        <a href="works/slug/"><img src="https://conhecimentocientifico.r7.com/wp-content/uploads/2020/03/prosa-o-que-e-caracteristicas-e-tipos.jpg"></a>
                     </div>
                 </div>
 
                 <div class="right">
-                    <div class="element opera" data-title="Titolo">
-                        <img src="https://houstonhistorymagazine.org/wp-content/uploads/2013/11/LittleNightMusic.jpg">
+                    <div class="element opera" data-title="Titolo" data-slug="works/slug/">
+                        <a href="works/slug/"><img src="https://houstonhistorymagazine.org/wp-content/uploads/2013/11/LittleNightMusic.jpg"></a>
                     </div>
         
 
 
-                    <div class="element prosa" data-title="Titolo">
-                        <img src="https://conhecimentocientifico.r7.com/wp-content/uploads/2020/03/prosa-o-que-e-caracteristicas-e-tipos.jpg">
+                    <div class="element prosa" data-title="Titolo" data-slug="works/slug/">
+                        <a href="works/slug/"><img src="https://conhecimentocientifico.r7.com/wp-content/uploads/2020/03/prosa-o-que-e-caracteristicas-e-tipos.jpg"></a>
                     </div>
         
-                    <div class="element prosa" data-title="Titolo">
-                        <img src="https://conhecimentocientifico.r7.com/wp-content/uploads/2020/03/prosa-o-que-e-caracteristicas-e-tipos.jpg">
+                    <div class="element prosa" data-title="Titolo" data-slug="works/slug/">
+                        <a href="works/slug/"><img src="https://conhecimentocientifico.r7.com/wp-content/uploads/2020/03/prosa-o-que-e-caracteristicas-e-tipos.jpg"></a>
                     </div>
         
-                    <div class="element opera" data-title="Titolo">
-                        <img src="https://houstonhistorymagazine.org/wp-content/uploads/2013/11/LittleNightMusic.jpg">
+                    <div class="element opera" data-title="Titolo" data-slug="works/slug/">
+                        <a href="works/slug/"><img src="https://houstonhistorymagazine.org/wp-content/uploads/2013/11/LittleNightMusic.jpg"></a>
                     </div>
         
 
-                    <div class="element opera" data-title="Titolo">
-                        <img src="https://houstonhistorymagazine.org/wp-content/uploads/2013/11/LittleNightMusic.jpg">
+                    <div class="element opera" data-title="Titolo" data-slug="works/slug/">
+                        <a href="works/slug/"><img src="https://houstonhistorymagazine.org/wp-content/uploads/2013/11/LittleNightMusic.jpg"></a>
                     </div>
         
-                    <div class="element video" data-title="Titolo">
-                        <img src="https://sonavisual.com/wp-content/uploads/2022/05/7-Video-Hooks-2048x1365.jpg">
-                    </div>
+                    <!-- <div class="element video" data-title="Titolo" data-slug="works/slug/">
+                        <a href="works/slug/"><img src="https://sonavisual.com/wp-content/uploads/2022/05/7-Video-Hooks-2048x1365.jpg"></a>
+                    </div> -->
                 </div>
             </div>
         </div>
 
         <div id="news">
-            <h1>Bio</h1>
+           
             <div class="biotext">
+                <h1>:)</h1>
                 <p>
                     Lorenzo Ponte fa cose, vede gente ed e' nato sotto una verza.<br>Inoltre ha l'accento toscano anche se è siciliano.<br>Mi chiedo se mi potrà pagare il 20% in arancin con la schwa. e vegetariani.
                 </p>
                          </div>
-            <div class="sticky"><a id="up" href="#head">↑</a></div>
+            <div class="sticky"><a id="up" href="#head"><span>↑</span></a></div>
         </div>
 
         
 
         <div id='bio' >
-            <h1><a href="#head" id="closeMenu">Chiudi</a></h1>
+            <h1><a href="#head" id="closeMenu"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.29289 5.29289C5.68342 4.90237 6.31658 4.90237 6.70711 5.29289L12 10.5858L17.2929 5.29289C17.6834 4.90237 18.3166 4.90237 18.7071 5.29289C19.0976 5.68342 19.0976 6.31658 18.7071 6.70711L13.4142 12L18.7071 17.2929C19.0976 17.6834 19.0976 18.3166 18.7071 18.7071C18.3166 19.0976 17.6834 19.0976 17.2929 18.7071L12 13.4142L6.70711 18.7071C6.31658 19.0976 5.68342 19.0976 5.29289 18.7071C4.90237 18.3166 4.90237 17.6834 5.29289 17.2929L10.5858 12L5.29289 6.70711C4.90237 6.31658 4.90237 5.68342 5.29289 5.29289Z"/></svg></a></h1>
             <ul>
                 <li>12 01 2025<br>SPETTACOLONE</li>
 
