@@ -132,6 +132,7 @@ document.querySelector("#toggle").addEventListener("click", (toggle)=>{
 
 var swiper = new Swiper(".swiper", {
     loop: true,
+    autoplay: true,
     clickable: true,
     // autoplay: {
     //     delay: 2500,
