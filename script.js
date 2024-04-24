@@ -128,23 +128,41 @@ document.querySelector("#toggle").addEventListener("click", (toggle)=>{
    toggleMenu()
 })
 
+let egg =  document.getElementById("egg")
+let toggleEgg = false
+
+egg.addEventListener("click", ()=>{
+        egg.style.zIndex = 100
+        setTimeout(() => {
+            toggleEgg = !toggleEgg
+        }, 100);
+  })
+
+    document.body.addEventListener('click', ()=>{
+        if (toggleEgg == true){
+            egg.style.zIndex = -10
+    }
+    })
+  
 
 
-var swiper = new Swiper(".swiper", {
-    loop: true,
-    autoplay: true,
-    clickable: true,
-    // autoplay: {
-    //     delay: 2500,
-    //     disableOnInteraction: false,
-    //   },
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
+// var swiper = new Swiper(".swiper", {
+//     loop: true,
+//     autoplay: true,
+//     clickable: true,
+//     // autoplay: {
+//     //     delay: 2500,
+//     //     disableOnInteraction: false,
+//     //   },
+//     navigation: {
+//         nextEl: ".swiper-button-next",
+//         prevEl: ".swiper-button-prev",
+//       },
 
-      pagination: {
-        el: ".swiper-pagination",
-        dynamicBullets: true,
-      },
-  });
+//       pagination: {
+//         el: ".swiper-pagination",
+//         dynamicBullets: true,
+//       },
+//   });
+
+
