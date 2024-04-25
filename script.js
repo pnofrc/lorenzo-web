@@ -114,9 +114,11 @@ function toggleMenu(tog){
     
         if (toggle){
             document.querySelector(".burger").style.display = "flex"
-            document.querySelector("#toggle").innerHTML = '<svg width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.29289 5.29289C5.68342 4.90237 6.31658 4.90237 6.70711 5.29289L12 10.5858L17.2929 5.29289C17.6834 4.90237 18.3166 4.90237 18.7071 5.29289C19.0976 5.68342 19.0976 6.31658 18.7071 6.70711L13.4142 12L18.7071 17.2929C19.0976 17.6834 19.0976 18.3166 18.7071 18.7071C18.3166 19.0976 17.6834 19.0976 17.2929 18.7071L12 13.4142L6.70711 18.7071C6.31658 19.0976 5.68342 19.0976 5.29289 18.7071C4.90237 18.3166 4.90237 17.6834 5.29289 17.2929L10.5858 12L5.29289 6.70711C4.90237 6.31658 4.90237 5.68342 5.29289 5.29289Z" fill="#0F1729"/></svg>'
+            document.querySelector("#fakeBackground").style.display = "block"
+            document.querySelector("#toggle").innerHTML = '<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.29289 5.29289C5.68342 4.90237 6.31658 4.90237 6.70711 5.29289L12 10.5858L17.2929 5.29289C17.6834 4.90237 18.3166 4.90237 18.7071 5.29289C19.0976 5.68342 19.0976 6.31658 18.7071 6.70711L13.4142 12L18.7071 17.2929C19.0976 17.6834 19.0976 18.3166 18.7071 18.7071C18.3166 19.0976 17.6834 19.0976 17.2929 18.7071L12 13.4142L6.70711 18.7071C6.31658 19.0976 5.68342 19.0976 5.29289 18.7071C4.90237 18.3166 4.90237 17.6834 5.29289 17.2929L10.5858 12L5.29289 6.70711C4.90237 6.31658 4.90237 5.68342 5.29289 5.29289Z" /></svg>'
         } else { 
             document.querySelector(".burger").style.display = "none"
+            document.querySelector("#fakeBackground").style.display = "none"
             document.querySelector("#toggle").innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 50 50"><path d="M 0 9 L 0 11 L 50 11 L 50 9 Z M 0 24 L 0 26 L 50 26 L 50 24 Z M 0 39 L 0 41 L 50 41 L 50 39 Z"></path></svg>'
         }
         toggle = !toggle
@@ -146,23 +148,23 @@ egg.addEventListener("click", ()=>{
   
 
 
-// var swiper = new Swiper(".swiper", {
-//     loop: true,
-//     autoplay: true,
-//     clickable: true,
-//     // autoplay: {
-//     //     delay: 2500,
-//     //     disableOnInteraction: false,
-//     //   },
-//     navigation: {
-//         nextEl: ".swiper-button-next",
-//         prevEl: ".swiper-button-prev",
-//       },
+var swiper = new Swiper(".swiper", {
+    loop: true,
+    autoplay: true,
+    clickable: true,
+    // autoplay: {
+    //     delay: 2500,
+    //     disableOnInteraction: false,
+    //   },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
 
-//       pagination: {
-//         el: ".swiper-pagination",
-//         dynamicBullets: true,
-//       },
-//   });
+      pagination: {
+        el: ".swiper-pagination",
+        dynamicBullets: true,
+      },
+  });
 
 
