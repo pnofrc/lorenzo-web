@@ -4,6 +4,15 @@
     
 }
 
+
+
+
+@keyframes spastico{
+    from{background-color: var(--main); }
+    to{background-color: var(--second) ; }
+}
+
+
 @font-face {
     font-family: 'lineal';
     src: url('./Lineal-Thin.woff');
@@ -26,8 +35,12 @@
   box-sizing: border-box;
 }
 
+.transition svg{
+    width: 60px;
+}
+
 .transition{
-    transition: 1.2s;
+        transition: 1.2s;
 }
 
 html,body{
@@ -40,6 +53,8 @@ html,body{
     font-family: Arial, Helvetica, sans-serif;
     font-family: 'ortica';
 
+
+
 }
 h1{
     font-family: 'vg';
@@ -48,7 +63,7 @@ h1{
 .start{
     width: 100%;
     z-index: 100;
-  top: 10rem;
+  top: 5rem;
 }
 
 .start a{
@@ -82,6 +97,10 @@ h1{
     justify-content: space-between;
     text-decoration: none;
     top: 5rem !important;
+}
+
+.categories a:hover{
+    color: var(--main) !important;
 }
 
 #name{
@@ -181,7 +200,7 @@ h1{
     -webkit-text-stroke: 1px var(--main);
     color: var(--main) !important;
     /* font-family: 'lineal'; */
-    font-family: 'ortica';
+    font-family: 'vg';
     text-decoration: none;
 }
 
@@ -356,12 +375,6 @@ h1{
 
 
 
-@keyframes spastico{
-    from{background-color: var(--main);}
-    to{background-color: var(--second);}
-}
-
-
 #egg:hover{
     animation: spastico .1s ease infinite;
 }
@@ -379,11 +392,7 @@ h1{
     width: min-content !important;
 }
 
-.closing:hover{
-    background: var(--main) !important;
-    color: var(--second) !important;
-    height: 40% !important;
-}
+
 
 #closeMenu{
     width: 100%;
@@ -409,8 +418,9 @@ margin-top: 10%;
     fill: var(--main);
     border: solid var(--main);
     background-color: var(--second);
-    height: 75%;
-    width: 35%;
+    animation: spastico .1s ease infinite;
+    /* height: 75%;
+    width: 35%; */
 }
 
 
@@ -446,7 +456,7 @@ margin-top: 10%;
   .corpus
 {
     display: flex;
-    margin-top: 4rem;
+    margin-top: 2rem;
 }
 
   .index{
@@ -496,8 +506,7 @@ html::-webkit-scrollbar{
 
 
   .content h1{
-    font-size: 3rem;
-    font-family: 'lineal';
+    font-size: 2rem;
     -webkit-text-stroke: unset;
   }
 
@@ -553,11 +562,49 @@ html::-webkit-scrollbar{
 
 #fakeBackground{
     display: none;
+
+}
+
+
+
+
+#modal{
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: rgba(255,255,255,0.8);
+    top: 0;
+}
+
+#modal .swiper{
+    width: 75%;
+    height: 80%;
+    margin-top: 5%;
+
+}
+
+
+
+#closemodal{
+    position: fixed;
+    top: 2rem;
+    right: 3rem;
+background-color: var(--main);
+fill: var(--second);
+width: 5%;
+}
+
+#closemodal:hover{
+    animation: spastico .1s ease infinite;
+    fill: var(--main);
 }
 
 @media only screen and (max-width: 600px) {
 
     #fakeBackground{
+        top: 0;
         width: 100vw;
         height: 100vh;
         display: none;
@@ -590,8 +637,9 @@ html::-webkit-scrollbar{
 
 .menu div:nth-child(1){
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    /* align-items: center; */
+    /* justify-content: space-between; */
+    margin: 0;
     margin: 0 1rem;
   
 }
@@ -633,7 +681,7 @@ html::-webkit-scrollbar{
 .start{
     display: flex !important;
     flex-direction: column;
-    z-index: -1;
+    z-index: 999;
 }
 .sticky{
     /* top: 40%; */
@@ -654,6 +702,8 @@ html::-webkit-scrollbar{
 #toggle{
     display: block;
     height: fit-content;
+    left: 82vw;
+    position: absolute;
 }
 
 #toggle svg{
@@ -741,8 +791,31 @@ html::-webkit-scrollbar{
     align-items: baseline !important;
 }
 
-
+#modal{
+    width: 100vw;
+    height: 100vh;
 }
+#modal .swiper{
+    width: 80%;
+    height: unset;
+    top: 35%;
+}
+
+
+#closemodal{
+    left: 0;
+  width: 10%;
+  margin-left: 5%;
+  top: 2rem;
+}
+}
+
+
+
+
+
+
+
 .swiper.presentazione {
     /* width: 85%;
     height: 70%;
@@ -757,6 +830,14 @@ html::-webkit-scrollbar{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: transparent;
+  }
+
+  .swiper-slide span{
+    color: var(--second);
+    background-color:  var(--main);
   }
 
   .swiper-slide img {
@@ -792,4 +873,28 @@ html::-webkit-scrollbar{
 
 
 
+
+.spastico {
+    width: 7% !important;
+    display: block;
+    height: 85%;
+
+    background-color: var(--second);
+    color: var(--main) !important;
+    border: solid;
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    font-size: 4rem;
+    cursor: pointer;
+}
+
+  svg.spastico:hover{
+    /* background: var(--main) !important;
+    color: var(--second) !important; */
+    animation: spastico .1s ease infinite !important;
+    background-color: red;
+/* fill: red; */
+    /* height: 40% !important; */
+}
 

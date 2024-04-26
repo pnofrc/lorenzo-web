@@ -20,6 +20,9 @@
 // });
 
 
+
+
+
 function eraseCategories(){
 
     let cat = document.querySelectorAll(`.element`)
@@ -126,7 +129,7 @@ function toggleMenu(tog){
 }
 
 let toggle = true
-document.querySelector("#toggle").addEventListener("click", (toggle)=>{
+document.querySelector("#toggle").addEventListener("click", ()=>{
    toggleMenu()
 })
 
@@ -166,5 +169,7 @@ var swiper = new Swiper(".swiper", {
         dynamicBullets: true,
       },
   });
+
+
 
 

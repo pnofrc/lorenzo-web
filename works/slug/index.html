@@ -9,6 +9,7 @@
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
 
+
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         
@@ -170,22 +171,24 @@
                 </div>
 
                 <div class="grid">
-                   <a target="_blank" class="swiper-slide"href="../../apertura/_DSC7702.JPG">
+                   <a target="_blank" onclick="openModal()" class="swiper-slide">
                         <img src="../../apertura/_DSC7702.JPG" alt="">
                     </a>
-                   <a target="_blank" class="swiper-slide"href="../../apertura/Buoni_a_nulla.JPG">
+                   <a target="_blank" onclick="openModal()"class="swiper-slide">
                         <img src="../../apertura/Buoni_a_nulla.JPG" alt="">
                     </a>
-                   <a target="_blank" class="swiper-slide"href="../../apertura/Ido.jpg">
+                   <a target="_blank" onclick="openModal()"class="swiper-slide">
                         <img src="../../apertura/Ido.jpg" alt="">
                     </a>
-                   <a target="_blank" class="swiper-slide"href="../../apertura/Ido2.jpg">
+                   <a target="_blank" onclick="openModal()"class="swiper-slide">
                         <img src="../../apertura/Ido2.jpg" alt="">
                     </a>
-                   <a target="_blank" class="swiper-slide"href="../../apertura/Sito.JPG">
+                   <a target="_blank" onclick="openModal()" class="swiper-slide">
                         <img src="../../apertura/Sito.JPG" alt="">
                     </a>
                   </div>
+
+            
 
                 <div class="text_content">
                     <p>
@@ -198,6 +201,44 @@
                 
             </div>
             
+        </div>
+        <div id="fakeBackground"></div>
+           
+        <div  id="modal" >
+
+            <svg id="closemodal" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.29289 5.29289C5.68342 4.90237 6.31658 4.90237 6.70711 5.29289L12 10.5858L17.2929 5.29289C17.6834 4.90237 18.3166 4.90237 18.7071 5.29289C19.0976 5.68342 19.0976 6.31658 18.7071 6.70711L13.4142 12L18.7071 17.2929C19.0976 17.6834 19.0976 18.3166 18.7071 18.7071C18.3166 19.0976 17.6834 19.0976 17.2929 18.7071L12 13.4142L6.70711 18.7071C6.31658 19.0976 5.68342 19.0976 5.29289 18.7071C4.90237 18.3166 4.90237 17.6834 5.29289 17.2929L10.5858 12L5.29289 6.70711C4.90237 6.31658 4.90237 5.68342 5.29289 5.29289Z" /></svg>
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="../../apertura/_DSC7702.JPG" alt="">
+                        <span>BLA BLA Lorem Ipsum l'è il lorenzo che non aggiorna bene la pagina >:(</span>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../../apertura/Buoni_a_nulla.JPG" alt="">
+                        <span>BLA BLA Lorem Ipsum l'è il lorenzo che non aggiorna bene la pagina >:(</span>
+
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../../apertura/Ido.jpg" alt="">
+                        <span>BLA BLA Lorem Ipsum l'è il lorenzo che non aggiorna bene la pagina >:(</span>
+
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../../apertura/Ido2.jpg" alt="">
+                        <span>BLA BLA Lorem Ipsum l'è il lorenzo che non aggiorna bene la pagina >:(</span>
+
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../../apertura/Sito.JPG" alt="">
+                        <span>BLA BLA Lorem Ipsum l'è il lorenzo che non aggiorna bene la pagina >:(</span>
+
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <!-- <div class="swiper-pagination"></div> -->
+
+                </div>
         </div>
 
 
@@ -238,9 +279,8 @@
             Web Artisan: Federico Poni;
 
         </footer>
-
-        
         <script src="../../script.js"></script>
+        <script src="../../script.work.js"></script>
         
     </body>
 </html>
