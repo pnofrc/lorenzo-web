@@ -60,13 +60,18 @@
 
         <div id="friends">
             
-            <div style="position: absolute;
+            <div id="egg" style="position: absolute;
             top: 2rem;
             right: 5rem;
             z-index: -10;
-            width: 50%;"></div>
+            width: 50%; 
+            display: flex; 
+            align-items: center; 
+            justify-content: center;">
+                <img style="width: 15%;" src="renzo.png" alt="">
+            </div>
 
-            <div>
+            <div class="list-friends">
                 A list of my friends
 
                 <ul>
@@ -78,8 +83,13 @@
                 </ul>
             </div>
 
-            <div class="close-friends" onclick="document.getElementById('friends').style.display ='none'">✖</div>
+            <!-- <div> -->
+                <svg class="spastico"  onclick="document.getElementById('friends').style.display ='none'" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M5.29289 5.29289C5.68342 4.90237 6.31658 4.90237 6.70711 5.29289L12 10.5858L17.2929 5.29289C17.6834 4.90237 18.3166 4.90237 18.7071 5.29289C19.0976 5.68342 19.0976 6.31658 18.7071 6.70711L13.4142 12L18.7071 17.2929C19.0976 17.6834 19.0976 18.3166 18.7071 18.7071C18.3166 19.0976 17.6834 19.0976 17.2929 18.7071L12 13.4142L6.70711 18.7071C6.31658 19.0976 5.68342 19.0976 5.29289 18.7071C4.90237 18.3166 4.90237 17.6834 5.29289 17.2929L10.5858 12L5.29289 6.70711C4.90237 6.31658 4.90237 5.68342 5.29289 5.29289Z"/>
+                </svg>
+            <!-- </div> -->
         </div>
+
 
         <div class="head" id="head">
             <div class="menu">
