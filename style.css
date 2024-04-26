@@ -254,7 +254,17 @@ header{
   
 }
 #closeMenu{
-    padding-top: 2rem;
+  margin-top: 2rem;
+  display: flex;
+  border: var(--second) 1px solid;
+  width: 80%;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10%;
+}
+
+#closeMenu:hover{
+    animation: spastico .1s ease infinite;
 }
 
 #bio ul{
@@ -347,14 +357,14 @@ h1{
 
 
 #friends{
-   
+  
     width: 100%;
     height: 100%;
     position: fixed;
     display: none;
     align-items: center;
     justify-content: center;
-    z-index: 200;
+    z-index: 9000;
 }
 
 #friends div{
@@ -394,13 +404,17 @@ h1{
 
 
 
-#closeMenu{
-    width: 100%;
-  width: 4rem;
-}
+
+
+
 
 svg{
     fill: var(--main)
+}
+
+#closeMenu svg{
+    fill: var(--second);
+    width: 25%;
 }
 
 #closeSvg{
@@ -456,7 +470,7 @@ margin-top: 10%;
   .corpus
 {
     display: flex;
-    margin-top: 2rem;
+    margin-top: 4rem;
 }
 
   .index{
@@ -585,7 +599,7 @@ html::-webkit-scrollbar{
 
 }
 
-
+.element h1, .element hr{display: none;}
 
 #closemodal{
     position: fixed;
@@ -599,6 +613,35 @@ width: 5%;
 #closemodal:hover{
     animation: spastico .1s ease infinite;
     fill: var(--main);
+}
+
+
+
+.spastico {
+    width: 7% !important;
+    display: block;
+    height: 85%;
+
+    background-color: var(--second);
+    color: var(--main) !important;
+    border: solid;
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    font-size: 4rem;
+    cursor: pointer;
+}
+
+  svg.spastico:hover{
+    /* background: var(--main) !important;
+    color: var(--second) !important; */
+    animation: spastico .1s ease infinite !important;
+/* fill: red; */
+    /* height: 40% !important; */
+}
+
+.mobile-title{
+    display:  none;
 }
 
 @media only screen and (max-width: 600px) {
@@ -653,6 +696,7 @@ width: 5%;
 
 .categories a {
     font-size: 1.7rem;
+
 }
 
 #news{
@@ -681,7 +725,7 @@ width: 5%;
 .start{
     display: flex !important;
     flex-direction: column;
-    z-index: 999;
+    z-index: 0;
 }
 .sticky{
     /* top: 40%; */
@@ -696,7 +740,18 @@ width: 5%;
     flex-direction: column;
     gap: 0;
     display: none;
-    height: 100vh;
+    height: unset;
+    gap: 3rem;
+
+}
+
+.burger div:nth-child(2){
+    margin-left: 1rem;
+    border: solid;
+    width: fit-content;
+    padding: 1rem;
+    overflow-y: scroll;
+    height: 20rem;
 }
 
 #toggle{
@@ -719,7 +774,7 @@ width: 5%;
 }
 
 .categories{
-    z-index: 0;
+z-index: 99999999;
     flex-direction: row;
     top: 5rem !important;
     margin-right: 1rem;
@@ -767,6 +822,15 @@ width: 5%;
     margin:  1rem 1rem;
 }
 
+.element h1{
+    -webkit-text-stroke: unset;
+}
+
+.element hr{
+    width: 100%;
+    border: solid var(--main) .1px;
+}
+
 .closing{
     height: 5rem !important;
   width: 70% !important;
@@ -807,6 +871,36 @@ width: 5%;
   width: 10%;
   margin-left: 5%;
   top: 2rem;
+}
+
+.spastico{
+    width: 40% !important;
+  height: 5%;
+}
+
+
+#friends{
+    width: 57%;
+  height: 54%;
+  position: fixed;
+  display: none;
+  align-items: center;
+  justify-content: start;
+  z-index: 9000;
+  margin-left: .5rem;
+}
+
+#egg img{
+    width: 100%;
+}
+
+html{
+    height: unset;
+}
+
+
+.mobile-title{
+    display: block;
 }
 }
 
@@ -871,30 +965,4 @@ width: 5%;
 
 
 
-
-
-
-.spastico {
-    width: 7% !important;
-    display: block;
-    height: 85%;
-
-    background-color: var(--second);
-    color: var(--main) !important;
-    border: solid;
-    position: absolute;
-    top: 2rem;
-    left: 2rem;
-    font-size: 4rem;
-    cursor: pointer;
-}
-
-  svg.spastico:hover{
-    /* background: var(--main) !important;
-    color: var(--second) !important; */
-    animation: spastico .1s ease infinite !important;
-    background-color: red;
-/* fill: red; */
-    /* height: 40% !important; */
-}
 
