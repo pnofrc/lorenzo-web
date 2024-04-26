@@ -25,6 +25,12 @@
     height: 10%;
 }
 
+@media only screen and (max-width: 900px) {
+    .burger{
+        flex-direction: column;
+    }
+}
+
 @media only screen and (max-width: 600px) {
 
 
@@ -49,8 +55,10 @@
     overflow-wrap: break-word;
     font-size: 1rem;
     color: var(--main);
-  -webkit-text-stroke: unset
+  -webkit-text-stroke: unset;
 }
+
+
 }
         </style>
     </head>
@@ -101,14 +109,14 @@
 
               
                 <div class="burger">
-                    <div>
+                    <div >
                         <a href="../../#work" onclick="toggleMenu(false)">Lavori</a>
                         <a href="#news" onclick="toggleMenu(false)">Bio</a>
                         <a href="#bio" onclick="toggleMenu(false)">News</a>
                         <a onclick="document.getElementById('friends').style.display ='flex', toggleMenu(false)" href="#friends">Amici</a>
                         <a id="lang" href="/en">ENG</a>
                     </div>
-                    <div>
+                    <div class="scrollbar">  
                         <a href='#'>Un'opera del maestro Ponte</a><br>
                         <a href='#'>Un'opera del maestro Ponte</a><br>
                         <a href='#' class="selected">I sospiri di una ragazza bellissima</a><br>
@@ -166,7 +174,7 @@
 
             </div>
 
-            <div class="content">
+            <div class="content scrollbar">
                 <h1>I sospiri di una ragazza bellissima</h1>
 
 
