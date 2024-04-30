@@ -122,7 +122,6 @@ top: 5rem !important;
 
 #name:hover{
     animation: spasticoName .1s ease infinite;
-
 }
 
  .categories a{
@@ -423,7 +422,7 @@ svg{
 
 #closeMenu svg{
     fill: var(--second);
-    width: 25%;
+    width: 15%;
 }
 
 #closeSvg{
@@ -622,16 +621,15 @@ width: 5%;
 
 
 .spastico {
-    width: 7% !important;
+    width: 4% !important;
     display: block;
     height: 85%;
-
     background-color: var(--second);
     color: var(--main) !important;
     border: solid;
     position: absolute;
-    top: 2rem;
-    left: 2rem;
+    top: 4rem;
+    left: 5rem;
     font-size: 4rem;
     cursor: pointer;
 }
@@ -687,7 +685,7 @@ width: 5%;
     padding-top: unset;
   justify-content: unset;
   right: unset;
-  top: unset;
+  top: 0 !important;
   flex-direction: column;
 }
 
