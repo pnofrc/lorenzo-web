@@ -655,6 +655,9 @@ width: 5%;
 
 @media only screen and (max-width: 900px) {
 
+    body,html{
+        overflow-x: hidden !important;
+    }
     
 .head .menu{position: absolute;}
     #fakeBackground{
