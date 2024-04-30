@@ -7,7 +7,7 @@
 
 @keyframes spastico{
     from{background-color: var(--main); }
-    to{background-color: var(--second) ; }
+    to{background-color: pink ; }
 }
 
 
