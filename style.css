@@ -10,6 +10,11 @@
     to{background-color: pink ; }
 }
 
+@keyframes spasticoName{
+    from{color: var(--main); }
+    to{color: pink ; }
+}
+
 
 @font-face {
     font-family: 'ortica';
@@ -110,11 +115,15 @@ top: 5rem !important;
     color: var(--main);
 }
 
-#name:hover, a:hover{
+ a:hover{
     -webkit-text-stroke: var(--main) 1px;
     color: var(--second);
 }
 
+#name:hover{
+    animation: spasticoName .1s ease infinite;
+
+}
 
  .categories a{
     color: var(--second) !important;
