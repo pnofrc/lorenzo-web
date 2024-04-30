@@ -503,7 +503,7 @@ margin-top: 10%;
 
   .index a:hover{
     -webkit-text-stroke: unset;
-   text-decoration: line-through 5px;
+   text-decoration: line-through 5px pink;
   }
 
   .content{
@@ -656,7 +656,7 @@ width: 5%;
 @media only screen and (max-width: 900px) {
 
     
-
+.head .menu{position: absolute;}
     #fakeBackground{
         top: 0;
         width: 100vw;
@@ -688,7 +688,7 @@ width: 5%;
   top: 0 !important;
   flex-direction: column;
   margin-top: 0 !important;
-
+/* TODO */
 }
 
 .menu div:nth-child(1){
