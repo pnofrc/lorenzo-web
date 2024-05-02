@@ -267,7 +267,6 @@ header{
   width: 80%;
   align-items: center;
   justify-content: center;
-  margin-left: 10%;
 }
 
 #closeMenu:hover{
@@ -660,6 +659,17 @@ width: 5%;
     display:  none;
 }
 
+
+.swiper-slide img {
+    display: block;
+    /* width: 80%; */
+    width: 100%;
+    height: unset !important;
+    object-fit: cover;
+  }
+
+
+
 @media only screen and (max-width: 1200px) {
     .swiper-slide img {
         width: 71%;
@@ -673,8 +683,7 @@ width: 5%;
         overflow-x: hidden !important;
     }
     
-.head .menu{
-    height: 7%;}
+
 
     #fakeBackground{
         top: 0;
@@ -711,11 +720,13 @@ width: 5%;
 /* TODO */
 }
 
+.element h1, .element hr{display: block;}
 
 
 .burger div:nth-child(1){
     margin: 0;
-    
+    gap: 2rem;
+    display: flex;
 }
 
 
@@ -822,6 +833,7 @@ width: 5%;
     padding: 1rem;
     overflow-y: scroll;
     height: 20rem;
+    
 }
 
 #toggle{
@@ -972,6 +984,12 @@ html{
 .mobile-title{
     display: block;
 }
+
+.swiper-slide img{
+    height: 100vh !important;
+  width: auto;
+}
+
 }
 
 
@@ -1014,6 +1032,16 @@ html{
         margin-bottom: 1rem;
     }
 
+    .burger{
+        gap: 1rem;
+    }
+
+.burger div:nth-child(1){
+    margin: 0;
+    gap: 1rem;
+    display: flex
+}
+
 }
 
 
@@ -1045,12 +1073,10 @@ html{
     background-color:  var(--main);
   }
 
-  .swiper-slide img {
-    display: block;
-    width: 80%;
-    height: unset !important;
-    object-fit: cover;
+  .presentazione{
+    border-radius: 100%;
   }
+
 
   .swiper-button-next,
   .swiper-button-prev{

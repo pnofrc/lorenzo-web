@@ -81,8 +81,14 @@ function bo(){
     });
     }
 
-    bo()
+    var x = window.matchMedia("(max-width: 900px)")
 
+        if (!x.matches) { // If media query matches
+            bo()
+
+        } 
+
+  
 
 
 
@@ -153,7 +159,7 @@ egg.addEventListener("click", ()=>{
 
 var swiper = new Swiper(".swiper", {
     loop: true,
-    autoplay: true,
+    // autoplay: true,
     clickable: true,
     // autoplay: {
     //     delay: 2500,
