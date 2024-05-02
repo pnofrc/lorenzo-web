@@ -70,7 +70,7 @@
 
         <div class="head" id="head">
             <div class="menu">
-                <div>
+                <div class='site-title'>
                     <a href="#head" id="name">Lorenzo Ponte</a>
                     <div id="toggle" ><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 50 50">
                         <path d="M 0 9 L 0 11 L 50 11 L 50 9 Z M 0 24 L 0 26 L 50 26 L 50 24 Z M 0 39 L 0 41 L 50 41 L 50 39 Z"></path></svg>
@@ -79,15 +79,15 @@
 
                 <div class="burger">
                     <a href="#work" onclick="toggleMenu(false)">Lavori</a>
-                    <a href="#news" onclick="toggleMenu(false)">Bio</a>
-                    <a href="#bio" onclick="toggleMenu(false)">News</a>
+                    <a href="#news"  onclick="toggleMenu(false)">Bio</a>
+                    <a onclick="openNews(),toggleMenu(false)">News</a>
                     <a onclick="document.getElementById('friends').style.display ='flex', toggleMenu(false)" href="#friends">Amici</a>
                     <a id="lang" href="/en">ENG</a>
                 </div>
                 <div class="desktop">
                     <a href="#work">Lavori</a>
                     <a href="#news" >Bio</a>
-                    <a href="#bio">News</a>
+                    <a href="#bio" onclick="openNews()">News</a>
                     <a onclick="document.getElementById('friends').style.display ='flex'" href="#friends">Amici</a>
                     <a id="lang" href="/en">ENG</a>
                 </div>
@@ -227,7 +227,7 @@
         <div id='bio' >
             <!-- <h1 id="closeMenu"> -->
                 <!-- <h1> -->
-                    <a href="#head" id="closeMenu"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.29289 5.29289C5.68342 4.90237 6.31658 4.90237 6.70711 5.29289L12 10.5858L17.2929 5.29289C17.6834 4.90237 18.3166 4.90237 18.7071 5.29289C19.0976 5.68342 19.0976 6.31658 18.7071 6.70711L13.4142 12L18.7071 17.2929C19.0976 17.6834 19.0976 18.3166 18.7071 18.7071C18.3166 19.0976 17.6834 19.0976 17.2929 18.7071L12 13.4142L6.70711 18.7071C6.31658 19.0976 5.68342 19.0976 5.29289 18.7071C4.90237 18.3166 4.90237 17.6834 5.29289 17.2929L10.5858 12L5.29289 6.70711C4.90237 6.31658 4.90237 5.68342 5.29289 5.29289Z"/></svg>
+                    <a onclick="closeNews()" id="closeMenu"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.29289 5.29289C5.68342 4.90237 6.31658 4.90237 6.70711 5.29289L12 10.5858L17.2929 5.29289C17.6834 4.90237 18.3166 4.90237 18.7071 5.29289C19.0976 5.68342 19.0976 6.31658 18.7071 6.70711L13.4142 12L18.7071 17.2929C19.0976 17.6834 19.0976 18.3166 18.7071 18.7071C18.3166 19.0976 17.6834 19.0976 17.2929 18.7071L12 13.4142L6.70711 18.7071C6.31658 19.0976 5.68342 19.0976 5.29289 18.7071C4.90237 18.3166 4.90237 17.6834 5.29289 17.2929L10.5858 12L5.29289 6.70711C4.90237 6.31658 4.90237 5.68342 5.29289 5.29289Z"/></svg>
                     </a>
                 <!-- </h1> -->
 

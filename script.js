@@ -173,3 +173,10 @@ var swiper = new Swiper(".swiper", {
 
 
 
+function openNews(){
+    document.querySelector("#bio").style.display = 'inline'
+    // toggleMenu(false)
+}
+function closeNews(){
+    document.querySelector("#bio").style.display = 'none'
+}
