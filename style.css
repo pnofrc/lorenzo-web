@@ -159,10 +159,10 @@ top: 10% !important;
     height: 10%;
 }
 
-.head{
+/* .head{
     height: 25%;
 
-}
+} */
 #head{
         background: var(--second);
   /* position: fixed; */
@@ -484,7 +484,6 @@ margin-top: 10%;
   .corpus
 {
     display: flex;
-    margin-top: 4rem;
 }
 
   .index{
@@ -777,9 +776,6 @@ width: 5%;
   font-size: 1rem;
 }
 
-.corpus{
-    margin-top: 10rem;
-}
 #bio{
     left: 0;
     position: fixed;
