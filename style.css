@@ -264,7 +264,7 @@ header{
   margin-top: 2rem;
   display: flex;
   border: var(--second) 1px solid;
-  width: 80%;
+  width: 100%;
   align-items: center;
   justify-content: center;
 }
@@ -666,10 +666,10 @@ width: 5%;
 
 
 .presentazione{
-    height: 900px;
-  max-height:900px;
+    height: 700px;
+  max-height:700px;
   top: 15%;
-  width: 900px;
+  width: 700px;
   border-radius: 100%;
 }
 
