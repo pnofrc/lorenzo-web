@@ -111,7 +111,7 @@
                 <div class="burger">
                     <div >
                         <a href="../../#work" onclick="toggleMenu(false)">Lavori</a>
-                        <a href="#news" onclick="toggleMenu(false)">Bio</a>
+                        <a onclick="openNews(),toggleMenu(false)">News</a>
                         <a href="#bio" onclick="toggleMenu(false)">News</a>
                         <a onclick="document.getElementById('friends').style.display ='flex', toggleMenu(false)" href="#friends">Amici</a>
                         <a id="lang" href="/en">ENG</a>
@@ -135,7 +135,7 @@
                 <div class="desktop">
                     <a href="#work">Lavori</a>
                     <a href="#news" >Bio</a>
-                    <a href="#bio">News</a>
+                    <a href="#bio" onclick="openNews()">News</a>
                     <a onclick="document.getElementById('friends').style.display ='flex'" href="#friends">Amici</a>
                     <a id="lang" href="/en">ENG</a>
                 </div>
