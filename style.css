@@ -635,7 +635,7 @@ width: 5%;
 .swiper-slide img{
     width: auto;
     min-height: 100%;
-  
+    /* scale: 2; */
 }
 
 .spastico {
@@ -1094,9 +1094,10 @@ html{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 2rem;
+    width: 100% !important;
+    gap: 10rem;
     background-color: transparent;
-
+/* scale: 2 */
   }
 
   .swiper-slide span{
