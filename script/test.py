@@ -173,13 +173,15 @@ def prepare_project():
     # Convert markdown file to HTML for Italian
     with open(markdown_file, 'r') as f:
         markdown_content_it = f.read()
+        markdown_content_it = markdown.markdown(markdown_content_it)
     html_content_it = markdown_content_it
     
     # Convert markdown file to HTML for English
     with open(markdown_en_file, 'r') as f:
         markdown_content_en = f.read()
+        markdown_content_en = markdown.markdown(markdown_content_en)
     html_content_en = markdown_content_en
-    
+ 
     # Update project data in JSON file
     project_data["main_picture"] = main_picture
     project_data["captions_it"] = captions_it

@@ -145,7 +145,7 @@
 
             {% for slug,contents in cms_data.projects.items() %}
             <a href='../{{slug}}' {% if contents.name==values.name %} class="selected" {% endif
-                %}>{{contents.name}}</a><br>
+                %}>{{contents.name}}</a>
             {% endfor %}
 
         </div>
