@@ -1,0 +1,42 @@
+{
+    "projects": {
+        "tribe_at_work": {
+            "name": "Tribe at work",
+            "category": "Prosa",
+            "main_picture": "Buoni_a_nulla.JPG",
+            "captions_it": {
+                "Buoni_a_nulla.JPG": "ciao",
+                "Ido.jpg": "ciao",
+                "_DSC7702.JPG": "c",
+                "Ido2.jpg": "c"
+            },
+            "captions_en": {
+                "Buoni_a_nulla.JPG": "ciao",
+                "Ido.jpg": "ciao",
+                "_DSC7702.JPG": "c",
+                "Ido2.jpg": "c"
+            },
+            "video_url": "c",
+            "html_content_it": "sdftgyuioiuytre",
+            "html_content_en": ""
+        },
+        "reincantamentomentoreincanta_eeeeeeeee": {
+            "name": "Reincantamentomentoreincanta eeeeeeeee",
+            "category": "Prosa",
+            "main_picture": "Buoni_a_nulla.JPG",
+            "captions_it": {
+                "Buoni_a_nulla.JPG": "Test"
+            },
+            "captions_en": {
+                "Buoni_a_nulla.JPG": "Test"
+            },
+            "video_url": "",
+            "html_content_it": "# CIAO",
+            "html_content_en": "Hellooooooooo"
+        }
+    },
+    "categories": [
+        "Prosa",
+        "MAGIAAA"
+    ]
+}

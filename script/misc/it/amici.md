@@ -1,0 +1,2 @@
+* un amico
+* un'altra
