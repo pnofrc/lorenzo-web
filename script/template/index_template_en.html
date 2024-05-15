@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+
         <link
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
@@ -13,7 +14,13 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         
         <title>Lorenzo Ponte</title>
-        <meta name="description" content="">
+        <meta name="description" content="{{project_data.description}}">
+
+        <meta property="og:title" content="{{project_data.name}}">
+        <meta property="og:description" content="{{project_data.description}}">
+        <meta property="og:image" content="http://lorenzoponte.com/projects/{{project_data}}/assets/{{project_data.main_picture}}">
+        <meta property="og:url" content="http://lorenzoponte.com">
+
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="../style.css">
 

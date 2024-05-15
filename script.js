@@ -179,10 +179,20 @@ var swiper = new Swiper(".swiper", {
 
 
 
-function openNews(){
-    document.querySelector("#bio").style.display = 'inline'
+function openFriends(){
+    document.querySelector("#friends").style.display = 'inline'
     // toggleMenu(false)
 }
-function closeNews(){
-    document.querySelector("#bio").style.display = 'none'
+function closeFriends(){
+    document.querySelector("#friends").style.display = 'none'
 }
+
+function lightingNews(){
+    document.querySelector('footer').classList += 'animated'
+
+    setTimeout(() => {
+        document.querySelector('footer').classList.remove("animated")
+    }, 1500);
+}
+
+

@@ -36,7 +36,7 @@
     </head>
     <body>
 
-        <div id="friends">
+        <div id="bioN">
             
             <div id="egg" style="position: absolute;
             top: 2rem;
@@ -49,20 +49,15 @@
                 <img loading='lazy' style="width: 50%;" src="renzo.png" alt="">
             </div>
 
-            <div class="list-friends">
-                A list of my friends
-
-                <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-
-                </ul>
+            <div >
+                <h1>:)</h1>
+                <p>
+                    Lorenzo Ponte fa cose, vede gente ed e' nato sotto una verza.<br>Inoltre ha l'accento toscano anche se è siciliano.<br>Mi chiedo se mi potrà pagare il 20% in arancin con la schwa. e vegetariani.
+                </p>
             </div>
 
             <!-- <div> -->
-                <svg class="spastico"  onclick="document.getElementById('friends').style.display ='none'" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="spastico"  onclick="document.getElementById('bioN').style.display ='none'" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M5.29289 5.29289C5.68342 4.90237 6.31658 4.90237 6.70711 5.29289L12 10.5858L17.2929 5.29289C17.6834 4.90237 18.3166 4.90237 18.7071 5.29289C19.0976 5.68342 19.0976 6.31658 18.7071 6.70711L13.4142 12L18.7071 17.2929C19.0976 17.6834 19.0976 18.3166 18.7071 18.7071C18.3166 19.0976 17.6834 19.0976 17.2929 18.7071L12 13.4142L6.70711 18.7071C6.31658 19.0976 5.68342 19.0976 5.29289 18.7071C4.90237 18.3166 4.90237 17.6834 5.29289 17.2929L10.5858 12L5.29289 6.70711C4.90237 6.31658 4.90237 5.68342 5.29289 5.29289Z"/>
                 </svg>
             <!-- </div> -->
@@ -79,16 +74,16 @@
 
                 <div class="burger">
                     <a href="#work" onclick="toggleMenu(false)">Lavori</a>
-                    <a href="#news"  onclick="toggleMenu(false)">Bio</a>
-                    <a onclick="openNews(),toggleMenu(false)">News</a>
-                    <a onclick="document.getElementById('friends').style.display ='flex', toggleMenu(false)" href="#friends">Amici</a>
+                    <a onclick="document.getElementById('bioN').style.display ='flex', toggleMenu(false)" href="#bioN">bio</a>
+                    <a onclick="toggleMenu(false)" onclick="lightingNews()">calendario</a>
+                    <a onclick="openFriends(),toggleMenu(false)">amici</a>
                     <a id="lang" href="/en">ENG</a>
                 </div>
                 <div class="desktop">
                     <a href="#work">Lavori</a>
-                    <a href="#news" >Bio</a>
-                    <a href="#bio" onclick="openNews()">News</a>
-                    <a onclick="document.getElementById('friends').style.display ='flex'" href="#friends">Amici</a>
+                    <a onclick="document.getElementById('bioN').style.display ='flex'" href="#bioN">bio</a>
+                    <a onclick="lightingNews()">calendario</a>
+                    <a href="#friends" onclick="openFriends()">amici</a>
                     <a id="lang" href="/en">ENG</a>
                 </div>
 
@@ -211,7 +206,7 @@
             </div>
         </div>
 
-        <div id="news">
+        <!-- <div id="news">
            
             <div class="biotext">
                 <h1>:)</h1>
@@ -220,26 +215,27 @@
                 </p>
                          </div>
             <div class="sticky"><a id="up" class="transition" href="#head"><span>↑</span></a></div>
-        </div>
+        </div> -->
 
         
 
-        <div id='bio' >
+        <div id='friends' >
             <!-- <h1 id="closeMenu"> -->
                 <!-- <h1> -->
-                    <a onclick="closeNews()" id="closeMenu"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.29289 5.29289C5.68342 4.90237 6.31658 4.90237 6.70711 5.29289L12 10.5858L17.2929 5.29289C17.6834 4.90237 18.3166 4.90237 18.7071 5.29289C19.0976 5.68342 19.0976 6.31658 18.7071 6.70711L13.4142 12L18.7071 17.2929C19.0976 17.6834 19.0976 18.3166 18.7071 18.7071C18.3166 19.0976 17.6834 19.0976 17.2929 18.7071L12 13.4142L6.70711 18.7071C6.31658 19.0976 5.68342 19.0976 5.29289 18.7071C4.90237 18.3166 4.90237 17.6834 5.29289 17.2929L10.5858 12L5.29289 6.70711C4.90237 6.31658 4.90237 5.68342 5.29289 5.29289Z"/></svg>
+                    <a onclick="closeFriends()" id="closeMenu"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.29289 5.29289C5.68342 4.90237 6.31658 4.90237 6.70711 5.29289L12 10.5858L17.2929 5.29289C17.6834 4.90237 18.3166 4.90237 18.7071 5.29289C19.0976 5.68342 19.0976 6.31658 18.7071 6.70711L13.4142 12L18.7071 17.2929C19.0976 17.6834 19.0976 18.3166 18.7071 18.7071C18.3166 19.0976 17.6834 19.0976 17.2929 18.7071L12 13.4142L6.70711 18.7071C6.31658 19.0976 5.68342 19.0976 5.29289 18.7071C4.90237 18.3166 4.90237 17.6834 5.29289 17.2929L10.5858 12L5.29289 6.70711C4.90237 6.31658 4.90237 5.68342 5.29289 5.29289Z"/></svg>
                     </a>
                 <!-- </h1> -->
 
             <!-- </h1> -->
             <ul>
-                <li>12 01 2025<br>SPETTACOLONE</li>
-
-                <li>12 01 2025<br>SPETTACOLONE</li>
-
-                <li>12 01 2025<br>SPETTACOLONE</li>
-
-                <li>12 01 2025<br>SPETTACOLONE</li>
+                <li>Amicx</li>
+                <li>Amicx</li>
+                <li>Amicx</li>
+                <li>Amicx</li>
+                <li>Amicx</li>
+                <li>Amicx</li>
+                <li>Amicx</li>
+                <li>Amicx</li>
             </ul>   
            
         </div>
@@ -252,7 +248,18 @@
 
 
         <footer>
-            Web Artisan: Federico Poni;
+            <marquee direction="left" behavior="scroll" onmouseenter="this.stop();" onmouseleave="this.start();">
+      
+
+                <span>19 - 20 Giugno:                 <a href="https://smetanovalitomysl.cz/en/udalosti/the-two-widows-a-new-view/">Two widows by Bedřich Smetana at Smetanova Litomyšl </a>                </span>
+               
+
+                <span>Web Artisan: 
+                    <a href="http://federicoponi.it">Federico Poni</a>
+                </span>
+
+                
+            </marquee>
 
         </footer>
 
