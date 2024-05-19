@@ -23,6 +23,8 @@
 
 
 
+
+
 function eraseCategories(){
 
     let cat = document.querySelectorAll(`.element`)
@@ -81,12 +83,12 @@ function bo(){
     });
     }
 
-    var x = window.matchMedia("(max-width: 900px)")
+    var x = window.matchMedia("(max-width: 1050px)")
 
-        if (!x.matches) { // If media query matches
-            bo()
+    if (!x.matches) { // If media query matches
+        bo()
 
-        } 
+    } 
 
   
 
@@ -196,3 +198,19 @@ function lightingNews(){
 }
 
 
+// when window resize close the burger menu if it's opened
+window.onresize = function(event) {
+    if (document.querySelector(".burger").style.display = "flex"){
+        document.querySelector(".burger").style.display = "none"
+        document.querySelector("#fakeBackground").style.display = "none"
+        document.querySelector("#toggle").innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 50 50"><path d="M 0 9 L 0 11 L 50 11 L 50 9 Z M 0 24 L 0 26 L 50 26 L 50 24 Z M 0 39 L 0 41 L 50 41 L 50 39 Z"></path></svg>'
+    
+    }
+ 
+};
+
+
+
+// if (x.matches) { // If media query matches
+//     window.location.href = 'https://lorenzoponte.com'
+// } 

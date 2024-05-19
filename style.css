@@ -554,14 +554,19 @@ footer,
   position: fixed;
   width: 100%;
   height: 100%;
-  z-index: 9999;
+  z-index: 99999;
   background: rgba(255, 255, 255, 0.9);
   top: 0;
 }
 
+#modal .swiper-slide img{
+  border-radius: unset !important;
+  width: auto;
+}
+
 #modal .swiper {
   width: 75%;
-  height: 80%;
+  height: 100%;
   margin-top: 5%;
 }
 
@@ -704,12 +709,44 @@ marquee span , marquee a{
   font-family: 'ortica';
 }
 
+.burger{
+  display: none
+}
+
+.prefooter{
+  z-index: 10000;
+  background: var(--second);
+  width: 100%;
+  position: sticky;
+  height: 8%;
+  border-top: solid;
+}
 
 
-@media only screen and (max-width: 900px) {
+
+.prefooter marquee span{
+  color: black;
+  margin-left: 2%;
+}
+.prefooter a{
+  color: var(--main);
+}
+
+.prefooter a:hover{
+  color:pink;
+  -webkit-text-stroke: unset !important;
+}
+
+#work{
+  margin-bottom: 5%;
+}
+@media only screen and (max-width: 1050px) {
   body,
   html {
     overflow-x: hidden !important;
+  }
+  #work{
+    margin-bottom: 10%;
   }
 
   #fakeBackground {
@@ -746,6 +783,10 @@ marquee span , marquee a{
     flex-direction: column;
     margin-top: 0 !important;
     /* TODO */
+  }
+
+  #bioN div {
+    flex-direction: column;
   }
 
   .element h1,
@@ -789,6 +830,8 @@ marquee span , marquee a{
   #name {
     font-size: 2.5rem;
   }
+
+ 
   .burger a {
     font-size: 2rem;
   }
@@ -948,6 +991,12 @@ marquee span , marquee a{
     align-items: baseline !important;
   } */
 
+  #friends{
+    display: none;
+    z-index: 1000000;    right: 0;
+    width: 100%;
+  }
+
   #modal {
     width: 100vw;
     height: 100vh;
@@ -994,10 +1043,8 @@ marquee span , marquee a{
   }
 
   .swiper-slide img {
-    /* height: 100vh !important; */
-    /* width: auto; */
-
-    width: 250%;
+    width: 450px;
+    height: 450px;
   }
 
   .presentazione {
@@ -1070,6 +1117,53 @@ marquee span , marquee a{
     margin-left: 2rem;
     margin-top: 1rem;
   }
+
+  #work{
+    margin-bottom: 35%;
+  }
+
+  .prefooter{
+            position: relative;
+    display: flex;
+   justify-content: center;
+   align-items: center;
+   bottom: 5%;
+   padding: 2% 0;
+   height: auto
+  }
+
+  marquee span{
+   font-size: .7rem;
+  }
+}
+
+
+@media only screen and (max-height: 800px) {
+
+  .swiper-slide img{
+    width: 400px;
+    height: 400px;
+  }
+
+}
+
+
+@media only screen and (max-height: 700px) {
+
+  .burger div:nth-child(2) {
+    height: 10rem;
+  }
+
+}
+
+
+@media only screen and (max-height: 600px) {
+
+  .swiper-slide img{
+    width: 300px;
+    height: 300px;
+  }
+
 }
 
 footer {
@@ -1085,9 +1179,18 @@ footer {
   z-index: 20000;
 }
 
+footer:hover{
+  /* background-color: pink; */
+  animation: spastico 0.1s ease infinite;
+
+}
+
 .swiper-wrapper {
   height: unset !important;
 }
+
+
+/* scrollbar style for chromium based */
 
 .content::-webkit-scrollbar-track {
   border: solid 1px;
@@ -1102,3 +1205,6 @@ footer {
 .content::-webkit-scrollbar-thumb {
   background-color: var(--main);
 }
+
+
+
