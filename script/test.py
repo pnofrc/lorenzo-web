@@ -189,6 +189,7 @@ def prepare_project():
     project_data["video_url"] = video_url
     project_data["html_content_it"] = html_content_it
     project_data["html_content_en"] = html_content_en
+
     
     # Save updated JSON file
     with open(cms_file, 'w') as f:

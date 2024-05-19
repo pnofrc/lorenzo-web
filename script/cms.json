@@ -1,42 +1,197 @@
 {
     "projects": {
-        "tribe_at_work": {
-            "name": "Tribe at work",
-            "category": "Prosa",
-            "main_picture": "Buoni_a_nulla.JPG",
+        "confabulazioni": {
+            "name": "Confabulazioni",
+            "category": "Opera",
+            "main_picture": "Locandina - opzione A.jpg",
             "captions_it": {
-                "Buoni_a_nulla.JPG": "ciao",
-                "Ido.jpg": "ciao",
-                "_DSC7702.JPG": "c",
-                "Ido2.jpg": "c"
+                "Locandina - opzione B.jpg": "",
+                "Locandina - opzione A.jpg": "",
+                "4.jpg": "",
+                "5.jpg": "",
+                "7.jpg": "",
+                "6.jpg": "",
+                "2.jpg": "",
+                "3.jpg": "",
+                "1.jpg": ""
             },
             "captions_en": {
-                "Buoni_a_nulla.JPG": "ciao",
-                "Ido.jpg": "ciao",
-                "_DSC7702.JPG": "c",
-                "Ido2.jpg": "c"
-            },
-            "video_url": "c",
-            "html_content_it": "sdftgyuioiuytre",
-            "html_content_en": ""
-        },
-        "reincantamentomentoreincanta_eeeeeeeee": {
-            "name": "Reincantamentomentoreincanta eeeeeeeee",
-            "category": "Prosa",
-            "main_picture": "Buoni_a_nulla.JPG",
-            "captions_it": {
-                "Buoni_a_nulla.JPG": "Test"
-            },
-            "captions_en": {
-                "Buoni_a_nulla.JPG": "Test"
+                "Locandina - opzione B.jpg": "",
+                "Locandina - opzione A.jpg": "",
+                "4.jpg": "",
+                "5.jpg": "",
+                "7.jpg": "",
+                "6.jpg": "",
+                "2.jpg": "",
+                "3.jpg": "",
+                "1.jpg": ""
             },
             "video_url": "",
-            "html_content_it": "# CIAO",
-            "html_content_en": "Hellooooooooo"
+            "html_content_it": "<ul>\n<li>di Eleonora Paris</li>\n<li>regia Lorenzo Ponte</li>\n<li>tutor Michele De Vita Conti</li>\n<li>con Elena Callegari, Alice Conti, Marco Vergani\ne con Sebastiano Bronzato, Chiara Cali\u00f2, Eleonora Paris, Lorenzo Ponte</li>\n<li>musiche dal vivo Sebastiano Bronzato</li>\n<li>adattamento musicale Gabriele Gramaglia, Edoardo Grittini, Gianfranco Pedroli</li>\n<li>scene e costumi Serena D\u2019Orlando, Valentina Silva, Lorenzo Vigevani</li>\n<li>videomaker Chiara Cali\u00f2</li>\n<li>tecnica video Fabio Brusadin</li>\n<li>organizzazione e promozione Simona Conforti, Elisa Piasente, Camilla Rizzi</li>\n<li>Spettacolo inserito nella rassegna teatrale Teste Inedite</li>\n<li>realizzata da autori, registi e organizzatori della Civica Scuola di Teatro Paolo Grassi</li>\n</ul>\n<p><strong>Note di regia</strong></p>\n<p>Confabulazioni di Eleonora Paris \u00e8 una storia di formazione; i personaggi faticano ad affrontare la realt\u00e0, l\u2019inevitabile fine delle cose. Mettono in scena un matrimonio, il pi\u00f9 tradizionale dei riti, per esorcizzare la paura della morte della nonna e fuggire dalla complessit\u00e0 di una relazione d\u2019amore. Verit\u00e0 e menzogna si intrecciano in questo testo, tutto \u00e8 finto, nulla \u00e8 falso. Ognuno dei personaggi ha le sue ragioni per affrontare questo gioco di ruoli, tutti si impegnano affinch\u00e9 la festa riesca al meglio. Dentro i personaggi si agitano segreti e pensieri irrisolti, fuori tutto deve apparire perfetto. In scena musicisti e operatori video affiancano gli attori per costruire l\u2019immagine di un\u2019unione felice. Se all\u2019inizio le regole del gioco sono chiare, procedendo i confini sfumano e il gioco si fa via via pi\u00f9 pericoloso. Lo sforzo continuo di rendere credibile la festa finisce per soggiogare i personaggi alla loro stessa menzogna. In un\u2019epoca in cui l\u2019autenticit\u00e0 e il benessere individuale sono i valori su cui si fonda la nostra societ\u00e0, qual \u00e8 lo stato di salute dei modelli che hanno tentato di assicurarci la felicit\u00e0 di coppia fino ad oggi?</p>\n<p><em>Lorenzo Ponte</em></p>\n<p><strong>Note di drammaturgia</strong></p>\n<p>Due amici d\u2019infanzia si rivedono a un anno di distanza. Lui vive a Londra, lei vive in Italia con sua nonna, una donna molto anziana. Per realizzare il desiderio della nonna di vedere sua nipote sposata prima di morire, i due decidono di organizzare un finto matrimonio. Questa finzione per\u00f2 riapre in loro dei problemi irrisolti e la loro stessa messinscena li spinger\u00e0 a guardarsi veramente e ad affrontare la complessit\u00e0 del loro rapporto. Confabulazioni \u00e8 un testo che parla di solitudine, una condizione che i personaggi vivono con timore ma che al tempo stesso vedono come l\u2019unica possibilit\u00e0 per esprimere la propria libert\u00e0 personale. La paura di non bastare a s\u00e9 stessi e la paura che l\u2019altro limiti la propria indipendenza sono i due poli entro i quali i personaggi si muovono. I loro ricordi si confondono con le narrazioni idealizzate del loro rapporto: se i ricordi creano una storia e questa storia \u00e8 costruita sulle proprie fantasie non si hanno pi\u00f9 parametri per valutare la realt\u00e0. Tutto vale, ma se tutto vale niente ha pi\u00f9 valore. Attraverso questo testo ho cercato di indagare il modo in cui oggi si ridefiniscono i rapporti affettivi e come la paura di perdere l\u2019altro ci impedisca di scoprirlo realmente.</p>\n<p><em>Eleonora Paris</em></p>\n<p>Giugno 2018</p>",
+            "html_content_en": "<ul>\n<li>written by Eleonora Paris</li>\n<li>directed by Lorenzo Ponte</li>\n<li>tutor Michele De Vita Conti</li>\n<li>with Elena Callegari, Alice Conti, Marco Vergani\nand Sebastiano Bronzato, Chiara Cali\u00f2, Eleonora Paris, Lorenzo Ponte</li>\n<li>live music Sebastiano Bronzato</li>\n<li>soundtrack Gabriele Gramaglia, Edoardo Grittini, Gianfranco Pedroli</li>\n<li>set and costume design Serena D\u2019Orlando, Valentina Silva, Lorenzo Vigevani</li>\n<li>videomaker Chiara Cali\u00f2</li>\n<li>video set up Fabio Brusadin</li>\n<li>organization and promotion Simona Conforti, Elisa Piasente, Camilla Rizzi</li>\n<li>Show included in Teste Inedite, Civica Scuola di Teatro Paolo Grassi</li>\n</ul>\n<p><strong>Director's notes</strong></p>\n<p>Confabulazioni by Eleonora Paris is a coming-of-age story; the characters struggle to face reality, the inevitable end of things. They stage a wedding, the most traditional of rites, to exorcise the fear of their grandmother's death and escape from the complexity of a love relationship. Truth and lies are intertwined in this text, everything is fake, nothing is false. Each of the characters has their own reasons for tackling this role play, everyone is committed to making sure the party is as successful as possible. Secrets and unresolved thoughts swirl inside the characters, everything must appear perfect on the outside. On stage, musicians and videographers work alongside the actors to build the image of a happy union. If at the beginning the rules of the game are clear, as the game progresses the boundaries blur and the game gradually becomes more dangerous. The continuous effort to make the party credible ends up subjugating the characters to their own lie. In a society founded on the values of authenticity and individual well-being, what is the state of health of the models who have attempted to ensure the happiness of people?</p>\n<p><em>Lorenzo Ponte</em> </p>\n<p><strong>Notes on dramaturgy</strong></p>\n<p>Two childhood friends meet again a year later. He lives in London, she lives in Italy with her grandmother, a very old woman. To fulfill the grandmother's wish to see her granddaughter married before she dies, the two decide to organize a fake wedding. This fiction, however, reopens unresolved problems in them and their very staging will push them to really look at each other and face the complexity of their relationship. Confabulazioni is a text that talks about loneliness, a condition that the characters live with fear but at the same time see as the only possibility to express their personal freedom. The fear of not being enough for oneself and the fear that others will limit one's independence are the two poles within which the characters move. Their memories become confused with the idealized narratives of their relationship: if the memories create a story and this story is built on one's fantasies, one no longer has parameters to evaluate reality. Everything is valid, but if everything is valid nothing has value anymore.\nThrough this text I tried to investigate the way in which emotional relationships are redefined today and how the fear of losing the other prevents us from truly discovering it.</p>\n<p><em>Eleonora Paris</em></p>\n<p>June 2018</p>"
+        },
+        "tu_sei_agatha": {
+            "name": "Tu Sei Agatha",
+            "category": "Opera",
+            "main_picture": "A - Locandina.png",
+            "captions_it": {
+                "A - Locandina.png": "",
+                "4.JPG": "",
+                "5.JPG": "",
+                "6.jpg": "",
+                "2.jpg": "",
+                "3.JPG": "",
+                "1.JPG": "",
+                "0.jpg": ""
+            },
+            "captions_en": {
+                "A - Locandina.png": "",
+                "4.JPG": "",
+                "5.JPG": "",
+                "6.jpg": "",
+                "2.jpg": "",
+                "3.JPG": "",
+                "1.JPG": "",
+                "0.jpg": ""
+            },
+            "video_url": "",
+            "html_content_it": "<ul>\n<li>da Agatha di Marguerite Duras</li>\n<li>adattamento e regia Lorenzo Ponte</li>\n<li>con Christian La Rosa e Valentina Picello</li>\n<li>scena Davide Signorini</li>\n<li>musica Sebastiano Bronzato</li>\n<li>luci Giuliano Almerighi</li>\n<li>Foto Luca de Pia</li>\n<li>produzione Teatro Franco Parenti</li>\n</ul>\n<p>Si ringraziano Sabrina Sinatti, tutor del progetto - Civica Scuola di Teatro Paolo Grassi - e Lab121.\nSi ringrazia per la collaborazione VIE dei festival - Roma e la rassegna Stanze, per cui lo spettacolo \u00e8 andato in scena a Palazzo Boschi Di Stefano.</p>\n<p>Esistono legami che niente \u00e8 in grado di scalfire. Tu sei Agatha d\u00e0 forma poetica a un\nmistero irrappresentabile: l'amore disperato e impossibile tra un fratello e una sorella. Tra\nle righe del testo si legge velata la bruciante autobiografia di Marguerite Duras, del suo\namore per il fratello Paulo morto giovane e dei suoi ricordi.</p>\n<p>Nella villa d'infanzia, ormai abbandonata, Agata, incontra il fratello che non vede da anni.\nHa deciso di partire e interrompere il rapporto incestuoso che li unisce; ha incontrato un\nuomo e andr\u00e0 a vivere con lui ma la possibilit\u00e0 di una separazione fa riemergere ricordi,\nnodi di un legame, difficili da sciogliere. Il loro rapporto incestuoso e indissolubile \u00e8 uno\nspecchio rovesciato che riflette la nostra difficolt\u00e0 ad incontrare ed accettare la libert\u00e0\ndell'Altro e il dolore del fallimento.</p>\n<p>La scena \u00e8 vuota per fare spazio a un rito d'incontro tra due corpi che si sono sempre\ncercati senza mai toccarsi. Lo spazio teatrale diventa il luogo ideale per indagare il cuore\ndella relazione e liberare quel feroce desiderio a lungo frustrato.</p>\n<p><em>Tu sei Agatha</em> \u00e8 la storia di un amore e del tentativo di sopravvivere alla sua forza.</p>\n<p>Ottobre 2018</p>",
+            "html_content_en": "<ul>\n<li>from Agatha by Marguerite Duras</li>\n<li>dramaturgy and direction Lorenzo Ponte</li>\n<li>with Christian La Rosa and Valentina Picello</li>\n<li>set design Davide Signorini</li>\n<li>music Sebastiano Bronzato</li>\n<li>light design Giuliano Almerighi</li>\n<li>Pictures by Luca Del Pia</li>\n<li>Production Teatro Franco parenti</li>\n</ul>\n<p>Thanks to Sabrina Sinatti, project tutor - Civica Scuola di Teatro Paolo Grassi - Lab121 - VIE dei Festival, Rome - Stanze, Milan</p>\n<p>There are bonds that nothing can undermine. You are Agatha gives poetic form to an\nunrepresentable mystery: the desperate and impossible love between a brother and a\nsister. Hidden in this fictional story there is of course the burning autobiography of\nMarguerite Duras and the memory of her love for her brother Paulo who died when he was\nan adolescent.</p>\n<p>In her childhood villa, now abandoned, Agatha meets her brother. She has decided to\nleave and interrupt the incestuous relationship that unites them; she has met a man and\nwill go to live with him. However the impending separation brings back memories, which\nare not fading away. Their incestuous and indissoluble relationship is an inverted mirror\nthat reflects our difficulty in meeting and accepting the freedom of the Other and the pain\nof failure.</p>\n<p>The stage is empty in order to host a ritual between two bodies that have always looked\nfor each other without being able to touch. Theater becomes the ideal place to investigate\nthe heart of the relationship and release that ferocious desire that has long been\nfrustrated.</p>\n<p><em>Tu sei Agatha</em> is the story of a love and the attempt to survive its strength.</p>\n<p>October 2018</p>"
+        },
+        "buoni_a_nulla": {
+            "name": "Buoni a Nulla",
+            "category": "Opera",
+            "main_picture": "Locandina.JPG",
+            "captions_it": {
+                "6c.JPG": "",
+                "6b.JPG": "",
+                "8.JPG": "",
+                "9.JPG": "",
+                "1a.JPG": "",
+                "Locandina.JPG": "",
+                "10.JPG": "",
+                "2b.JPG": "",
+                "4.JPG": "",
+                "5.JPG": "",
+                "7.JPG": "",
+                "6.JPG": "",
+                "2.JPG": "",
+                "1.JPG": ""
+            },
+            "captions_en": {
+                "6c.JPG": "",
+                "6b.JPG": "",
+                "8.JPG": "",
+                "9.JPG": "",
+                "1a.JPG": "",
+                "Locandina.JPG": "",
+                "10.JPG": "",
+                "2b.JPG": "",
+                "4.JPG": "",
+                "5.JPG": "",
+                "7.JPG": "",
+                "6.JPG": "",
+                "2.JPG": "",
+                "1.JPG": ""
+            },
+            "video_url": "",
+            "html_content_it": "<ul>\n<li>testo e regia Lorenzo Ponte</li>\n<li>con Tobia Dal Corso Polzot, Paola Galassi e Luca Oldani</li>\n<li>scena Davide Signorini</li>\n<li>costumi Giulia Rossena</li>\n<li>luci Emanuele Agliati</li>\n<li>suono Gaetano Pappalardo e Simone Sigurani</li>\n<li>assistente regia Filippo Capobianco</li>\n<li>voce giornale radio Pietro Adami</li>\n<li>con la supervisione artistica di Giuliana Musso</li>\n<li>Foto di Luca Del Pia</li>\n<li>produzione Teatro Franco Parenti</li>\n</ul>\n<p>con il sostegno di PRAXIS - Olinda/TeatroLaCucina - Vincitore bando Animali Teatrali Fantastici 2021 - ZONA K nell'ambito del progetto IntercettAzioni - Centro di Residenza Artistica della Lombardia; Fondazione Claudia Lombardi per il teatro</p>\n<p>Osservare e stare ai margini per capire cosa sta al centro della nostra societa.\nGuidati da questa idea, per 3 anni abbiamo fatto un percorso di conoscenza e\navvicinamento alla vita delle persone senza dimora nella citt\u00e0 di Milano. Tra il 2019\ne il 2021, la compagnia ha affiancato unit\u00e0 di strade composte da psicologi,\neducatori e volontari che lavorano con persone che vivono questo fenomeno di\nespulsione.</p>\n<p>I nostri pregiudizi sono andati in frantumi e, visti da vicino, abbiamo trovato molti\npunti di contatto con persone che tendiamo a nascondere e cacciare dalle vie delle\nnostre citt\u00e0. I poveri oggi vengono invisibilizzati e stigmatizzati perch\u00e9 costringono a\nfare i conti con le storture e i limiti di citt\u00e0 sempre pi\u00f9 esclusive e respingenti.</p>\n<p>Dalla ricerca \u00e8 scaturito uno spettacolo di narrazione nel quale si incarnano le voci,\ni silenzi, i corpi e le emozioni attraversate sul campo.\nSiamo alla fermata di un autobus che non sappiamo se passer\u00e0 mai. Lo aspettiamo\ninsieme a tre personaggi le cui vicende intrecciandosi raccontano come un prisma\nla marginalit\u00e0 interiore e sociale di Milano. Un giovane studente universitario della\nBocconi, alle prese con gli ultimi esami prima della laurea. Una giornalista precaria\ndi 30 anni, affaticata dai ritmi cittadini, che ha deciso di fare volontariato con le\npersone senza dimora. E infine uno strambo profeta, che maledice la follia che\ndomina la citt\u00e0 e offre a tutti una via di salvezza.</p>\n<p>Con lo spettacolo vogliamo riportare al centro la vita di chi sta ai margini provando\na mettere in discussione lo sguardo pietistico e di superiorit\u00e0 che riserviamo ai devianti. La voce e il vissuto degli ultimi ci interpellano: come ci poniamo di fronte al\ndolore dell'altro? E noi, i sani, come stiamo? E adesso, ancora, che fare?</p>",
+            "html_content_en": "<ul>\n<li>written and directed by Lorenzo Ponte</li>\n<li>with Tobia Dal Corso Polzot, Paola Galassi and Luca Oldani</li>\n<li>set design Davide Signorini</li>\n<li>costumes Giulia Rossena</li>\n<li>lights Emanuele Agliati</li>\n<li>sound design Gaetano Pappalardo and Simone Sigurani</li>\n<li>assistant director Filippo Capobianco,</li>\n<li>radio newspaper voice Pietro Adami</li>\n<li>with the artistic supervision of Giuliana Musso</li>\n<li>Pictures by Foto di Luca Del Pia</li>\n<li>production Teatro Franco Parenti </li>\n</ul>\n<p>with the support of PRAXIS - Olinda/TeatroLaCucina - Winner of the Fantastic Theatrical Animals 2021 ZONA K tender as part of the IntercettAzioni project - Lombardy Artistic Residency Centre; Claudia\nLombardi Foundation for the theatre</p>\n<p>Observe and stay on the margins to understand what is at the center of our society.\nGuided by this idea, for 3 years we have undertaken a journey of understanding\nand approaching people's lives homeless in the city of Milan. Between 2019 and\n2021, the company joined psychologists, educators and volunteers who work with\npeople experiencing this phenomenon of expulsion. </p>\n<p>The research method was\ndivided into three different moments. A first part of participatory observation, in\nwhich the whole company accompanied the road units for a long period on night\noutings in the downtown streets. This work has allowed us to build relationships of\ntrust. The second part of the research consisted of going into the street to talk to\npeople without being framed voluntary associations, to try to distance themselves\nfrom a volunteer-assisted relationship. Finally, where possible, we conducted\ninterviews with homeless people, workers and volunteers and experts to try to build\na broader framework that would allow us to read homelessness as a social\nphenomenon and not as individual problem. Our prejudices were shattered and,\nseen up close, we found many points of contact with people who we tend to hide\nand chase from the streets of our cities. The poor today are invisibilized and\nstigmatized because they force us to deal with the distortions and limitations of\nincreasingly exclusive and repelling cities.</p>\n<p>From the research described above, a narrative show emerged in which voices,\nsilences, bodies and the emotions experienced on the field. We are at the stop of a bus that we don't know if it will ever pass. We wait for him together with three\ncharacters whose intertwining events tell like a prism the internal and social\nmarginality of Milan. A young Bocconi student, struggling with the last exams before\ngraduation. A 30-year-old precarious journalist, tired by the city's rhythms, she\ndecided to volunteer with homeless people. And finally a weirdo prophet, who\ncurses the madness that dominates the city and offers everyone a way of salvation.</p>\n<p>With the show we want to bring the life of those on the margins back to the center\nby trying to question the pietistic and superior look that we reserve for deviants. The\nvoice and experiences of the last challenge us: how do we do we face the pain of\nthe other? And how are we, the healthy ones? And now, what can we do?</p>"
+        },
+        "quando_non_saremo_grandi": {
+            "name": "Quando non saremo grandi",
+            "category": "Opera",
+            "main_picture": "Immagine locandina copia.jpeg",
+            "captions_it": {
+                "5 copia.jpg": "",
+                "Immagine locandina copia.jpeg": "",
+                "3 copia.jpg": "",
+                "4 copia.jpg": "",
+                "2 copia.jpg": "",
+                "7 copia.jpg": "",
+                "1 copia.jpg": "",
+                "6 copia.jpg": ""
+            },
+            "captions_en": {
+                "5 copia.jpg": "",
+                "Immagine locandina copia.jpeg": "",
+                "3 copia.jpg": "",
+                "4 copia.jpg": "",
+                "2 copia.jpg": "",
+                "7 copia.jpg": "",
+                "1 copia.jpg": "",
+                "6 copia.jpg": ""
+            },
+            "video_url": "",
+            "html_content_it": "<ul>\n<li>soggetto Giulia Lombezzi e Lorenzo Ponte</li>\n<li>drammaturgia Giulia Lombezzi</li>\n<li>con llaria Marchian\u00f2, Elia Galeotti</li>\n<li>regia Lorenzo Ponte</li>\n<li>scene e costumi Chiara Previato</li>\n<li>La voce dei Grandi \u00e8 di Alberto Mancioppi</li>\n<li>produzione Teatro Franco Parenti</li>\n<li>in collaborazione con Associazione Pier Lombardo</li>\n<li>Foto di Andea Salafia</li>\n</ul>\n<p>Milano. Anno 2123. Uma e Mo, adolescenti, vivono nella comunit\u00e0 nomade\ndei Grandi. Mo \u00e8 il maggiore, ma \u00e8 Uma a occuparsi di lui, a farsi carico per\nentrambi di tutte le responsabilit\u00e0. Mo \u00e8 malato e ha un segreto.\nVivono in una Milano colpita dalla siccit\u00e0, priva di ordine sociale, dove le\nrisorse elettriche sono limitate e ogni cosa, a causa della crisi climatica, si \u00e8\nfermata. Devono lavorare sottostando a regole infinite e punteggi impietosi.</p>\n<p>Il premio agognato \u00e8 un trasferimento sul Pianeta B, dove regna il benessere,\ndove l'acqua non \u00e8 razionata e puoi accendere la luce quando vuoi. Mentre Uma si impegna per il passaggio al pianeta B, Mo vaneggia sul Fuori, il\nterritorio proibito oltre i Distretti, dove la natura sopravvive nonostante i\ncambiamenti climatici. Possibile che il Pianeta B sia l'unica speranza? E se\nnel Fuori ci fosse una possibilit\u00e0 di recuperare il nostro rapporto con la\nnatura, con la nostra umanit\u00e0?</p>\n<p>Maggio / Novembre 2023</p>",
+            "html_content_en": "<ul>\n<li>directed by Lorenzo Ponte</li>\n<li>subject Giulia Lombezzi and Lorenzo Ponte</li>\n<li>dramaturgy Giulia Lombezzi</li>\n<li>with llaria Marchian\u00f2, Elia Galeotti</li>\n<li>scenes and costumes Chiara Previato</li>\n<li>Voice of the Greats Alberto Mancioppi</li>\n<li>production Teatro Franco Parenti in collaboration with the Pier Lombardo Association</li>\n<li>Photo by Andea Salafia</li>\n</ul>\n<p>Milan. Year 2123. Uma and Mo, teenagers, live in the nomadic community of\nthe Great Ones. Mo is the eldest, but it is Uma who takes care of him, who\ntakes on all the responsibilities for both of them. Mo is sick and has a secret.</p>\n<p>They live in a drought-stricken Milan, devoid of social order, where electricity\nresources are limited and everything, due to the climate crisis, has stopped.\nThey have to work under endless rules and merciless scores. The desired\nprize is a transfer to Planet B, where well-being reigns, where water is not\nrationed and you can turn on the light whenever you want. While Uma strives\nfor the transition to planet B, Mo raves about the Outside, the forbidden\nterritory beyond the Districts, where nature survives despite climate change.\nIs it possible that Planet B is the only hope? What if outside there was a\npossibility of recovering our relationship with nature, with our humanity?</p>\n<p>May / November 2023</p>"
+        },
+        "idomeneo": {
+            "name": "Idomeneo",
+            "category": "Opera",
+            "main_picture": "Locandina.jpg",
+            "captions_it": {
+                "15 b.jpg": "",
+                "11 a.jpg": "",
+                "8.jpg": "",
+                "11 b.jpg": "",
+                "9 copia.jpg": "",
+                "16 b.jpg": "",
+                "15.jpg": "",
+                "17.jpg": "",
+                "16.jpg": "",
+                "Locandina.jpg": "",
+                "10 copia.jpg": "",
+                "21.jpg": "",
+                "20.jpg": "",
+                "22.jpg": "",
+                "13 copia.jpg": "",
+                "18.jpg": "",
+                "19.jpg": "",
+                "4.jpg": "",
+                "14 copia.jpg": "",
+                "5.jpg": "",
+                "7.jpg": "",
+                "6.jpg": "",
+                "2.jpg": "",
+                "12 copia.jpg": "",
+                "3.jpg": "",
+                "1.jpg": ""
+            },
+            "captions_en": {
+                "15 b.jpg": "",
+                "11 a.jpg": "",
+                "8.jpg": "",
+                "11 b.jpg": "",
+                "9 copia.jpg": "",
+                "16 b.jpg": "",
+                "15.jpg": "",
+                "17.jpg": "",
+                "16.jpg": "",
+                "Locandina.jpg": "",
+                "10 copia.jpg": "",
+                "21.jpg": "",
+                "20.jpg": "",
+                "22.jpg": "",
+                "13 copia.jpg": "",
+                "18.jpg": "",
+                "19.jpg": "",
+                "4.jpg": "",
+                "14 copia.jpg": "",
+                "5.jpg": "",
+                "7.jpg": "",
+                "6.jpg": "",
+                "2.jpg": "",
+                "12 copia.jpg": "",
+                "3.jpg": "",
+                "1.jpg": ""
+            },
+            "video_url": "",
+            "html_content_it": "<p><em>Opera seria in tre atti</em></p>\n<ul>\n<li>Musica Wolfgang Amadeus Mozart</li>\n<li>\nLibretto Giambattista Varesco dal dramma di Danchet\n<br></li>\n<li>\nNuova produzione Op\u00e9ra national de Lorraine</li>\n<li>\nOPERA NATIONAL DE LORRAINE ORCHESTRA E CORO\n<br></li>\n<li>\nDirettore Jakob Lehmann</li>\n<li>\nRegista Lorenzo Ponte\n<br></li>\n<li>\nScene Alice Benazzi</li>\n<li>Costumi Giulia Rossena</li>\n<li>Luci Emanuele Agliati</li>\n<li>\nAssistente alle luci Alessandro Manni\n  <br></li>\n<li>\nDirettore del coro Guillaume Fauch\u00e8re</li>\n<li>Direttore assistente William Le Sage</li>\n</ul>\n<br>\n<ul>\n<li>Idomeneo Toby Spence</li>\n<li>damante Heloise Mas</li>\n<li>llia Siobhan Stagg</li>\n<li>Elettra Amanda Woodbury</li>\n<li>Arbace L\u00e9o Vermot-Desroches</li>\n<li>Il grande sacerdote* Wook Kang</li>\n<li>La voce di Nettuno Louis Morvan</li>\n<li>Donne Cretesi* Inna Jeskova e S\u00e9verine Maquaire</li>\n<li>Troiani* Yongwoo Jung e Jinhyuck Kim</li>\n<li>Coro lontano* Yongwoo Jung, IIl Ju Lee, Jinhyuck Kim e Christophe Sagnier</li>\n<li>Meda Rosabel Huguet</li>\n</ul>\n<p>*Solisti del Coro</p>\n<p>I miti si tramandano in versioni sempre diverse a seconda del luogo e del tempo.\nDopo la seconda guerra mondiale, Christa Wolf inizi\u00f2 a riscrivere i miti da una prospettiva\nche mise in discussione l'egemonia dei padri. Nel 2023 la storia di Idomeneo \u00e8 ancora\ntutta da interrogare: uomini e donne sono nelle mani degli dei, le scelte di un re venaono\nattribuite a un mostro, il sacrificio umano \u00e8 accettabile e l'amore \u00e8 raccontato come uno\nstrumento capace di guarire tutto.</p>\n<p>Partiamo dal conflitto con cui si conclude l'opera: il Dio del mare ha risolto tutto per tutti\ntranne che per un solo personaggio. Elettra grida che la gioia e l'amore le sono stati rubati.\nQual \u00e8 il crimine per il quale promette vendetta? Credo che ci sia qualcosa di pi\u00f9 profondo\ndel rifiuto di damante a muoverla a una tale rabbia. C'\u00e8 una violenza nascosta in questa\nfamiglia. Il sacrificio del bambino viene presentato come un incidente. Invece questo\nsacrificio, questa violenza sono le fondamenta stesse della civilt\u00e0 cretese.</p>\n<p>Nell'opera mancano totalmente i riferimenti alla Regina di Creta, moglie di Idomeneo e\nmadre di damante. E difficile persino rintracciare la sua presenza in altre fonti letterarie.\nSappiamo che si chiamava Meda e che fu uccisa per tradimento. Qual \u00e8 stato il tradimento che le \u00e8 costato una damnatio memoriae? Meda fu uccisa perch\u00e9 vide, perch\u00e9 sapeva su\nquale crimine giace Creta: l'abuso perpetuo del figlio da parte del Padre.</p>\n<p>Intorno a Idomeneo e alla sua famiglia c'\u00e8 una cultura che accetta e celebra il sacrificio,\nNel nostro allestimento siamo negli anni '60. Il Grande Sacerdote e il sacrificio saranno\nrappresentati come parti della liturgia cristiana, la religione del Padre. L'uccisione dei\nbambini \u00e8 gi\u00e0 avvenuta quando Idomeneo abusava di loro. La religione nasconde la verit\u00e0\ne tiene lontano l'orrore dagli uomini e dalle donne. L'abuso \u00e8 possibile perch\u00e9 c'\u00e8 una\ncomunit\u00e0 che lo tollera. Il coro interpreta le famiglie che abitano nei dintorni di Idomeneo.\nVogliono una vita pacifica, minacciata dal dolore di questi bambini, e quindi hanno bisogno\ndi un rito che guarisca e riporti la pace.</p>\n<p>\u00c8 Elettra a riaprire la ferita. Lei \u00e8 una donna di 30/35 anni degli anni 80 che viagger\u00e0 nella\nmemoria per trovare responsabilit\u00e0: vedr\u00e0 e ci mostrer\u00e0 nuovamente la Regina Meda e\nquindi una possibilit\u00e0 di un vero nuovo ordine basato non sulla violenza e sul sacrificio, ma\nsulla tutela dei deboli.</p>\n<p>Il set racconta questo viaggio nella memoria attraverso i mezzi della fotografia analogica. Il\nlavoro sulla memoria diventa il lavoro di sviluppo di un'immagine. I passaggi narrativi\nsaranno scanditi dal procedimento fotografico. Inizieremo da un album di famiglia da cui\nviene cancellato il corpo della madre e vedremo il volto della madre alla fine dell'opera.</p>\n<p>Christa Wolf ha scritto: \"A poco a poco, quando inizi a sapere, inizi anche a ricordare.\nConoscere e ricordare sono la stessa cosa\". Mentre la storia scritta da Varesco procede,\nla messa in scena mette le parole e le azioni dei personaggi sotto una luce diversa.\nQuesta storia \u00e8 raccontata dal punto di vista di una donna ritenuta pazza. Questa \u00e8 una\nstoria sul valore della testimonianza, sulla memoria e sulla responsabilita.</p>\n<p>Settembre - Ottobre 2023</p>",
+            "html_content_en": "<p><em>opera seria in three acts</em></p>\n<ul>\n<li>Libretto Father Giambattista Varesco after the play by Danchet</li>\n<li>\nMusic Wolfgang Amadeus Mozart\n  <br></li>\n<li>\nNew production Op\u00e9ra national de Lorraine</li>\n<li>\nOPERA NATIONAL DE LORRAINE ORCHESTRA AND CHORUS\n  <br></li>\n<li>\nConductor Jakob Lehmann</li>\n<li>\nStage director Lorenzo Ponte\n  <br></li>\n<li>\nSet design Alice Benazzi</li>\n<li>Costumes Giulia Rossena</li>\n<li>Lighting Emanuele Agliati</li>\n<li>\nLighting assistant Alessandro Manni\n  <br></li>\n<li>\nChorus master Guillaume Fauch\u00e8re</li>\n<li>\nAssistant conductor William Le Sage\n<br></li>\n<li>\nIdomeneo Toby Spence\ndamante H\u00e9lo\u00efse Mas</li>\n<li>llia Siobhan Stagg</li>\n<li>Electre Amanda Woodbury</li>\n<li>Arbace L\u00e9o Vermot-Desroches</li>\n<li>The High Priest* Wook Kang</li>\n<li>The Voice of Neptune Louis Morvan</li>\n<li>Cretan women\u00ae Inna Jeskova and S\u00e9verine Maquaire</li>\n<li>Trojans<em> Yongwoo Jung and Jinhyuck Kim\nDistant chorus</em> Yongwoo Jung, Ill Ju Lee, Jinhyuck Kim and Christophe Sagnier</li>\n<li>Meda Rosabel Huguet</li>\n</ul>\n<p>*Opera Chorus soloists</p>\n<p>Muths have different versions. After World war II, Christa Wolf began to rewrite myths from\na perspective that questions the hegemony of the fathers. In 2023 the story of Idomeneo\nstill need to be questioned: men and women are in the hands of the gods, the choices of a\nking are blamed on a monster, human sacrifice is acceptable and love is told as a tool\ncapable to heal everything.</p>\n<p>We start from the conflict with which the opera ends: God apparently solves everything for\neveryone except for a single character. Electra cries out that joy and love have been stolen\nfrom her. What is the crime for which she pledges revenge? I believe there has to be\nsomething deeper than the love of Idamante. There is a hidden violence in this family. The\nsacrifice of the child is presented as an accident. Whereas this sacrifice, this violence are\nthe very foundations of the city.</p>\n<p>The opera is totally missing references to the Queen of Crete, wife of Idomeneo and\nmother of damante. It is even difficult to trace its presence in other literary sources. Her\nname was Meda and she was killed for treason. What was the betrayal that cost her a\ndamnatio memoriae? Meda was killed because she saw, because she knew on which\ncrime Crete lays: the perpetual abuse of the child by the Father. Around Idomeneo and his\nfamily there is a culture that accepts and celebrates the sacrifice. In our staging we are in\nthe 60's. The Great Priest and the sacrifice will be represented as parts of the Christian\nliturgy, the religion of the Father.</p>\n<p>The killing of the children has already taken place when Idomeneo abused of them.\nReligion hides the truth and keeps the horror away from men and women. The abuse is\npossible because there is a community who tolerates it. The chorus plays the families that\nlive nearby Idomeneo. They want a peaceful life, which is threatened by the pain of these\nchildren, and therefore they need a rite which heals and restore peace.\nElectra is the one who reopens the wound. She is a 30/35 years woman of the 80's who\nwill travel through memory to find responsibilities; she will see and show us again Queen\nMeda and therefore a possibility of a real new order based not on violence and sacrifice,\nbut on the protection of the weak.</p>\n<p>The set tell this trip into memory through the means of analogical photography. The work\non the memory becomes the work of developing a picture. The narrative passages will be\nmarked by the photographic process. We will start from a family album from which the\nbody of the mother is deleted and we will see the mother's face at the end of the opera.</p>\n<p>Christa Wolf wrote: \"Little by little, when you begin to know, you begin to remember too.\nKnowing and remembering are the same thing\". While the story of Varesco goes along, the\nstaging puts the words and the actions of the characters under a different light. This story\nis told from the perspective of a woman who is thought to be insane. This is a story about\nthe value of testimony, about memory and responsibility.</p>\n<p>September - October 2023</p>"
         }
     },
     "categories": [
-        "Prosa",
-        "MAGIAAA"
+        "Opera"
     ]
 }

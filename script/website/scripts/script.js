@@ -1,23 +1,4 @@
-// let elementsLeft = document.querySelectorAll(`.left .element`)
-// let elementsRight = document.querySelectorAll(`.right .element`)
 
-
-// function rd(min,max){
-//     return Math.random() * (max - min) + min;
-// }
-
-// elementsLeft.forEach(element => {
-//     element.style.width = rd(45,60)+'%';
-//     element.style.marginTop = rd(4,20)+"rem";
-//     element.style.left = rd(2,10)+"rem";
-// });
-
-
-// elementsRight.forEach(element => {
-//     element.style.width = rd(45,60)+'%';
-//     element.style.marginTop = rd(4,20)+"rem";
-//     element.style.left = rd(10,20)+"rem";
-// });
 
 
 
@@ -81,12 +62,12 @@ function bo(){
     });
     }
 
-    var x = window.matchMedia("(max-width: 900px)")
+    var x = window.matchMedia("(max-width: 1050px)")
 
-        if (!x.matches) { // If media query matches
-            bo()
+    if (!x.matches) { // If media query matches
+        bo()
 
-        } 
+    } 
 
   
 
@@ -179,10 +160,62 @@ var swiper = new Swiper(".swiper", {
 
 
 
-function openNews(){
-    document.querySelector("#bio").style.display = 'inline'
+function openFriends(){
+    document.querySelector("#friends").style.display = 'inline'
     // toggleMenu(false)
 }
-function closeNews(){
-    document.querySelector("#bio").style.display = 'none'
+function closeFriends(){
+    document.querySelector("#friends").style.display = 'none'
 }
+
+function lightingNews(){
+    document.querySelector('footer').classList += 'animated'
+
+    setTimeout(() => {
+        document.querySelector('footer').classList.remove("animated")
+    }, 1500);
+}
+
+
+// when window resize close the burger menu if it's opened
+window.onresize = function(event) {
+    if (document.querySelector(".burger").style.display = "flex"){
+        document.querySelector(".burger").style.display = "none"
+        document.querySelector("#fakeBackground").style.display = "none"
+        document.querySelector("#toggle").innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 50 50"><path d="M 0 9 L 0 11 L 50 11 L 50 9 Z M 0 24 L 0 26 L 50 26 L 50 24 Z M 0 39 L 0 41 L 50 41 L 50 39 Z"></path></svg>'
+    
+    }
+ 
+};
+
+
+
+// if (x.matches) { // If media query matches
+//     window.location.href = 'https://lorenzoponte.com'
+// } 
+
+
+// document.querySelectorAll('.marquee').forEach(marquee => {
+//     if (x.matches) { // If media query matches
+//     marquee.addEventListener('')
+// } 
+// });
+
+
+const listStyles = ['disc', 'circle', 'square', 'armenian', 'devanagari', 'disclosure-closed', 'disclosure-open','ethiopic-numeric', 'decimal',  'lower-roman', 'lower-alpha', 'upper-alpha', 'none'];
+
+// Function to get a random list style
+function getRandomListStyle() {
+    const randomIndex = Math.floor(Math.random() * listStyles.length);
+    return listStyles[randomIndex];
+}
+
+// Function to apply the random list style to the list
+function randomizeListStyle() {
+    const list = document.querySelector('ul');
+    const randomStyle = getRandomListStyle();
+    list.style.listStyleType = randomStyle;
+}
+
+// Optional: Automatically change the list style every few seconds
+setInterval(randomizeListStyle, 500);

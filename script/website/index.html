@@ -35,8 +35,7 @@
 
 <body>
 
-    <div id="friends">
-
+    <div id="bioN">
         <div id="egg" style="position: absolute;
             top: 2rem;
             right: 5rem;
@@ -48,24 +47,22 @@
             <img loading='lazy' style="width: 50%;" src="renzo.png" alt="">
         </div>
 
-        <div class="list-friends">
-            A list of my friends
-
-            <ul>
-                <ul>
-<li>un amico</li>
-<li>un'altra</li>
-</ul>
-
-            </ul>
+        <div>
+            <h1>:)</h1>
+            <p>Bentrovato!</p>
+<p>Sono nato a Roma, cresciuto tra Palermo e Milano. E chissà dove sono adesso che leggi.</p>
+<p>Mi sono laureato in <strong>Lettere Classiche</strong> all’Università Cattolica di Milano pensando che avrei fatto il professore di lettere. Poi ho iniziato a fare teatro e ho deciso di cercare un rapporto altro con la parola. Sono andato a studiare Regia teatrale alla <strong>Scuola Civica Paolo Grassi</strong> di Milano. Tra gli incontri più preziosi per la mia crescita artistica e professionale ricordo Mariano Furlani, Maurizio Schmidt, Carmelo Rifici, Marco Maccieri, Renata Molinari, Davide Carnevali, Giuliana Musso, e Claudio Autelli. Da ognuno di loro ho rubato e continuo a rubare. Dopo gli studi ho iniziato a lavorare come assistente alla regia presso il Teatro alla Scala di Milano e il Teatro Franco Parenti con Andrée Ruth Shammah. Sono stati gli anni della mia bottega, in cui ho iniziato a capire come è fatto un palcoscenico e chi sono i suoi abitanti.</p>
+<p>Dirigo spettacoli di teatro di prosa e di opera lirica. 
+A volte sento la necessità di scrivere io stesso le storie che racconto, più spesso amo raccogliere e restituire le parole di Altri.</p>
+<p>Nel 2018, insieme con Maddalena Massafra, Clio Sciro Saccà, Marco Sinopoli, vinciamo il concorso Macerata Opera Festival 4.0 per la scrittura e la composizione di un’opera contemporanea. Nel 2022, ho ricevuto il 3° premio dell’EOP – European opera prize for directors, insieme ad Alice Benazzi e Giulia Rossena. Nel 2023, abbiamo vinto la 13° edizione dell’<strong>EOP – European opera prize for directors</strong>.</p>
+<p><em>Da quella vergogna, dall'impotenza e dal dolore, nacque comunque qualcosa che credo fosse il desiderio di diventare poeta, cioè di poter esprimere cosa vuol dire provare rimpianto per qualcuno, essere stato amato, essere solo.</em>
+Stig Dagerman</p>
         </div>
 
         <!-- <div> -->
-        <svg class="spastico" onclick="document.getElementById('friends').style.display ='none'" viewBox="0 0 24 24"
-            fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd"
-                d="M5.29289 5.29289C5.68342 4.90237 6.31658 4.90237 6.70711 5.29289L12 10.5858L17.2929 5.29289C17.6834 4.90237 18.3166 4.90237 18.7071 5.29289C19.0976 5.68342 19.0976 6.31658 18.7071 6.70711L13.4142 12L18.7071 17.2929C19.0976 17.6834 19.0976 18.3166 18.7071 18.7071C18.3166 19.0976 17.6834 19.0976 17.2929 18.7071L12 13.4142L6.70711 18.7071C6.31658 19.0976 5.68342 19.0976 5.29289 18.7071C4.90237 18.3166 4.90237 17.6834 5.29289 17.2929L10.5858 12L5.29289 6.70711C4.90237 6.31658 4.90237 5.68342 5.29289 5.29289Z" />
-        </svg>
+            <svg class="spastico"  onclick="document.getElementById('bioN').style.display ='none'" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M5.29289 5.29289C5.68342 4.90237 6.31658 4.90237 6.70711 5.29289L12 10.5858L17.2929 5.29289C17.6834 4.90237 18.3166 4.90237 18.7071 5.29289C19.0976 5.68342 19.0976 6.31658 18.7071 6.70711L13.4142 12L18.7071 17.2929C19.0976 17.6834 19.0976 18.3166 18.7071 18.7071C18.3166 19.0976 17.6834 19.0976 17.2929 18.7071L12 13.4142L6.70711 18.7071C6.31658 19.0976 5.68342 19.0976 5.29289 18.7071C4.90237 18.3166 4.90237 17.6834 5.29289 17.2929L10.5858 12L5.29289 6.70711C4.90237 6.31658 4.90237 5.68342 5.29289 5.29289Z"/>
+            </svg>
         <!-- </div> -->
     </div>
 
@@ -84,17 +81,16 @@
 
             <div class="burger">
                 <a href="#work" onclick="toggleMenu(false)">Lavori</a>
-                <a href="#news" onclick="toggleMenu(false)">Bio</a>
-                <a onclick="openNews(),toggleMenu(false)">News</a>
-                <a onclick="document.getElementById('friends').style.display ='flex', toggleMenu(false)"
-                    href="#friends">Amici</a>
+                <a onclick="document.getElementById('bioN').style.display ='flex', toggleMenu(false)" href="#bioN">bio</a>
+                <!-- <a onclick="toggleMenu(false), lightingNews()">calendario</a> -->
+                <a onclick="openFriends(),toggleMenu(false)">amici</a>
                 <a id="lang" href="/en">ENG</a>
             </div>
             <div class="desktop">
                 <a href="#work">Lavori</a>
-                <a href="#news">Bio</a>
-                <a href="#bio" onclick="openNews()">News</a>
-                <a onclick="document.getElementById('friends').style.display ='flex'" href="#friends">Amici</a>
+                <a onclick="document.getElementById('bioN').style.display ='flex'" href="#bioN">bio</a>
+                <!-- <a onclick="lightingNews()">calendario</a> -->
+                <a href="#friends" onclick="openFriends()">amici</a>
                 <a id="lang" href="/en">ENG</a>
             </div>
 
@@ -108,15 +104,19 @@
 
                 
                 <div class="swiper-slide">
-                    <img src="galleria/Buoni_a_nulla.JPG" alt="">
+                    <img src="galleria/Idoménée, roi de Crête - 26-09-23 - Sim on Gosselin-141.jpg" alt="">
                 </div>
                 
                 <div class="swiper-slide">
-                    <img src="galleria/Ido.jpg" alt="">
+                    <img src="galleria/Idoménée, roi de Crête - 26-09-23 - Sim on Gosselin-93.jpg" alt="">
                 </div>
                 
                 <div class="swiper-slide">
-                    <img src="galleria/Sito.JPG" alt="">
+                    <img src="galleria/Sito 1 copia.JPG" alt="">
+                </div>
+                
+                <div class="swiper-slide">
+                    <img src="galleria/_DSC6686 copia.JPG" alt="">
                 </div>
                 
                 <div class="swiper-slide">
@@ -124,7 +124,11 @@
                 </div>
                 
                 <div class="swiper-slide">
-                    <img src="galleria/Ido2.jpg" alt="">
+                    <img src="galleria/Buoni a nulla.JPG" alt="">
+                </div>
+                
+                <div class="swiper-slide">
+                    <img src="galleria/Unknown.jpeg" alt="">
                 </div>
                 
 
@@ -144,9 +148,7 @@
         <div class="menu categories">
             <a onclick="selectCategory('all')" href="#work"><i>*</i></a>
             
-            <a href="#work" onclick="selectCategory('Prosa')">Prosa</a>
-            
-            <a href="#work" onclick="selectCategory('MAGIAAA')">MAGIAAA</a>
+            <a href="#work" onclick="selectCategory('Opera')">Opera</a>
             
         </div>
 
@@ -155,15 +157,37 @@
             <div class="left">
                 
                 
-                <div class="element Prosa" data-title="Tribe at work"
-                    data-slug="projects/tribe_at_work/">
-                    <a href="projects/tribe_at_work/"><img loading='lazy'
-                            src="projects/tribe_at_work/assets/compressed/Buoni_a_nulla.JPG"></a>
-                    <h1>Tribe at work</h1>
+                <div class="element Opera" data-title="Confabulazioni"
+                    data-slug="projects/confabulazioni/">
+                    <a href="projects/confabulazioni/"><img loading='lazy'
+                            src="projects/confabulazioni/assets/compressed/Locandina - opzione A.jpg"></a>
+                    <h1>Confabulazioni</h1>
                     <hr>
                 </div>
                 
                 
+                
+                
+                
+                <div class="element Opera" data-title="Buoni a Nulla"
+                    data-slug="projects/buoni_a_nulla/">
+                    <a href="projects/buoni_a_nulla/"><img loading='lazy'
+                            src="projects/buoni_a_nulla/assets/compressed/Locandina.JPG"></a>
+                    <h1>Buoni a Nulla</h1>
+                    <hr>
+                </div>
+                
+                
+                
+                
+                
+                <div class="element Opera" data-title="Idomeneo"
+                    data-slug="projects/idomeneo/">
+                    <a href="projects/idomeneo/"><img loading='lazy'
+                            src="projects/idomeneo/assets/compressed/Locandina.jpg"></a>
+                    <h1>Idomeneo</h1>
+                    <hr>
+                </div>
                 
                 
             </div>
@@ -173,13 +197,27 @@
                 
                 
                 
-                <div class="element Prosa" data-title="Reincantamentomentoreincanta eeeeeeeee"
-                    data-slug="projects/reincantamentomentoreincanta_eeeeeeeee/">
-                    <a href="projects/reincantamentomentoreincanta_eeeeeeeee/"><img loading='lazy'
-                            src="projects/reincantamentomentoreincanta_eeeeeeeee/assets/compressed/Buoni_a_nulla.JPG"></a>
-                    <h1>Reincantamentomentoreincanta eeeeeeeee</h1>
+                <div class="element Opera" data-title="Tu Sei Agatha"
+                    data-slug="projects/tu_sei_agatha/">
+                    <a href="projects/tu_sei_agatha/"><img loading='lazy'
+                            src="projects/tu_sei_agatha/assets/compressed/A - Locandina.png"></a>
+                    <h1>Tu Sei Agatha</h1>
                     <hr>
                 </div>
+                
+                
+                
+                
+                
+                <div class="element Opera" data-title="Quando non saremo grandi"
+                    data-slug="projects/quando_non_saremo_grandi/">
+                    <a href="projects/quando_non_saremo_grandi/"><img loading='lazy'
+                            src="projects/quando_non_saremo_grandi/assets/compressed/Immagine locandina copia.jpeg"></a>
+                    <h1>Quando non saremo grandi</h1>
+                    <hr>
+                </div>
+                
+                
                 
                 
             </div>
@@ -187,51 +225,49 @@
         </div>
     </div>
 
-    <div id="news">
-
-        <div class="biotext">
-            <h1>:)</h1>
-
-            <p>Lorenzo Ponte fa cose, vede gente ed e' nato sotto una verza.
-Inoltre ha l'accento toscano anche se è siciliano.
-Mi chiedo se mi potrà pagare il 20% in arancin con la schwa. e vegetariani. sdfghjuythgrfdsrth</p>
-        </div>
-        <div class="sticky"><a id="up" class="transition" href="#head"><span>↑</span></a></div>
-    </div>
-
-
-
-    <div id='bio'>
-        <a onclick="closeNews()" id="closeMenu"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M5.29289 5.29289C5.68342 4.90237 6.31658 4.90237 6.70711 5.29289L12 10.5858L17.2929 5.29289C17.6834 4.90237 18.3166 4.90237 18.7071 5.29289C19.0976 5.68342 19.0976 6.31658 18.7071 6.70711L13.4142 12L18.7071 17.2929C19.0976 17.6834 19.0976 18.3166 18.7071 18.7071C18.3166 19.0976 17.6834 19.0976 17.2929 18.7071L12 13.4142L6.70711 18.7071C6.31658 19.0976 5.68342 19.0976 5.29289 18.7071C4.90237 18.3166 4.90237 17.6834 5.29289 17.2929L10.5858 12L5.29289 6.70711C4.90237 6.31658 4.90237 5.68342 5.29289 5.29289Z" />
-            </svg>
+    <div id="friends">
+        <a onclick="closeFriends()" id="closeMenu"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.29289 5.29289C5.68342 4.90237 6.31658 4.90237 6.70711 5.29289L12 10.5858L17.2929 5.29289C17.6834 4.90237 18.3166 4.90237 18.7071 5.29289C19.0976 5.68342 19.0976 6.31658 18.7071 6.70711L13.4142 12L18.7071 17.2929C19.0976 17.6834 19.0976 18.3166 18.7071 18.7071C18.3166 19.0976 17.6834 19.0976 17.2929 18.7071L12 13.4142L6.70711 18.7071C6.31658 19.0976 5.68342 19.0976 5.29289 18.7071C4.90237 18.3166 4.90237 17.6834 5.29289 17.2929L10.5858 12L5.29289 6.70711C4.90237 6.31658 4.90237 5.68342 5.29289 5.29289Z"/></svg>
         </a>
-        <ul>
-            <p>12 01 2025
-SPETTACOLONE</p>
-<p>12 01 2025
-SPETTACOLONE</p>
-<p>12 01 2025
-SPETTACOLONE</p>
-<p>12 01 2025
-SPETTACOLONE</p>
-
-        </ul>
-
+     
+<p><a href="https://www.alicebenazzi.com">Alice Benazzi</a></p>
+<p><a href="https://www.instagram.com/giuliarossena/?hl=it">Giulia Rossena</a></p>
+<p><a href="https://www.k5600design.com">Emanuele Agliati</a></p>
+<p><a href="https://www.rosabelhuguet.com">Rosabel Huguet Dueñas</a></p>
+<p><a href="https://www.instagram.com/praxis.ass.cult/">Praxis</a></p>
+<p><a href="https://www.larailariabraconi.com">Lara Ilaria Braconi</a></p>
+<p><a href="https://arbaro.it">Arbaro</a></p>
+<p><a href="https://gliasinirivista.org">Gli Asini</a></p>
     </div>
 
 
 
-
-
-
-
+    <div class="prefooter">
+                
+        <marquee direction="left" behavior="scroll" class="marquee">
+            <span onmouseenter="this.stop();" onmouseleave="this.start();">Artigiano del Software: 
+                <a target="_blank" href="http://federicoponi.it">Federico Poni</a>
+            </span>
+            <span>Questo sito è stato costruito con <a href="">HTML</a>, <a href="">CSS</a> e <a href="http://vanilla-js.com/">plain JavaScript</a>, in più <a href="https://swiperjs.com/">Swiper.JS</a> è usato per gestire le gallerie</span>
+            <span>Uno script artigianale scritto in <a href="">Python</a> è usato come <a href="https://en.wikipedia.org/wiki/Static_site_generator">generatore statico del sito</a> per questioni ecologiche (no database!)</span>
+            <span>Font in uso: <a target="_blank" href="https://www.collletttivo.it/typefaces/ortica">Ortica</a> e <a target="_blank" href="https://velvetyne.fr/fonts/vg5000/">VG5000</a></span>
+        </marquee>
+    </div>
 
     <footer>
-        Web Artisan: Federico Poni;
+        <!-- <marquee direction="left" behavior="scroll" onmouseenter="this.stop();" onmouseleave="this.start();"ontouchstart="this.stop()" ontouchend="this.start()" class="marquee">
+  
+
+            <span>19 - 20 Giugno:  <a target="_blank" href="https://smetanovalitomysl.cz/en/udalosti/the-two-widows-a-new-view/">Two widows by Bedřich Smetana at Smetanova Litomyšl </a>                </span>
+           
+        </marquee> -->
 
     </footer>
+
+
+
+
+
+
 
 
     <script src="scripts/script.js"></script>

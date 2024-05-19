@@ -14,11 +14,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         
         <title>Lorenzo Ponte</title>
-        <meta name="description" content="{{project_data.description}}">
 
-        <meta property="og:title" content="{{project_data.name}}">
-        <meta property="og:description" content="{{project_data.description}}">
-        <meta property="og:image" content="http://lorenzoponte.com/projects/{{project_data}}/assets/{{project_data.main_picture}}">
         <meta property="og:url" content="http://lorenzoponte.com">
 
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -43,8 +39,7 @@
     </head>
     <body>
 
-        <div id="friends">
-            
+        <div id="bioN">            
             <div id="egg" style="position: absolute;
             top: 2rem;
             right: 5rem;
@@ -53,21 +48,19 @@
             display: flex; 
             align-items: center; 
             justify-content: center;">
-                <img loading='lazy' style="width: 50%;" src="renzo.png" alt="">
+                <img loading='lazy' style="width: 50%;" src="../renzo.png" alt="">
             </div>
 
-            <div class="list-friends">
-                A list of my friends
+            <div>
+                <h1>:)</h1>
+                {{misc_content.bio}}
 
-                <ul>
-                    {{misc_content.amici}}               
-
-                </ul>
+                     
             </div>
 
-                <svg class="spastico"  onclick="document.getElementById('friends').style.display ='none'" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M5.29289 5.29289C5.68342 4.90237 6.31658 4.90237 6.70711 5.29289L12 10.5858L17.2929 5.29289C17.6834 4.90237 18.3166 4.90237 18.7071 5.29289C19.0976 5.68342 19.0976 6.31658 18.7071 6.70711L13.4142 12L18.7071 17.2929C19.0976 17.6834 19.0976 18.3166 18.7071 18.7071C18.3166 19.0976 17.6834 19.0976 17.2929 18.7071L12 13.4142L6.70711 18.7071C6.31658 19.0976 5.68342 19.0976 5.29289 18.7071C4.90237 18.3166 4.90237 17.6834 5.29289 17.2929L10.5858 12L5.29289 6.70711C4.90237 6.31658 4.90237 5.68342 5.29289 5.29289Z"/>
-                </svg>
+            <svg class="spastico"  onclick="document.getElementById('bioN').style.display ='none'" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M5.29289 5.29289C5.68342 4.90237 6.31658 4.90237 6.70711 5.29289L12 10.5858L17.2929 5.29289C17.6834 4.90237 18.3166 4.90237 18.7071 5.29289C19.0976 5.68342 19.0976 6.31658 18.7071 6.70711L13.4142 12L18.7071 17.2929C19.0976 17.6834 19.0976 18.3166 18.7071 18.7071C18.3166 19.0976 17.6834 19.0976 17.2929 18.7071L12 13.4142L6.70711 18.7071C6.31658 19.0976 5.68342 19.0976 5.29289 18.7071C4.90237 18.3166 4.90237 17.6834 5.29289 17.2929L10.5858 12L5.29289 6.70711C4.90237 6.31658 4.90237 5.68342 5.29289 5.29289Z"/>
+            </svg>
         </div>
 
         <div class="head" id="head">
@@ -80,18 +73,18 @@
                 </div>
 
                 <div class="burger">
-                    <a href="#work" onclick="toggleMenu(false)">Projects</a>
-                    <a href="#news"  onclick="toggleMenu(false)">Bio</a>
-                    <a onclick="openNews(),toggleMenu(false)">News</a>
-                    <a onclick="document.getElementById('friends').style.display ='flex', toggleMenu(false)" href="#friends">Friends</a>
-                    <a id="lang" href="../">ITA</a>
+                    <a href="#work" onclick="toggleMenu(false)">Works</a>
+                    <a onclick="document.getElementById('bioN').style.display ='flex', toggleMenu(false)" href="#bioN">bio</a>
+                    <!-- <a onclick="toggleMenu(false), lightingNews()">calendario</a> -->
+                    <a onclick="openFriends(),toggleMenu(false)">friends</a>
+                    <a id="lang" href="../">Ita</a>
                 </div>
                 <div class="desktop">
-                    <a href="#work">Projects</a>
-                    <a href="#news" >Bio</a>
-                    <a href="#bio" onclick="openNews()">News</a>
-                    <a onclick="document.getElementById('friends').style.display ='flex'" href="#friends">Friends</a>
-                    <a id="lang" href="../">ITA</a>
+                    <a href="#work">works</a>
+                    <a onclick="document.getElementById('bioN').style.display ='flex'" href="#bioN">bio</a>
+                    <!-- <a onclick="lightingNews()">calendario</a> -->
+                    <a href="#friends" onclick="openFriends()">friends</a>
+                    <a id="lang" href="../">ita</a>
                 </div>
 
                 
@@ -104,7 +97,7 @@
 
                     {% for pic in gallery_pics %}
                     <div class="swiper-slide">
-                        <img src="galleria/{{pic}}" alt="">
+                        <img src="../galleria/{{pic}}" alt="">
                     </div>
                     {% endfor %}
 
@@ -157,37 +150,34 @@
             </div>
         </div>
 
-        <div id="news">
-           
-            <div class="biotext">
-                <h1>:)</h1>
-            
-                    {{misc_content.bio}}               
-                         </div>
-            <div class="sticky"><a id="up" class="transition" href="#head"><span>↑</span></a></div>
+        <div id="friends">
+            <a onclick="closeFriends()" id="closeMenu"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.29289 5.29289C5.68342 4.90237 6.31658 4.90237 6.70711 5.29289L12 10.5858L17.2929 5.29289C17.6834 4.90237 18.3166 4.90237 18.7071 5.29289C19.0976 5.68342 19.0976 6.31658 18.7071 6.70711L13.4142 12L18.7071 17.2929C19.0976 17.6834 19.0976 18.3166 18.7071 18.7071C18.3166 19.0976 17.6834 19.0976 17.2929 18.7071L12 13.4142L6.70711 18.7071C6.31658 19.0976 5.68342 19.0976 5.29289 18.7071C4.90237 18.3166 4.90237 17.6834 5.29289 17.2929L10.5858 12L5.29289 6.70711C4.90237 6.31658 4.90237 5.68342 5.29289 5.29289Z"/></svg>
+            </a>
+         
+    {{misc_content.amici}}
         </div>
 
         
 
-        <div id='bio' >
-                    <a onclick="closeNews()" id="closeMenu"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.29289 5.29289C5.68342 4.90237 6.31658 4.90237 6.70711 5.29289L12 10.5858L17.2929 5.29289C17.6834 4.90237 18.3166 4.90237 18.7071 5.29289C19.0976 5.68342 19.0976 6.31658 18.7071 6.70711L13.4142 12L18.7071 17.2929C19.0976 17.6834 19.0976 18.3166 18.7071 18.7071C18.3166 19.0976 17.6834 19.0976 17.2929 18.7071L12 13.4142L6.70711 18.7071C6.31658 19.0976 5.68342 19.0976 5.29289 18.7071C4.90237 18.3166 4.90237 17.6834 5.29289 17.2929L10.5858 12L5.29289 6.70711C4.90237 6.31658 4.90237 5.68342 5.29289 5.29289Z"/></svg>
-                    </a>
-            <ul>
-                {{misc_content.news}}               
-
-            </ul>   
-           
+        <div class="prefooter">
+                
+            <marquee direction="left" behavior="scroll" class="marquee">
+                <span onmouseenter="this.stop();" onmouseleave="this.start();">Software Artisan: 
+                    <a target="_blank" href="http://federicoponi.it">Federico Poni</a>
+                </span>
+                <span>This website is built with plain <a href="">HTML</a>, <a href="">CSS</a> and <a href="http://vanilla-js.com/">plain JavaScript</a>, but we use <a href="https://swiperjs.com/">Swiper.JS</a> library for the galleries</span>
+                <span>An artisanal <a href="">Python</a> script is used to <a href="https://en.wikipedia.org/wiki/Static_site_generator">statically generate this website</a> for ecological sake</span>
+                <span>Fonts in use: <a target="_blank" href="https://www.collletttivo.it/typefaces/ortica">Ortica</a> and <a target="_blank" href="https://velvetyne.fr/fonts/vg5000/">VG5000</a></span>
+            </marquee>
         </div>
 
-    
-
-
-
-
-
-
         <footer>
-            Web Artisan: Federico Poni;
+            <!-- <marquee direction="left" behavior="scroll" onmouseenter="this.stop();" onmouseleave="this.start();"ontouchstart="this.stop()" ontouchend="this.start()" class="marquee">
+      
+
+                <span>19 - 20 Giugno:  <a target="_blank" href="https://smetanovalitomysl.cz/en/udalosti/the-two-widows-a-new-view/">Two widows by Bedřich Smetana at Smetanova Litomyšl </a>                </span>
+               
+            </marquee> -->
 
         </footer>
 

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+
         <link
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
@@ -13,7 +14,9 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         
         <title>Lorenzo Ponte</title>
-        <meta name="description" content="">
+
+        <meta property="og:url" content="http://lorenzoponte.com">
+
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="../style.css">
 
@@ -36,8 +39,7 @@
     </head>
     <body>
 
-        <div id="friends">
-            
+        <div id="bioN">            
             <div id="egg" style="position: absolute;
             top: 2rem;
             right: 5rem;
@@ -46,24 +48,26 @@
             display: flex; 
             align-items: center; 
             justify-content: center;">
-                <img loading='lazy' style="width: 50%;" src="renzo.png" alt="">
+                <img loading='lazy' style="width: 50%;" src="../renzo.png" alt="">
             </div>
 
-            <div class="list-friends">
-                A list of my friends
+            <div>
+                <h1>:)</h1>
+                <p>Welcome!</p>
+<p>I was born in Rome, raised between Palermo and Milan. And who knows where I'm right now while you read this. </p>
+<p>I graduated in <strong>Classics literature</strong> at the Catholic University of Milan thinking that I would be a literature professor. Then I started a course of theater and I decided to look for a different relationship with words. Therefore I went to study Theater Direction at the <strong>Paolo Grassi Civic School</strong> in Milan. Among the most precious meetings for my artistic and professional growth I count Mariano Furlani, Maurizio Schmidt, Carmelo Rifici, Marco Maccieri, Renata Molinari, Davide Carnevali, Giuliana Musso, and Claudio Autelli. From each of them I have stolen and I continue to steal. After my studies I started working as an assistant director at the Teatro alla Scala in Milan and at the Teatro Franco Parenti with Andrée Ruth Shammah. These were the years of my apprenticeship, in which I began to understand how a theater stage is made and who its inhabitants are. </p>
+<p>I’ve directed prose theater and opera shows. 
+Sometimes I feel the need to write the stories I tell myself, sometimes I work with the words of Others.</p>
+<p>In 2018, together with Maddalena Massafra, Clio Sciro Saccà, Marco Sinopoli, we won the Macerata Opera Festival 4.0 competition for the writing and composition of a contemporary opera. In 2022, I received the 3rd prize of the EOP – European Opera Prize for Directors, together with Alice Benazzi and Giulia Rossena. In 2023, we won the 13th edition of the <strong>EOP – European Opera Award for Directors</strong>. </p>
+<p><em>From that shame, impotence and pain, something was born that I believe was the desire to become a poet, that is, to be able to express what it means to feel regret for someone, to have been loved, to be alone.</em>
+Stig Dagermann</p>
 
-                <ul>
-                    <ul>
-<li>friend</li>
-<li>other friend</li>
-</ul>               
-
-                </ul>
+                     
             </div>
 
-                <svg class="spastico"  onclick="document.getElementById('friends').style.display ='none'" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M5.29289 5.29289C5.68342 4.90237 6.31658 4.90237 6.70711 5.29289L12 10.5858L17.2929 5.29289C17.6834 4.90237 18.3166 4.90237 18.7071 5.29289C19.0976 5.68342 19.0976 6.31658 18.7071 6.70711L13.4142 12L18.7071 17.2929C19.0976 17.6834 19.0976 18.3166 18.7071 18.7071C18.3166 19.0976 17.6834 19.0976 17.2929 18.7071L12 13.4142L6.70711 18.7071C6.31658 19.0976 5.68342 19.0976 5.29289 18.7071C4.90237 18.3166 4.90237 17.6834 5.29289 17.2929L10.5858 12L5.29289 6.70711C4.90237 6.31658 4.90237 5.68342 5.29289 5.29289Z"/>
-                </svg>
+            <svg class="spastico"  onclick="document.getElementById('bioN').style.display ='none'" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M5.29289 5.29289C5.68342 4.90237 6.31658 4.90237 6.70711 5.29289L12 10.5858L17.2929 5.29289C17.6834 4.90237 18.3166 4.90237 18.7071 5.29289C19.0976 5.68342 19.0976 6.31658 18.7071 6.70711L13.4142 12L18.7071 17.2929C19.0976 17.6834 19.0976 18.3166 18.7071 18.7071C18.3166 19.0976 17.6834 19.0976 17.2929 18.7071L12 13.4142L6.70711 18.7071C6.31658 19.0976 5.68342 19.0976 5.29289 18.7071C4.90237 18.3166 4.90237 17.6834 5.29289 17.2929L10.5858 12L5.29289 6.70711C4.90237 6.31658 4.90237 5.68342 5.29289 5.29289Z"/>
+            </svg>
         </div>
 
         <div class="head" id="head">
@@ -76,18 +80,18 @@
                 </div>
 
                 <div class="burger">
-                    <a href="#work" onclick="toggleMenu(false)">Projects</a>
-                    <a href="#news"  onclick="toggleMenu(false)">Bio</a>
-                    <a onclick="openNews(),toggleMenu(false)">News</a>
-                    <a onclick="document.getElementById('friends').style.display ='flex', toggleMenu(false)" href="#friends">Friends</a>
-                    <a id="lang" href="../">ITA</a>
+                    <a href="#work" onclick="toggleMenu(false)">Works</a>
+                    <a onclick="document.getElementById('bioN').style.display ='flex', toggleMenu(false)" href="#bioN">bio</a>
+                    <!-- <a onclick="toggleMenu(false), lightingNews()">calendario</a> -->
+                    <a onclick="openFriends(),toggleMenu(false)">friends</a>
+                    <a id="lang" href="../">Ita</a>
                 </div>
                 <div class="desktop">
-                    <a href="#work">Projects</a>
-                    <a href="#news" >Bio</a>
-                    <a href="#bio" onclick="openNews()">News</a>
-                    <a onclick="document.getElementById('friends').style.display ='flex'" href="#friends">Friends</a>
-                    <a id="lang" href="../">ITA</a>
+                    <a href="#work">works</a>
+                    <a onclick="document.getElementById('bioN').style.display ='flex'" href="#bioN">bio</a>
+                    <!-- <a onclick="lightingNews()">calendario</a> -->
+                    <a href="#friends" onclick="openFriends()">friends</a>
+                    <a id="lang" href="../">ita</a>
                 </div>
 
                 
@@ -100,23 +104,31 @@
 
                     
                     <div class="swiper-slide">
-                        <img src="galleria/Buoni_a_nulla.JPG" alt="">
+                        <img src="../galleria/Idoménée, roi de Crête - 26-09-23 - Sim on Gosselin-141.jpg" alt="">
                     </div>
                     
                     <div class="swiper-slide">
-                        <img src="galleria/Ido.jpg" alt="">
+                        <img src="../galleria/Idoménée, roi de Crête - 26-09-23 - Sim on Gosselin-93.jpg" alt="">
                     </div>
                     
                     <div class="swiper-slide">
-                        <img src="galleria/Sito.JPG" alt="">
+                        <img src="../galleria/Sito 1 copia.JPG" alt="">
                     </div>
                     
                     <div class="swiper-slide">
-                        <img src="galleria/_DSC7702.JPG" alt="">
+                        <img src="../galleria/_DSC6686 copia.JPG" alt="">
                     </div>
                     
                     <div class="swiper-slide">
-                        <img src="galleria/Ido2.jpg" alt="">
+                        <img src="../galleria/_DSC7702.JPG" alt="">
+                    </div>
+                    
+                    <div class="swiper-slide">
+                        <img src="../galleria/Buoni a nulla.JPG" alt="">
+                    </div>
+                    
+                    <div class="swiper-slide">
+                        <img src="../galleria/Unknown.jpeg" alt="">
                     </div>
                     
 
@@ -136,9 +148,7 @@
             <div class="menu categories">
                 <a onclick="selectCategory('all')" href="#work"><i>*</i></a>
                 
-                    <a href="#work" onclick="selectCategory('Prosa')">Prosa</a>
-                
-                    <a href="#work" onclick="selectCategory('MAGIAAA')">MAGIAAA</a>
+                    <a href="#work" onclick="selectCategory('Opera')">Opera</a>
                 
             </div>
 
@@ -147,13 +157,31 @@
                 <div class="left">
                     
                         
-                        <div class="element Prosa" data-title="Tribe at work" data-slug="projects/tribe_at_work/">
-                            <a href="../projects/tribe_at_work/en"><img loading='lazy' src="/projects/tribe_at_work/assets/compressed/Buoni_a_nulla.JPG"></a>
-                            <h1>Tribe at work</h1>
+                        <div class="element Opera" data-title="Confabulazioni" data-slug="projects/confabulazioni/">
+                            <a href="../projects/confabulazioni/en"><img loading='lazy' src="/projects/confabulazioni/assets/compressed/Locandina - opzione A.jpg"></a>
+                            <h1>Confabulazioni</h1>
                         <hr>
                         </div>
                         
                     
+                        
+                    
+                        
+                        <div class="element Opera" data-title="Buoni a Nulla" data-slug="projects/buoni_a_nulla/">
+                            <a href="../projects/buoni_a_nulla/en"><img loading='lazy' src="/projects/buoni_a_nulla/assets/compressed/Locandina.JPG"></a>
+                            <h1>Buoni a Nulla</h1>
+                        <hr>
+                        </div>
+                        
+                    
+                        
+                    
+                        
+                        <div class="element Opera" data-title="Idomeneo" data-slug="projects/idomeneo/">
+                            <a href="../projects/idomeneo/en"><img loading='lazy' src="/projects/idomeneo/assets/compressed/Locandina.jpg"></a>
+                            <h1>Idomeneo</h1>
+                        <hr>
+                        </div>
                         
                     
                 </div>
@@ -163,11 +191,23 @@
                         
                     
                         
-                        <div class="element Prosa" data-title="Reincantamentomentoreincanta eeeeeeeee" data-slug="projects/reincantamentomentoreincanta_eeeeeeeee/">
-                            <a href="../projects/reincantamentomentoreincanta_eeeeeeeee/en"><img loading='lazy' src="/projects/reincantamentomentoreincanta_eeeeeeeee/assets/compressed/Buoni_a_nulla.JPG"></a>
-                            <h1>Reincantamentomentoreincanta eeeeeeeee</h1>
+                        <div class="element Opera" data-title="Tu Sei Agatha" data-slug="projects/tu_sei_agatha/">
+                            <a href="../projects/tu_sei_agatha/en"><img loading='lazy' src="/projects/tu_sei_agatha/assets/compressed/A - Locandina.png"></a>
+                            <h1>Tu Sei Agatha</h1>
                         <hr>
                         </div>
+                        
+                    
+                        
+                    
+                        
+                        <div class="element Opera" data-title="Quando non saremo grandi" data-slug="projects/quando_non_saremo_grandi/">
+                            <a href="../projects/quando_non_saremo_grandi/en"><img loading='lazy' src="/projects/quando_non_saremo_grandi/assets/compressed/Immagine locandina copia.jpeg"></a>
+                            <h1>Quando non saremo grandi</h1>
+                        <hr>
+                        </div>
+                        
+                    
                         
                     
                 </div>
@@ -175,38 +215,41 @@
             </div>
         </div>
 
-        <div id="news">
-           
-            <div class="biotext">
-                <h1>:)</h1>
-            
-                    <p>blabbl english loirenzo</p>               
-                         </div>
-            <div class="sticky"><a id="up" class="transition" href="#head"><span>↑</span></a></div>
+        <div id="friends">
+            <a onclick="closeFriends()" id="closeMenu"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.29289 5.29289C5.68342 4.90237 6.31658 4.90237 6.70711 5.29289L12 10.5858L17.2929 5.29289C17.6834 4.90237 18.3166 4.90237 18.7071 5.29289C19.0976 5.68342 19.0976 6.31658 18.7071 6.70711L13.4142 12L18.7071 17.2929C19.0976 17.6834 19.0976 18.3166 18.7071 18.7071C18.3166 19.0976 17.6834 19.0976 17.2929 18.7071L12 13.4142L6.70711 18.7071C6.31658 19.0976 5.68342 19.0976 5.29289 18.7071C4.90237 18.3166 4.90237 17.6834 5.29289 17.2929L10.5858 12L5.29289 6.70711C4.90237 6.31658 4.90237 5.68342 5.29289 5.29289Z"/></svg>
+            </a>
+         
+    <p><a href="https://www.alicebenazzi.com">Alice Benazzi</a></p>
+<p><a href="https://www.instagram.com/giuliarossena/?hl=it">Giulia Rossena</a></p>
+<p><a href="https://www.k5600design.com">Emanuele Agliati</a></p>
+<p><a href="https://www.rosabelhuguet.com">Rosabel Huguet Dueñas</a></p>
+<p><a href="https://www.instagram.com/praxis.ass.cult/">Praxis</a></p>
+<p><a href="https://www.larailariabraconi.com">Lara Ilaria Braconi</a></p>
+<p><a href="https://arbaro.it">Arbaro</a></p>
+<p><a href="https://gliasinirivista.org">Gli Asini</a></p>
         </div>
 
         
 
-        <div id='bio' >
-                    <a onclick="closeNews()" id="closeMenu"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.29289 5.29289C5.68342 4.90237 6.31658 4.90237 6.70711 5.29289L12 10.5858L17.2929 5.29289C17.6834 4.90237 18.3166 4.90237 18.7071 5.29289C19.0976 5.68342 19.0976 6.31658 18.7071 6.70711L13.4142 12L18.7071 17.2929C19.0976 17.6834 19.0976 18.3166 18.7071 18.7071C18.3166 19.0976 17.6834 19.0976 17.2929 18.7071L12 13.4142L6.70711 18.7071C6.31658 19.0976 5.68342 19.0976 5.29289 18.7071C4.90237 18.3166 4.90237 17.6834 5.29289 17.2929L10.5858 12L5.29289 6.70711C4.90237 6.31658 4.90237 5.68342 5.29289 5.29289Z"/></svg>
-                    </a>
-            <ul>
-                <p>12 01 2025
-fogjwougbwbu</p>               
-
-            </ul>   
-           
+        <div class="prefooter">
+                
+            <marquee direction="left" behavior="scroll" class="marquee">
+                <span onmouseenter="this.stop();" onmouseleave="this.start();">Software Artisan: 
+                    <a target="_blank" href="http://federicoponi.it">Federico Poni</a>
+                </span>
+                <span>This website is built with plain <a href="">HTML</a>, <a href="">CSS</a> and <a href="http://vanilla-js.com/">plain JavaScript</a>, but we use <a href="https://swiperjs.com/">Swiper.JS</a> library for the galleries</span>
+                <span>An artisanal <a href="">Python</a> script is used to <a href="https://en.wikipedia.org/wiki/Static_site_generator">statically generate this website</a> for ecological sake</span>
+                <span>Fonts in use: <a target="_blank" href="https://www.collletttivo.it/typefaces/ortica">Ortica</a> and <a target="_blank" href="https://velvetyne.fr/fonts/vg5000/">VG5000</a></span>
+            </marquee>
         </div>
 
-    
-
-
-
-
-
-
         <footer>
-            Web Artisan: Federico Poni;
+            <!-- <marquee direction="left" behavior="scroll" onmouseenter="this.stop();" onmouseleave="this.start();"ontouchstart="this.stop()" ontouchend="this.start()" class="marquee">
+      
+
+                <span>19 - 20 Giugno:  <a target="_blank" href="https://smetanovalitomysl.cz/en/udalosti/the-two-widows-a-new-view/">Two widows by Bedřich Smetana at Smetanova Litomyšl </a>                </span>
+               
+            </marquee> -->
 
         </footer>
 
