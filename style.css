@@ -1058,11 +1058,11 @@ marquee span , marquee a{
 
 @media only screen and (max-width: 600px) {
   .presentazione {
-    height: 300px;
-    max-height: 300px;
+    height: unset;      
+    max-height: unset ;
     /* top: 15%; */
-    width: 300px;
-    border-radius: 100%;
+    width: unset;
+    /* border-radius: 100%; */
   }
 
   .content::-webkit-scrollbar-track {
@@ -1140,8 +1140,8 @@ marquee span , marquee a{
 @media only screen and (max-height: 800px) {
 
   .swiper-slide img{
-    width: 400px;
-    height: 400px;
+    width: 300px;
+    height: 300px;
   }
 
 }
