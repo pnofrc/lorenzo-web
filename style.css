@@ -1110,7 +1110,6 @@ marquee span , marquee a{
 
   .video_content{
       width: 100%;
-      min-height: 8%;
   }
 
   .burger div:nth-child(2) {
@@ -1132,9 +1131,9 @@ marquee span , marquee a{
    height: auto
   }
 
-  marquee span{
+  /* marquee span{
    font-size: .7rem;
-  }
+  } */
 }
 
 
