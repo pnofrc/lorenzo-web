@@ -214,3 +214,10 @@ window.onresize = function(event) {
 // if (x.matches) { // If media query matches
 //     window.location.href = 'https://lorenzoponte.com'
 // } 
+
+
+// document.querySelectorAll('.marquee').forEach(marquee => {
+//     if (x.matches) { // If media query matches
+//     marquee.addEventListener('')
+// } 
+// });
