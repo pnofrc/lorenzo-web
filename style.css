@@ -937,7 +937,7 @@ marquee span , marquee a{
   .content {
     border: none;
     width: 100%;
-    height: unset;
+    /* height: unset; */
   }
 
   .video_content {
