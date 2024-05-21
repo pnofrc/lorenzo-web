@@ -142,10 +142,10 @@ var swiper = new Swiper(".swiper", {
     loop: true,
     // autoplay: true,
     clickable: true,
-    autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
-      },
+    // autoplay: {
+    //     delay: 2500,
+    //     disableOnInteraction: false,
+    //   },
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
@@ -166,6 +166,7 @@ function openFriends(){
 }
 function closeFriends(){
     document.querySelector("#friends").style.display = 'none'
+    // window.href = ''
 }
 
 function lightingNews(){
@@ -195,27 +196,34 @@ window.onresize = function(event) {
 // } 
 
 
-// document.querySelectorAll('.marquee').forEach(marquee => {
-//     if (x.matches) { // If media query matches
-//     marquee.addEventListener('')
+// document.querySelectorAll('marquee').forEach(marquee => {
+//     if (!x.matches) { // If media query matches
+//     marquee.addEventListener('mouseover', () => {
+//         this.stop()
+//     })
+//     marquee.addEventListener('mouse', () => {
+//         this.start()
+//     })
 // } 
 // });
 
 
-const listStyles = ['disc', 'circle', 'square', 'armenian', 'devanagari', 'disclosure-closed', 'disclosure-open','ethiopic-numeric', 'decimal',  'lower-roman', 'lower-alpha', 'upper-alpha', 'none'];
+// const listStyles = ['disc', 'circle', 'square', 'armenian', 'disclosure-closed', 'disclosure-open','ethiopic-numeric', 'decimal',  'lower-roman', 'lower-alpha', 'upper-alpha', 'none'];
 
-// Function to get a random list style
-function getRandomListStyle() {
-    const randomIndex = Math.floor(Math.random() * listStyles.length);
-    return listStyles[randomIndex];
-}
+// // Function to get a random list style
+// function getRandomListStyle() {
+//     const randomIndex = Math.floor(Math.random() * listStyles.length);
+//     return listStyles[randomIndex];
+// }
 
-// Function to apply the random list style to the list
-function randomizeListStyle() {
-    const list = document.querySelector('ul');
-    const randomStyle = getRandomListStyle();
-    list.style.listStyleType = randomStyle;
-}
+// // Function to apply the random list style to the list
+// function randomizeListStyle() {
+//     const lists = document.querySelectorAll('ul');
+//     const randomStyle = getRandomListStyle();
+//     lists.forEach(list => {
+//         list.style.listStyleType = randomStyle;
+//     });
+// }
 
-// Optional: Automatically change the list style every few seconds
-setInterval(randomizeListStyle, 500);
+// // Optional: Automatically change the list style every few seconds
+// setInterval(randomizeListStyle, 500);

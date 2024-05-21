@@ -64,11 +64,16 @@ h1 {
   font-family: "vg";
 }
 
+img{
+  user-select: none; 
+}
+
 
 .start {
   width: 100%;
   z-index: 100;
   top: 5rem;
+
 }
 
 .start a {
@@ -202,6 +207,7 @@ a:hover {
 }
 
 .overed {
+  text-align: center;
   overflow-wrap: break-word;
   position: absolute;
   font-size: 3rem !important;
@@ -218,6 +224,13 @@ a:hover {
 .element img {
   width: 100%;
   display: block;
+  object-fit: cover;
+  height: 48vh;
+}
+
+.element a{
+  width: -moz-available;
+  width: -webkit-fill-available;
 }
 
 .head {
@@ -244,9 +257,10 @@ header {
 
 #friends {
   position: absolute;
-  display: inline;
+
+  display: none;
   top: 0;
-  right: -44%;
+  right: 0;
   width: 40%;
   height: 100%;
   background-color: black;
@@ -271,6 +285,11 @@ header {
 
 #closeMenu:hover {
   animation: spastico 0.1s ease infinite;
+}
+
+ul{
+  list-style: none !important;
+  padding-left: 1rem;
 }
 
 #bio ul {
@@ -371,18 +390,21 @@ h1 {
 
 #bioN div {
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   justify-content: start;
   padding: 2rem;
   width: 65%;
   top: 10%;
-  height: 80%;
+  height: 70%;
   background-color: var(--main);
   color: var(--second);
   border: solid;
   font-family: "murmure";
   flex-direction: column;
+  overflow-y: scroll;
 }
+
+
 
 #egg {
   border: solid var(--second) 1px;
@@ -530,8 +552,15 @@ svg {
 }
 
 .text_content p {
-  font-size: 1.2rem;
+  font-size: 1rem;
   padding: 0.5rem 3rem;
+}
+.text_content ul p{
+  padding: unset;
+}
+
+p{
+  font-family: 'ortica';
 }
 
 
@@ -573,6 +602,8 @@ footer,
 #modal {
   display: none;
   position: fixed;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: 100%;
   z-index: 99999;
@@ -580,15 +611,10 @@ footer,
   top: 0;
 }
 
-#modal .swiper-slide img {
-  border-radius: unset !important;
-  width: 100% !important;
-  height: unset !important;
-}
 
 #modal .swiper {
-  width: 75%;
-  height: 100%;
+  /* width: 75%; */
+  height: auto;
   margin-top: 5%;
 }
 
@@ -614,6 +640,7 @@ footer,
   background-color: var(--main);
   fill: var(--second);
   width: 5%;
+  z-index: 9999999999999;
 }
 
 #closemodal:hover {
@@ -624,12 +651,12 @@ footer,
 .spastico {
   width: 4% !important;
   display: block;
-  height: 85%;
+  height: 60%;
   background-color: var(--second);
   color: var(--main) !important;
   border: solid;
   position: absolute;
-  top: 4rem;
+  top: 15%;
   left: 5rem;
   font-size: 4rem;
   cursor: pointer;
@@ -695,6 +722,20 @@ svg.spastico:hover {
   object-fit: cover;
 }
 
+#modal .swiper-wrapper{
+  display: flex;
+  align-items: center;
+}
+
+
+#modal .swiper-slide img{
+  width: 90% !important;
+  max-height: 100% !important;
+  object-fit: contain !important;
+  height: 800px !important;
+  border-radius: unset !important;
+  object-fit: contain;
+}
 /* .swiper-slide {
     text-align: center;
     font-size: 18px;
@@ -723,6 +764,9 @@ svg.spastico:hover {
   opacity: 0;
 }
 
+.text_content ul {
+  padding: 3rem;
+}
 
 marquee span {
   margin-right: 2rem;
@@ -767,11 +811,32 @@ marquee a {
   margin-bottom: 5%;
 }
 
+.mobile{
+  display: none;
+}
+
 @media only screen and (max-width: 1050px) {
+
+  /* .mobile{
+    margin-bottom: 5rem;
+  } */
 
   body,
   html {
     overflow-x: hidden !important;
+  }
+
+  #modal{
+    align-items: center
+     /* unset !important; */
+  }
+
+  .element img{
+    height: unset
+  }
+
+  .overed{
+    display: none !important;
   }
 
   #work {
@@ -895,6 +960,14 @@ marquee a {
     z-index: 0;
   }
 
+  .mobile{
+    display: block;
+  }
+
+  .left,.right{
+    display: none;
+  }
+
   .sticky {
     /* top: 40%; */
     position: unset;
@@ -980,13 +1053,15 @@ marquee a {
   .text_content p {
     padding: 1rem;
   }
-
+  .text_content ul {
+    padding: 1rem;
+  }
   .grid {
     gap: 0.2rem;
   }
 
   .left .element,
-  .right .element {
+  .right .element, .mobile .element {
     margin: 1rem 1rem;
   }
 
@@ -1038,7 +1113,6 @@ marquee a {
   #modal .swiper {
     width: 80%;
     height: unset;
-    top: 35%;
   }
 
 
@@ -1050,6 +1124,7 @@ marquee a {
   }
 
   .spastico {
+    top: 8%;
     width: 40% !important;
     height: 5%;
   }
@@ -1065,6 +1140,9 @@ marquee a {
     margin-left: 0.5rem;
   }
 
+  #egg{
+    top: 12% !important;
+  }
   #egg img {
     width: 100%;
   }
@@ -1089,7 +1167,56 @@ marquee a {
     width: 500px;
     border-radius: 100%;
   }
+
+  #modal .swiper-slide img{
+    width: 90% !important;
+  }
+
 }
+
+
+
+
+@media only screen and (max-height: 700px) {
+
+  #modal .swiper-slide img{
+    width: 70% !important;
+  }
+
+  .burger div:nth-child(2) {
+    height: 10rem;
+  }
+
+  .swiper-slide img {
+    width: 400px;
+    height: 400px;
+  }
+
+  .contact{
+    float: unset;
+  }
+
+
+}
+
+@media only screen and (max-height: 600px) {
+
+  .swiper-slide img {
+    width: 300px;
+    height: 300px;
+  }
+
+}
+
+@media only screen and (max-height: 800px) {
+
+  .swiper-slide img {
+    width: 500px;
+    height: 500px;
+  }
+
+}
+
 
 @media only screen and (max-width: 600px) {
   .presentazione {
@@ -1174,33 +1301,7 @@ marquee a {
 }
 
 
-@media only screen and (max-height: 800px) {
 
-  .swiper-slide img {
-    width: 300px;
-    height: 300px;
-  }
-
-}
-
-
-@media only screen and (max-height: 700px) {
-
-  .burger div:nth-child(2) {
-    height: 10rem;
-  }
-
-}
-
-
-@media only screen and (max-height: 600px) {
-
-  .swiper-slide img {
-    width: 300px;
-    height: 300px;
-  }
-
-}
 
 footer {
   background-color: var(--main);
@@ -1215,6 +1316,10 @@ footer {
   z-index: 20000;
 }
 
+footer p{
+  display: flex;
+}
+
 footer:hover {
   /* background-color: pink; */
   animation: spastico 0.1s ease infinite;
@@ -1222,7 +1327,7 @@ footer:hover {
 }
 
 .swiper-wrapper {
-  height: unset !important;
+  /* height: unset !important; */
 }
 
 
@@ -1240,4 +1345,38 @@ footer:hover {
 
 .content::-webkit-scrollbar-thumb {
   background-color: var(--main);
+}
+
+.contact{
+  float: right;
+}
+
+
+@media only screen and (orientation: landscape) and (max-width: 1000px) and (max-height: 400px) {
+
+  .swiper-slide img {
+    width: 250px;
+    height: 250px;
+  }
+
+  
+  .head .menu {
+    height: 15%;
+  }
+
+  iframe{
+    width: 100%;
+    min-height: 70%;
+  }
+
+  .prefooter{
+    margin-bottom: 2%;
+  }
+
+}
+
+
+iframe{
+  width: 80%;
+  min-height: 50%;
 }

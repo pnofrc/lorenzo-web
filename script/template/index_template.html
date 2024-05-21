@@ -11,7 +11,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <title>Lorenzo Ponte</title>
-    <meta name="description" content="">
+    <meta property="description"
+    content="Dirigo spettacoli di teatro di prosa e di opera lirica. 
+    A volte sento la necessità di scrivere io stesso le storie che racconto, più spesso amo raccogliere e restituire le parole di Altri."/>
+    <meta property="og:image" content="http://lorenzoponte.com/renzo.png"/>
+    <meta property="og:url" content="http://lorenzoponte.com">
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
 
@@ -44,11 +49,14 @@
             display: flex; 
             align-items: center; 
             justify-content: center;">
-            <img loading='lazy' style="width: 50%;" src="renzo.png" alt="">
+            <img  style="width: 50%;" src="renzo.png" alt="">
+            <i style="position: absolute;
+            bottom: 1rem;
+            right: 1rem;">Giulia Rossena</i>
         </div>
 
         <div>
-            <h1>:)</h1>
+            
             {{misc_content.bio}}
         </div>
 
@@ -74,16 +82,16 @@
 
             <div class="burger">
                 <a href="#work" onclick="toggleMenu(false)">Lavori</a>
-                <a onclick="document.getElementById('bioN').style.display ='flex', toggleMenu(false)" href="#bioN">bio</a>
+                <a onclick="document.getElementById('bioN').style.display ='flex', toggleMenu(false)" >bio</a>
                 <!-- <a onclick="toggleMenu(false), lightingNews()">calendario</a> -->
                 <a onclick="openFriends(),toggleMenu(false)">amici</a>
                 <a id="lang" href="/en">ENG</a>
             </div>
             <div class="desktop">
                 <a href="#work">Lavori</a>
-                <a onclick="document.getElementById('bioN').style.display ='flex'" href="#bioN">bio</a>
+                <a onclick="document.getElementById('bioN').style.display ='flex'" >bio</a>
                 <!-- <a onclick="lightingNews()">calendario</a> -->
-                <a href="#friends" onclick="openFriends()">amici</a>
+                <a  onclick="openFriends()">amici</a>
                 <a id="lang" href="/en">ENG</a>
             </div>
 
@@ -97,7 +105,7 @@
 
                 {% for pic in gallery_pics %}
                 <div class="swiper-slide">
-                    <img src="galleria/{{pic}}" alt="">
+                    <img src="galleria/compressed/{{pic}}" alt="">
                 </div>
                 {% endfor %}
 
@@ -117,38 +125,46 @@
         <div class="menu categories">
             <a onclick="selectCategory('all')" href="#work"><i>*</i></a>
             {% for category in cms_data.categories %}
-            <a href="#work" onclick="selectCategory('{{ category }}')">{{ category }}</a>
+            <a href="#work" onclick="selectCategory('{{ category[0] }}')">{{ category[0] }}</a>
             {% endfor %}
         </div>
 
 
         <div class="start">
             <div class="left">
-                {% for project_slug, project_data in cms_data.projects.items() %}
+                {% for project_slug, project_data in cms_data.projects.items()  | reverse %}
                 {% if loop.index is odd %}
-                <div class="element {{project_data.category}}" data-title="{{project_data.name}}"
+                <div class="element {{project_data.category[0]}}" data-title="{{project_data.name[0]}}"
                     data-slug="projects/{{project_slug}}/">
-                    <a href="projects/{{project_slug}}/"><img loading='lazy'
+                    <a href="projects/{{project_slug}}/"><img 
                             src="projects/{{project_slug}}/assets/compressed/{{project_data.main_picture}}"></a>
-                    <h1>{{project_data.name}}</h1>
-                    <hr>
                 </div>
                 {% endif %}
                 {% endfor %}
             </div>
 
             <div class="right">
-                {% for project_slug, project_data in cms_data.projects.items() %}
+                {% for project_slug, project_data in cms_data.projects.items() | reverse %}
                 {% if loop.index is even %}
-                <div class="element {{project_data.category}}" data-title="{{project_data.name}}"
+                <div class="element {{project_data.category[0]}}" data-title="{{project_data.name[0]}}"
                     data-slug="projects/{{project_slug}}/">
-                    <a href="projects/{{project_slug}}/"><img loading='lazy'
+                    <a href="projects/{{project_slug}}/"><img 
                             src="projects/{{project_slug}}/assets/compressed/{{project_data.main_picture}}"></a>
-                    <h1>{{project_data.name}}</h1>
-                    <hr>
                 </div>
                 {% endif %}
                 {% endfor %}
+            </div>
+
+            <div class="mobile">
+                {% for project_slug, project_data in cms_data.projects.items() | reverse %}
+                <div class="element {{project_data.category[0]}}" data-title="{{project_data.name[0]}}" data-slug="projects/{{project_slug}}/">
+                    <a href="projects/{{project_slug}}"><img  src="/projects/{{project_slug}}/assets/compressed/{{project_data.main_picture}}"></a>
+                    <h1>{{project_data.name[0]}}</h1>
+                    {% if not loop.last %}
+                    <hr>
+                    {% endif %}
+                </div>
+            {% endfor %}
             </div>
 
         </div>
@@ -166,22 +182,25 @@
     <div class="prefooter">
                 
         <marquee direction="left" behavior="scroll" class="marquee">
-            <span onmouseenter="this.stop();" onmouseleave="this.start();">Artigiano del Software: 
+            <span>Artigiano del Software: 
                 <a target="_blank" href="http://federicoponi.it">Federico Poni</a>
             </span>
-            <span>Questo sito è stato costruito con <a href="">HTML</a>, <a href="">CSS</a> e <a href="http://vanilla-js.com/">plain JavaScript</a>, in più <a href="https://swiperjs.com/">Swiper.JS</a> è usato per gestire le gallerie</span>
-            <span>Uno script artigianale scritto in <a href="">Python</a> è usato come <a href="https://en.wikipedia.org/wiki/Static_site_generator">generatore statico del sito</a> per questioni ecologiche (no database!)</span>
+            <span>Questo sito è stato costruito con <a target="_blank" href="https://it.wikipedia.org/wiki/HTML">HTML</a>, <a  target="_blank" href="https://it.wikipedia.org/wiki/CSS">CSS</a> e <a  target="_blank" href="https://it.wikipedia.org/wiki/JavaScript">puro JavaScript</a>, in più <a  target="_blank" href="https://swiperjs.com/">Swiper.JS</a> è usato per gestire le gallerie</span>
+            <span>Uno script artigianale scritto in <a  target="_blank" href="https://www.python.org/">Python</a> è usato come <a target="_blank" href="https://en.wikipedia.org/wiki/Static_site_generator">generatore statico del sito</a> per questioni ecologiche (no database!)</span>
             <span>Font in uso: <a target="_blank" href="https://www.collletttivo.it/typefaces/ortica">Ortica</a> e <a target="_blank" href="https://velvetyne.fr/fonts/vg5000/">VG5000</a></span>
         </marquee>
     </div>
 
     <footer>
-        <!-- <marquee direction="left" behavior="scroll" onmouseenter="this.stop();" onmouseleave="this.start();"ontouchstart="this.stop()" ontouchend="this.start()" class="marquee">
+        <marquee direction="left" behavior="scroll" onmouseenter="this.stop();" onmouseleave="this.start();" class="marquee">
   
-
-            <span>19 - 20 Giugno:  <a target="_blank" href="https://smetanovalitomysl.cz/en/udalosti/the-two-widows-a-new-view/">Two widows by Bedřich Smetana at Smetanova Litomyšl </a>                </span>
+            
+            
+            {{misc_content.news}}
+            <!-- <span>19 - 20 Giugno:  <a target="_blank" href="https://smetanovalitomysl.cz/en/udalosti/the-two-widows-a-new-view/">Two widows by Bedřich Smetana at Smetanova Litomyšl </a>                </span> -->
            
-        </marquee> -->
+        </marquee>
+
 
     </footer>
 

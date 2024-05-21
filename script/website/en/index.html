@@ -14,7 +14,10 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         
         <title>Lorenzo Ponte</title>
-
+        <meta property="description"
+        content="I’ve directed prose theater and opera shows. 
+        Sometimes I feel the need to write the stories I tell myself, sometimes I work with the words of Others."/>
+        <meta property="og:image" content="http://lorenzoponte.com/renzo.png"/>
         <meta property="og:url" content="http://lorenzoponte.com">
 
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -48,19 +51,21 @@
             display: flex; 
             align-items: center; 
             justify-content: center;">
-                <img loading='lazy' style="width: 50%;" src="../renzo.png" alt="">
+                <img  style="width: 50%;" src="../renzo.png" alt="">
+                <i style="position: absolute;
+            bottom: 1rem;
+            right: 1rem;">Giulia Rossena</i>
             </div>
 
             <div>
-                <h1>:)</h1>
-                <p>Welcome!</p>
-<p>I was born in Rome, raised between Palermo and Milan. And who knows where I'm right now while you read this. </p>
+                
+                <p><span class="contact">lorenzopuntoponte [at] gmail.com </span></p>
+<p>I was born in Rome, raised between Palermo and Milan.</p>
 <p>I graduated in <strong>Classics literature</strong> at the Catholic University of Milan thinking that I would be a literature professor. Then I started a course of theater and I decided to look for a different relationship with words. Therefore I went to study Theater Direction at the <strong>Paolo Grassi Civic School</strong> in Milan. Among the most precious meetings for my artistic and professional growth I count Mariano Furlani, Maurizio Schmidt, Carmelo Rifici, Marco Maccieri, Renata Molinari, Davide Carnevali, Giuliana Musso, and Claudio Autelli. From each of them I have stolen and I continue to steal. After my studies I started working as an assistant director at the Teatro alla Scala in Milan and at the Teatro Franco Parenti with Andrée Ruth Shammah. These were the years of my apprenticeship, in which I began to understand how a theater stage is made and who its inhabitants are. </p>
 <p>I’ve directed prose theater and opera shows. 
 Sometimes I feel the need to write the stories I tell myself, sometimes I work with the words of Others.</p>
 <p>In 2018, together with Maddalena Massafra, Clio Sciro Saccà, Marco Sinopoli, we won the Macerata Opera Festival 4.0 competition for the writing and composition of a contemporary opera. In 2022, I received the 3rd prize of the EOP – European Opera Prize for Directors, together with Alice Benazzi and Giulia Rossena. In 2023, we won the 13th edition of the <strong>EOP – European Opera Award for Directors</strong>. </p>
-<p><em>From that shame, impotence and pain, something was born that I believe was the desire to become a poet, that is, to be able to express what it means to feel regret for someone, to have been loved, to be alone.</em>
-Stig Dagermann</p>
+<p><em>From that shame, impotence and pain, something was born that I believe was the desire to become a poet, that is, to be able to express what it means to feel regret for someone, to have been loved, to be alone.</em>  <br>Stig Dagerman</p>
 
                      
             </div>
@@ -81,16 +86,16 @@ Stig Dagermann</p>
 
                 <div class="burger">
                     <a href="#work" onclick="toggleMenu(false)">Works</a>
-                    <a onclick="document.getElementById('bioN').style.display ='flex', toggleMenu(false)" href="#bioN">bio</a>
+                    <a onclick="document.getElementById('bioN').style.display ='flex', toggleMenu(false)" >bio</a>
                     <!-- <a onclick="toggleMenu(false), lightingNews()">calendario</a> -->
                     <a onclick="openFriends(),toggleMenu(false)">friends</a>
                     <a id="lang" href="../">Ita</a>
                 </div>
                 <div class="desktop">
                     <a href="#work">works</a>
-                    <a onclick="document.getElementById('bioN').style.display ='flex'" href="#bioN">bio</a>
+                    <a onclick="document.getElementById('bioN').style.display ='flex'" >bio</a>
                     <!-- <a onclick="lightingNews()">calendario</a> -->
-                    <a href="#friends" onclick="openFriends()">friends</a>
+                    <a  onclick="openFriends()">friends</a>
                     <a id="lang" href="../">ita</a>
                 </div>
 
@@ -101,36 +106,37 @@ Stig Dagermann</p>
 
             <div class="presentazione swiper">
                 <div class="swiper-wrapper">
-
-                    
                     <div class="swiper-slide">
-                        <img src="../galleria/Idoménée, roi de Crête - 26-09-23 - Sim on Gosselin-141.jpg" alt="">
+                        <img src="../galleria/compressed/falstaff.jpg" alt="">
                     </div>
                     
                     <div class="swiper-slide">
-                        <img src="../galleria/Idoménée, roi de Crête - 26-09-23 - Sim on Gosselin-93.jpg" alt="">
+                        <img src="galleria/compressed/_DSC7702.JPG" alt="">
                     </div>
                     
                     <div class="swiper-slide">
-                        <img src="../galleria/Sito 1 copia.JPG" alt="">
+                        <img src="../galleria/compressed/Idoménée, roi de Crête - 26-09-23 - Sim on Gosselin-141.jpg" alt="">
                     </div>
                     
                     <div class="swiper-slide">
-                        <img src="../galleria/_DSC6686 copia.JPG" alt="">
+                        <img src="../galleria/compressed/Idoménée, roi de Crête - 26-09-23 - Sim on Gosselin-93.jpg" alt="">
                     </div>
                     
                     <div class="swiper-slide">
-                        <img src="../galleria/_DSC7702.JPG" alt="">
+                        <img src="../galleria/compressed/Sito 1 copia.JPG" alt="">
                     </div>
                     
                     <div class="swiper-slide">
-                        <img src="../galleria/Buoni a nulla.JPG" alt="">
+                        <img src="../galleria/compressed/_DSC6686 copia.JPG" alt="">
                     </div>
+                    
                     
                     <div class="swiper-slide">
-                        <img src="../galleria/Unknown.jpeg" alt="">
+                        <img src="../galleria/compressed/Buoni a nulla.JPG" alt="">
                     </div>
                     
+                    
+       
 
                 </div>
                 <div class="swiper-button-next"></div>
@@ -150,6 +156,8 @@ Stig Dagermann</p>
                 
                     <a href="#work" onclick="selectCategory('Opera')">Opera</a>
                 
+                    <a href="#work" onclick="selectCategory('Theater')">Theater</a>
+                
             </div>
 
 
@@ -157,30 +165,27 @@ Stig Dagermann</p>
                 <div class="left">
                     
                         
-                        <div class="element Opera" data-title="Confabulazioni" data-slug="projects/confabulazioni/">
-                            <a href="../projects/confabulazioni/en"><img loading='lazy' src="/projects/confabulazioni/assets/compressed/Locandina - opzione A.jpg"></a>
-                            <h1>Confabulazioni</h1>
-                        <hr>
+                        <div class="element Opera" data-title="Idomeneo, re di Creta" data-slug="projects/idomeneo/">
+                            <a href="../projects/idomeneo/en"><img  src="/projects/idomeneo/assets/compressed/Locandina.jpg"></a>
+
                         </div>
                         
                     
                         
                     
                         
-                        <div class="element Opera" data-title="Buoni a Nulla" data-slug="projects/buoni_a_nulla/">
-                            <a href="../projects/buoni_a_nulla/en"><img loading='lazy' src="/projects/buoni_a_nulla/assets/compressed/Locandina.JPG"></a>
-                            <h1>Buoni a Nulla</h1>
-                        <hr>
+                        <div class="element Theater" data-title="Good for Nothing" data-slug="projects/buoni_a_nulla/">
+                            <a href="../projects/buoni_a_nulla/en"><img  src="/projects/buoni_a_nulla/assets/compressed/Locandina.JPG"></a>
+
                         </div>
                         
                     
                         
                     
                         
-                        <div class="element Opera" data-title="Idomeneo" data-slug="projects/idomeneo/">
-                            <a href="../projects/idomeneo/en"><img loading='lazy' src="/projects/idomeneo/assets/compressed/Locandina.jpg"></a>
-                            <h1>Idomeneo</h1>
-                        <hr>
+                        <div class="element Theater" data-title="Confabulazioni" data-slug="projects/confabulazioni/">
+                            <a href="../projects/confabulazioni/en"><img  src="/projects/confabulazioni/assets/compressed/Locandina - opzione A.jpg"></a>
+
                         </div>
                         
                     
@@ -191,29 +196,66 @@ Stig Dagermann</p>
                         
                     
                         
-                        <div class="element Opera" data-title="Tu Sei Agatha" data-slug="projects/tu_sei_agatha/">
-                            <a href="../projects/tu_sei_agatha/en"><img loading='lazy' src="/projects/tu_sei_agatha/assets/compressed/A - Locandina.png"></a>
-                            <h1>Tu Sei Agatha</h1>
-                        <hr>
+                        <div class="element Theater" data-title="Once we won't be great" data-slug="projects/quando_non_saremo_grandi/">
+                            <a href="../projects/quando_non_saremo_grandi/en"><img  src="/projects/quando_non_saremo_grandi/assets/compressed/Immagine locandina copia.jpeg"></a>
                         </div>
                         
                     
                         
                     
                         
-                        <div class="element Opera" data-title="Quando non saremo grandi" data-slug="projects/quando_non_saremo_grandi/">
-                            <a href="../projects/quando_non_saremo_grandi/en"><img loading='lazy' src="/projects/quando_non_saremo_grandi/assets/compressed/Immagine locandina copia.jpeg"></a>
-                            <h1>Quando non saremo grandi</h1>
-                        <hr>
+                        <div class="element Theater" data-title="You Are Agatha" data-slug="projects/tu_sei_agatha/">
+                            <a href="../projects/tu_sei_agatha/en"><img  src="/projects/tu_sei_agatha/assets/compressed/A - Locandina.png"></a>
                         </div>
                         
                     
                         
                     
                 </div>
+
+                <div class="mobile">
+                    
+                    <div class="element Opera" data-title="Idomeneo, re di Creta" data-slug="projects/idomeneo/">
+                        <a href="../projects/idomeneo/en"><img  src="/projects/idomeneo/assets/compressed/Locandina.jpg"></a>
+                        <h1>Idomeneo, re di Creta</h1>
+                        
+                        <hr>
+                        
+                    </div>
                 
-            </div>
+                    <div class="element Theater" data-title="Once we won't be great" data-slug="projects/quando_non_saremo_grandi/">
+                        <a href="../projects/quando_non_saremo_grandi/en"><img  src="/projects/quando_non_saremo_grandi/assets/compressed/Immagine locandina copia.jpeg"></a>
+                        <h1>Once we won't be great</h1>
+                        
+                        <hr>
+                        
+                    </div>
+                
+                    <div class="element Theater" data-title="Good for Nothing" data-slug="projects/buoni_a_nulla/">
+                        <a href="../projects/buoni_a_nulla/en"><img  src="/projects/buoni_a_nulla/assets/compressed/Locandina.JPG"></a>
+                        <h1>Good for Nothing</h1>
+                        
+                        <hr>
+                        
+                    </div>
+                
+                    <div class="element Theater" data-title="You Are Agatha" data-slug="projects/tu_sei_agatha/">
+                        <a href="../projects/tu_sei_agatha/en"><img  src="/projects/tu_sei_agatha/assets/compressed/A - Locandina.png"></a>
+                        <h1>You Are Agatha</h1>
+                        
+                        <hr>
+                        
+                    </div>
+                
+                    <div class="element Theater" data-title="Confabulazioni" data-slug="projects/confabulazioni/">
+                        <a href="../projects/confabulazioni/en"><img  src="/projects/confabulazioni/assets/compressed/Locandina - opzione A.jpg"></a>
+                        <h1>Confabulazioni</h1>
+                        
+                    </div>
+                
+                </div>
         </div>
+    </div>
 
         <div id="friends">
             <a onclick="closeFriends()" id="closeMenu"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.29289 5.29289C5.68342 4.90237 6.31658 4.90237 6.70711 5.29289L12 10.5858L17.2929 5.29289C17.6834 4.90237 18.3166 4.90237 18.7071 5.29289C19.0976 5.68342 19.0976 6.31658 18.7071 6.70711L13.4142 12L18.7071 17.2929C19.0976 17.6834 19.0976 18.3166 18.7071 18.7071C18.3166 19.0976 17.6834 19.0976 17.2929 18.7071L12 13.4142L6.70711 18.7071C6.31658 19.0976 5.68342 19.0976 5.29289 18.7071C4.90237 18.3166 4.90237 17.6834 5.29289 17.2929L10.5858 12L5.29289 6.70711C4.90237 6.31658 4.90237 5.68342 5.29289 5.29289Z"/></svg>
@@ -234,22 +276,23 @@ Stig Dagermann</p>
         <div class="prefooter">
                 
             <marquee direction="left" behavior="scroll" class="marquee">
-                <span onmouseenter="this.stop();" onmouseleave="this.start();">Software Artisan: 
+                <span>Software Artisan: 
                     <a target="_blank" href="http://federicoponi.it">Federico Poni</a>
                 </span>
-                <span>This website is built with plain <a href="">HTML</a>, <a href="">CSS</a> and <a href="http://vanilla-js.com/">plain JavaScript</a>, but we use <a href="https://swiperjs.com/">Swiper.JS</a> library for the galleries</span>
-                <span>An artisanal <a href="">Python</a> script is used to <a href="https://en.wikipedia.org/wiki/Static_site_generator">statically generate this website</a> for ecological sake</span>
+                <span>This website is built with plain <a target="_blank" href="https://en.wikipedia.org/wiki/HTML">HTML</a>, <a target="_blank" href="https://en.wikipedia.org/wiki/CSS">CSS</a> and <a href="https://en.wikipedia.org/wiki/JavaScript">plain JavaScript</a>, but we use <a target="_blank" href="https://swiperjs.com/">Swiper.JS</a> library for the galleries</span>
+                <span>An artisanal <a target="_blank" href="https://www.python.org/">Python</a> script is used to <a target="_blank" href="https://en.wikipedia.org/wiki/Static_site_generator">statically generate this website</a> for ecological sake</span>
                 <span>Fonts in use: <a target="_blank" href="https://www.collletttivo.it/typefaces/ortica">Ortica</a> and <a target="_blank" href="https://velvetyne.fr/fonts/vg5000/">VG5000</a></span>
             </marquee>
         </div>
 
         <footer>
-            <!-- <marquee direction="left" behavior="scroll" onmouseenter="this.stop();" onmouseleave="this.start();"ontouchstart="this.stop()" ontouchend="this.start()" class="marquee">
-      
-
-                <span>19 - 20 Giugno:  <a target="_blank" href="https://smetanovalitomysl.cz/en/udalosti/the-two-widows-a-new-view/">Two widows by Bedřich Smetana at Smetanova Litomyšl </a>                </span>
+            <marquee direction="left" behavior="scroll" class="marquee">
+                
+                <p><span>19 - 20 June:  <a target="_blank" href="https://smetanovalitomysl.cz/en/udalosti/the-two-widows-a-new-view/">Two widows by Bedřich Smetana at Smetanova Litomyšl </a>              <br />
+</span> </p>
+                <!-- <span>19 - 20 Giugno:  <a target="_blank" href="https://smetanovalitomysl.cz/en/udalosti/the-two-widows-a-new-view/">Two widows by Bedřich Smetana at Smetanova Litomyšl </a>                </span> -->
                
-            </marquee> -->
+            </marquee>
 
         </footer>
 

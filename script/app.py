@@ -1,3 +1,12 @@
+# TODO:
+# doppia lingua categorie creazione
+# eliminare progetto
+# convertire foto assets in una dimensione seria
+# elimare compressed/compressed da galleria
+# titoli inglese
+
+
+
 import os
 import json
 import subprocess
@@ -128,7 +137,7 @@ def prepare_project():
     os.makedirs(compressed_dir, exist_ok=True)
     image_files = [f for f in os.listdir(assets_dir) if os.path.isfile(os.path.join(assets_dir, f))]
     for image_file in image_files:
-        subprocess.run(["convert", os.path.join(assets_dir, image_file), "-resize", "50%", os.path.join(compressed_dir, image_file)])
+        subprocess.run(["convert", os.path.join(assets_dir, image_file), "-resize", "50%", "-define", "jpeg:extent=512kb", os.path.join(compressed_dir, image_file)])
     
     # Prompt user to select main picture
     print("Available pictures:")
@@ -248,8 +257,15 @@ def generate_website():
         misc_content_it[file_name.replace('.md','')] = html_content
 
 
-    # Get gallery images
+
     gallery_pics = [f for f in os.listdir('website/galleria') if not f.startswith('.')]
+
+    # Get gallery images
+    os.makedirs('website/galleria/compressed', exist_ok=True)
+
+    # Compress/resize images
+    for gallery_pic in gallery_pics:
+        subprocess.run(["convert", os.path.join('website/galleria', gallery_pic), "-resize", "50%", "-define", "jpeg:extent=512kb", os.path.join('website/galleria/compressed', gallery_pic)])
 
     # Initialize Jinja environment
     env = Environment(loader=FileSystemLoader('.'))

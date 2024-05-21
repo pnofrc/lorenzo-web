@@ -71,11 +71,14 @@
             display: flex; 
             align-items: center; 
             justify-content: center;">
-            <img loading='lazy' style="width: 50%;" src="../../renzo.png" alt="">
+            <img  style="width: 50%;" src="../../renzo.png" alt="">
+            <i style="position: absolute;
+            bottom: 1rem;
+            right: 1rem;">Giulia Rossena</i>
         </div>
 
         <div>
-            <h1>:)</h1>
+            
             {{misc_content.bio}}
         </div>
 
@@ -90,7 +93,7 @@
         <a onclick="closeFriends()" id="closeMenu"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.29289 5.29289C5.68342 4.90237 6.31658 4.90237 6.70711 5.29289L12 10.5858L17.2929 5.29289C17.6834 4.90237 18.3166 4.90237 18.7071 5.29289C19.0976 5.68342 19.0976 6.31658 18.7071 6.70711L13.4142 12L18.7071 17.2929C19.0976 17.6834 19.0976 18.3166 18.7071 18.7071C18.3166 19.0976 17.6834 19.0976 17.2929 18.7071L12 13.4142L6.70711 18.7071C6.31658 19.0976 5.68342 19.0976 5.29289 18.7071C4.90237 18.3166 4.90237 17.6834 5.29289 17.2929L10.5858 12L5.29289 6.70711C4.90237 6.31658 4.90237 5.68342 5.29289 5.29289Z"/></svg>
         </a>
      
-            {{misc_content.friends}}
+            {{misc_content.amici}}
     </div>
 
 
@@ -111,24 +114,24 @@
             <div class="burger">
                 <div>
                     <a href="../../#work" onclick="toggleMenu(false)">Lavori</a>
-                        <a onclick="document.getElementById('bioN').style.display ='flex', toggleMenu(false)" href="#bioN">bio</a>
+                        <a onclick="document.getElementById('bioN').style.display ='flex', toggleMenu(false)" >bio</a>
                         <!-- <a onclick="toggleMenu(false), lightingNews()">calendario</a> -->
                         <a onclick="openFriends(),toggleMenu(false)">amici</a>
                         <a id="lang" href="./en">ENG</a>
                 </div>
                 <div class="scrollbar">
-                    {% for slug,contents in cms_data.projects.items() %}
+                    {% for slug,contents in cms_data.projects.items()  | reverse  %}
                     <a href='../{{slug}}' {% if contents.name==values.name %} class="selected" {% endif
-                        %}>{{contents.name}}</a><br>
+                        %}>{{contents.name[0]}}</a><br>
                     {% endfor %}
                 </div>
 
             </div>
             <div class="desktop">
                 <a href="../../#work">Lavori</a>
-                    <a onclick="document.getElementById('bioN').style.display ='flex'" href="#bioN">bio</a>
+                    <a onclick="document.getElementById('bioN').style.display ='flex'" >bio</a>
                     <!-- <a onclick="lightingNews()">calendario</a> -->
-                    <a href="#friends" onclick="openFriends()">amici</a>
+                    <a  onclick="openFriends()">amici</a>
                     <a id="lang" href="./en">ENG</a>
             </div>
 
@@ -145,15 +148,15 @@
 
         <div class="index desktop">
 
-            {% for slug,contents in cms_data.projects.items() %}
+            {% for slug,contents in cms_data.projects.items()  | reverse  %}
             <a href='../{{slug}}' {% if contents.name==values.name %} class="selected" {% endif
-                %}>{{contents.name}}</a>
+                %}>{{contents.name[0]}}</a>
             {% endfor %}
 
         </div>
 
         <div class="content scrollbar">
-            <h1>{{values.name}}</h1>
+            <h1>{{values.name[0]}}</h1>
 
 
             {{values.video_url}}
@@ -164,8 +167,8 @@
             </div>
 
             <div class="grid">
-                {% for pic,caption in values.captions_it.items()%}
-                <img onclick="openModal()" class="slide" loading='lazy' src="assets/compressed/{{pic}}"
+                {% for pic,caption in values.captions_it | dictsort%}
+                <img onclick="openModal()" class="slide"  src="assets/compressed/{{pic}}"
                     alt="{{caption}}">
                 {% endfor %}
 
@@ -187,9 +190,9 @@
         </svg>
         <div class="swiper">
             <div class="swiper-wrapper">
-                {% for pic,caption in values.captions_it.items() %}
+                {% for pic,caption in values.captions_it | dictsort %}
                 <div class="swiper-slide">
-                    <img loading='lazy' src="assets/{{pic}}" alt="{{caption}}">
+                    <img  src="assets/compressed/{{pic}}" alt="{{caption}}">
                     <span>{{caption}}</span>
                 </div>
                 {% endfor %}
@@ -208,22 +211,24 @@
     <div class="prefooter">
                 
         <marquee direction="left" behavior="scroll" class="marquee">
-            <span onmouseenter="this.stop();" onmouseleave="this.start();">Artigiano del Software: 
+            <span>Artigiano del Software: 
                 <a target="_blank" href="http://federicoponi.it">Federico Poni</a>
             </span>
-            <span>Questo sito è stato costruito con <a href="">HTML</a>, <a href="">CSS</a> e <a href="http://vanilla-js.com/">plain JavaScript</a>, in più <a href="https://swiperjs.com/">Swiper.JS</a> è usato per gestire le gallerie</span>
-            <span>Uno script artigianale scritto in <a href="">Python</a> è usato come <a href="https://en.wikipedia.org/wiki/Static_site_generator">generatore statico del sito</a> per questioni ecologiche (no database!)</span>
+            <span>Questo sito è stato costruito con <a target="_blank" href="https://it.wikipedia.org/wiki/HTML">HTML</a>, <a  target="_blank" href="https://it.wikipedia.org/wiki/CSS">CSS</a> e <a  target="_blank" href="https://it.wikipedia.org/wiki/JavaScript">puro JavaScript</a>, in più <a  target="_blank" href="https://swiperjs.com/">Swiper.JS</a> è usato per gestire le gallerie</span>
+            <span>Uno script artigianale scritto in <a  target="_blank" href="https://www.python.org/">Python</a> è usato come <a target="_blank" href="https://en.wikipedia.org/wiki/Static_site_generator">generatore statico del sito</a> per questioni ecologiche (no database!)</span>
             <span>Font in uso: <a target="_blank" href="https://www.collletttivo.it/typefaces/ortica">Ortica</a> e <a target="_blank" href="https://velvetyne.fr/fonts/vg5000/">VG5000</a></span>
         </marquee>
     </div>
 
     <footer>
-        <!-- <marquee direction="left" behavior="scroll" onmouseenter="this.stop();" onmouseleave="this.start();"ontouchstart="this.stop()" ontouchend="this.start()" class="marquee">
-  
-
-            <span>19 - 20 Giugno:  <a target="_blank" href="https://smetanovalitomysl.cz/en/udalosti/the-two-widows-a-new-view/">Two widows by Bedřich Smetana at Smetanova Litomyšl </a>                </span>
+        <marquee direction="left" behavior="scroll" class="marquee">
+    
+            
+            {{misc_content.news}}
+            <!-- <span>19 - 20 Giugno:  <a target="_blank" href="https://smetanovalitomysl.cz/en/udalosti/the-two-widows-a-new-view/">Two widows by Bedřich Smetana at Smetanova Litomyšl </a>                </span> -->
            
-        </marquee> -->
+        </marquee>
+
 
     </footer>
 

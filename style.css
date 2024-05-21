@@ -1165,8 +1165,8 @@ marquee a {
 @media only screen and (max-height: 800px) {
 
   .swiper-slide img {
-    width: 300px;
-    height: 300px;
+    width: 500px;
+    height: 500px;
   }
 
 }
@@ -1177,6 +1177,12 @@ marquee a {
   .burger div:nth-child(2) {
     height: 10rem;
   }
+
+  .swiper-slide img {
+    width: 400px;
+    height: 400px;
+  }
+
 
 }
 
